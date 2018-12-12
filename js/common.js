@@ -14,63 +14,26 @@ $(document).ready(function() {
 	$tablist1=$(".tablist-type1"),
 	$tablist2=$(".tablist-type2"),
 	$qna=$(".qna"),
-	$location=$(".location-nav-wrap");
-
-	var allBtnNum = 0;	//전체메뉴 기본 설정값
-
+	$location=$(".location-nav-wrap"),
+	$lang=$(".lang");
 
 
-	//메인 확인
-	var mainCheck = function(){
-		if ($('#main').length==1) {
-			return true;
-		}else{
-			return false;
-		}
-	}
 	//메뉴 열기
 	var openMenu = function(){	
 		$opensectionWrap.slideDown("fast")
 		.addClass('active');
 		$allBtn.hide();
 		$closeBtn.show();
-		if (mainCheck()) {
-			$header.removeClass('main-style');
-		}
 	}
 	//메뉴 닫기
 	var closeMenu = function(){		
-		if (allBtnNum==0) {
-			$opensectionWrap.stop().slideUp("fast")
-			.removeClass('active');
-			$allBtn.show();
-			$closeBtn.hide();
-			if (mainCheck() && $(this).scrollTop() == 0) {				
-				$header.addClass('main-style')
-				.removeClass('main-style2')			
-			}
-		}
+		$opensectionWrap.stop().slideUp("fast")
+		.removeClass('active');
+		$allBtn.show();
+		$closeBtn.hide();
 	}
 
-	//전체버튼 클릭 이벤트
-	$allBtn.on('click', function(event) {
-		allBtnNum = 1;	
-		openMenu();
-	});
-	$closeBtn.on('click', function(event) {
-		allBtnNum = 0;	
-		closeMenu();
-	});
-	$mainWrap.on('click', function(event) {
-		allBtnNum = 0;	
-		closeMenu();
-	});
-	$container.on('click', function(event) {
-		allBtnNum = 0;	
-		closeMenu();
-	});
-
-	//메뉴 롤오버 이벤트 
+		//메뉴 롤오버 이벤트 
 	$gnb.on('mouseenter',function(){
 		openMenu();	
 	});
@@ -112,13 +75,21 @@ $(document).ready(function() {
 		$(this).find('a').removeClass('active');
 	});
 
+	//외국어 이벤트
+	$lang.find('a').on('focus mouseenter', function(event) {
+		$(this).addClass('active');
+	});
+	$lang.on('blur mouseleave', function(event) {
+		$(this).find('a').removeClass('active');
+	});
+
 
 	// 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
 	var tapN = $tablist1.find('a').length;
-	if (tapN < 6) {
+	if (tapN < 5) {
 		var tapW = 1180/tapN;
 		$tablist1.find('a').css( 'width', tapW+'px' );
-	}else if(tapN > 6){
+	}else if(tapN > 5){
 		$(".scroll-btn").addClass('active')
 	}
 
@@ -146,31 +117,11 @@ $(document).ready(function() {
 	});
 
 
-	//탭 가로 스크롤 버튼
-	$('.scroll-left').on('click keydown', function(event) {
-		scrollMove(-196);
-	});
-	//탭 가로 스크롤 버튼
-	$('.scroll-right').on('click keydown', function(event) {
-		scrollMove(196);
-	});
-	var scrollMove = function (n){
-		$('.tablist-type1').animate({scrollLeft : $('.tablist-type1').scrollLeft() + n}, 500);   
-	}
-
-
   	//자주하는 질문
   	$qna.find('dt').on('click focus keydown',function() {
   		$qna.find('dt').removeClass('active');
   		$(this).addClass('active');
   	});
-
-
-	//진료과 목록  아이콘 노출 
-	$('.text-ko > a').on('focus',function(){
-		$('.over-icon').css( 'display', 'none' );
-		$(this).siblings('.over-icon').css( 'display', 'block' );
-	});
 
 
 	//select IE9 수정
@@ -182,8 +133,6 @@ $(document).ready(function() {
 			}
 		});
 	}
-
-
 
 
 });

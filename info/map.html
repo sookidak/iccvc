@@ -1,0 +1,228 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap">
+		<h1 class="title-style1">찾아오시는 길</h1>
+	</div>
+	<div class="contents">		
+		<div class="map-wrap">
+			지도 API	
+		</div>
+		<div class="btn-wrap marT30 textR map">
+			<div class="floatL marT10">
+			<button type="button" class="btn btn-m color05">지도 확대/축소 끄기 </button>
+			<button type="button" class="btn btn-m color05 ">지도 확대/축소 켜기</button>	
+			</div>
+			<button type="button" class="btn btn-l color02 ">빠른 길찾기</button>
+		</div>
+		<div class="prg-wrap marT80">
+			<div class="prg-left"><h1 class="prg-title">버스로 오시는<br/> 방법</h1></div>
+			<div class="prg-right">
+				<div class="prg-cont">				
+					<table class="table table-type1">	  
+						<caption><span class="offscreen">시내버스, 마을버스, 광역버스 노선번호 및 주요 정류장 안내</span></caption>	  
+						<colgroup>	    
+							<col style="width:170px"/>							
+							<col style="width:96px"/>	    
+							<col style=""/> 							
+							<col style="width:163px"/> 
+						</colgroup>	  
+						<thead>
+							<tr>
+								<th class="line">구분</th>
+								<th>노선번호</th>
+								<th>주요 정류장</th>
+								<th>비고</th>
+							</tr>
+						</thead>	  
+						<tbody>	
+							<tr>
+								<th rowspan="10">시내버스</th>
+								<td>5</td>
+								<td>운연역 – 남인천세무서 – 신세계백화점(인천터미널) – 인하대역 – 옹진군청 – 인하대병원</td>
+								<td rowspan="2">병원 앞 하차</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>무지개아파트(동남아파트) – 동막역 – 인천가톨릭대 – 더샵하버뷰 – 인하대역 – 인하대병원</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>항동7가버스차고지 – 국제여객터미널 – 수협(인천해양센터) – 항운아파트 – 출입국관리사무소</td>
+								<td>출입국 관리사무소 하차</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>신흥교통 – CJ인천2공장 – 신선초등학교 – 인하대병원</td>
+								<td>병원 앞 하차</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>항동7가버스차고지 – 풍물시장 – 연안여객터미널 – 연안초등학교 – 옹진군청 – 숭의역</td>
+								<td rowspan="2">숭의역 하차</td>
+							</tr>
+							<tr>
+								<td>16</td>
+								<td>무지개아파트(동남아파트) – 연세대 – 해양경찰청 – 송도역 – 교통방송사거리 – 옹진군청 – 숭의역</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td>국제여객터미널 –  연안부두어시장 – 남항부두 –    신선초등학교 – 출입국관리사무소</td>
+								<td>출입국 관리사무소 하차</td>
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>월곶 – 소래포구입구 – 신세계백화점(인천터미널) – 문학경기장 – 인하대역 – 옹진군청 – 인하대병원</td>
+								<td rowspan="3">병원 앞 하차</td>
+							</tr>
+							<tr>
+								<td>33</td>
+								<td>항동7가버스차고지 – 연안어시장 – 수협(인천해양센터) – 신선초등학교 – 인하대병원</td>
+							</tr>
+							<tr>
+								<td>36</td>
+								<td>항동7가버스차고지 – 연안여객터미널 – 남항부두 – 신선초등학교 – 인하대병원</td>
+							</tr>
+							<tr>
+								<th rowspan="3">마을버스</th>
+								<td>517</td>
+								<td>윤성아파트(인항고교) – 토지금고시장 –굴다리입구 – 숭의역</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<td>519</td>
+								<td>윤성아파트(인항고교) – 토지금고시장 – 하나로쇼핑 – 인하대병원</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<td>521</td>
+								<td>옥련중학교 – 옥련2동주민센터(옥련우체국) – 인천해양과학고 – 경인방송 – 숭의역</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<th rowspan="5">광역버스</th>
+								<td>9100</td>
+								<td>강남역서초현대타워앞 – 하늘휴게소 – 선바위역 – 하늘휴게소 – 남동구청역 – 제물포역 – 숭의역</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<td>R8848</td>
+								<td>안양역 – 만수역 – 남동구청역 – 인천시청후문 – 제물포역 – 숭의역</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<td>R8850</td>
+								<td>수원공용버스터미널 – 수원역 – 목감사거리 – 인천시청후문 – 제물포역 – 숭의역</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<td>R8851</td>
+								<td>수원공용버스터미널 – 수원역 – 목감사거리– 인천시청후문 – 제물포역 – 숭의역</td>
+								<td>　</td>
+							</tr>
+							<tr>
+								<td>R8855</td>
+								<td>스타프라자 – 안산역– 모아아파트 – 남동구청 – 인천시청후문 – 제물포역 – 숭의역</td>
+								<td>　</td>
+							</tr>
+						</tbody>	
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="prg-wrap">
+			<div class="prg-left"><h1 class="prg-title">지하철로 오시는<br/>방법</h1></div>
+			<div class="prg-right">
+				<div class="prg-cont">
+					<table class="table table-type1 map">	  
+						<caption><span class="offscreen">지하철 내리는역 안내</span></caption>	  
+						<colgroup>	    
+							<col style="width:170px"/>		    
+							<col style=""/> 							
+							<col style=""/> 
+						</colgroup>	  
+						<thead>
+							<tr>
+								<th class="line">노선</th>
+								<th>내리는역</th>
+								<th>비고</th>
+							</tr>
+						</thead>	  
+						<tbody>	
+							<tr>
+								<th rowspan="2"><p class="subway01">1호선</p></th>
+								<td>제물포역 또는 동인천역</td>
+								<td>하차 후 버스 또는 택시 이용<br>
+								(택시 이용 시 요금 약 4,000원) </td>
+							</tr>
+							<tr>
+								<td>인천역</td>
+								<td>수인선 환승    (오이도역 방향)</td>
+							</tr>
+							<tr>
+								<th><p class="subway02">수인선</p></th>
+								<td>숭의(인하대병원)역</td>
+								<td>2번출구로 나와서 도보 약 5분</td>
+							</tr>
+							<tr>
+								<th><p class="subway03">인천 1호선</p></th>
+								<td>원인재역</td>
+								<td>수인선 환승 (인천역 방향)</td>
+							</tr>
+						</tbody>	
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="prg-wrap">
+			<div class="prg-left"><h1 class="prg-title">자가용으로 오시는<br/>방법 (고속도로)</h1></div>
+			<div class="prg-right">
+				<div class="prg-cont">						
+					<table class="table table-type1">	  
+						<caption><span class="offscreen">자동차로 올수있는 진행방향 안내</span></caption>	  
+						<colgroup>	    
+							<col style="width:170px"/>		    
+							<col style=""/> 			
+						</colgroup>	  
+						<thead>
+							<tr>
+								<th class="line">구분</th>
+								<th>진행방향</th>
+							</tr>
+						</thead>	  
+						<tbody>	 
+							<tr>
+								<th>서울, 부천방면</th>
+								<td class="textL">제1경인고속도로 종점 → 직진하여 우측</td>
+							</tr>
+							<tr>
+								<th>서산, 태안방면</th>
+								<td class="textL">서해안 고속도로 → 안산 분기점 → 영동고속도로 → 서창 분기점 → 제2경인 고속도로 → 종점에서 우회전 →    제1경인고속도로 입구 → <br/>좌회전하여 우측</td>
+							</tr>
+							<tr>
+								<th>성남, 분당방면</th>
+								<td class="textL">서울외곽순환고속도로 → 안현 분기점→ 제2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측</td>
+							</tr>
+							<tr>
+								<th>안양, 안산방면</th>
+								<td class="textL">제 2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측</td>
+							</tr>
+							<tr>
+								<th>용인, 이천방면</th>
+								<td class="textL">영동고속도로 → 서창 분기점 → 제2경인고속도로 → 종점에서 우회전 → 제1경인고속도로 입구 → 좌회전하여 우측</td>
+							</tr>
+							<tr>
+								<th>일산방면</th>
+								<td class="textL">외곽순환고속도로 → 서운 분기점 → 제1경인고속도로 종점 → 직진하여 우측</td>
+							</tr>   
+						</tbody>	
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

@@ -1,0 +1,35 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+
+<!-- layer popup active로 보이기 조정-->
+<div id="layer-bg" class="active"></div>
+<div id="layer-box" role="dialog" aria-labelledby="layerpopup" class="active">
+	<div>
+		<div class="layer-wrap rolling">		
+			<div class="layer-cont "style="z-index: 4">
+				Contents Area 01	
+			</div>	
+			<div class="layer-cont " style="z-index: 3">
+				Contents Area 02
+			</div>	
+			<div class="layer-cont " style="z-index: 2">
+				Contents Area 03		
+			</div>	
+			<div class="layer-cont " style="z-index: 1">
+				Contents Area 04		
+			</div>	
+		</div>
+		<div class="layer-close">
+			<div>
+				<div class="checkbox">
+					<input type="checkbox" id="check" aria-checked=”false” >
+					<label for="check" >오늘 하루 보지않기</label>
+				</div>
+				<button type="button" class="btn-close"><span class="offscreen">레이어 닫기</span></button>
+			</div>
+		</div>	
+	</div>
+</div>
+<!-- //layer popup -->
+@@include('../inc/footer.html')

@@ -1,0 +1,1563 @@
+@@include('../inc/head.html')
+<style>
+	table th,table td{border:1px solid #ccc;padding:5px;font-size:13px}
+	.guide{padding:20px;width:1180px;margin:0 auto;}
+	.guide-title{font-size:30px;margin-bottom:30px;text-align: center;font-weight: bold}
+	.guide-title2{font-size:24px;margin-bottom:20px;font-weight: bold}
+	.table-guide{width:1180px;}
+	.guide-section{margin-bottom:30px;}
+	.guide-nav{margin-bottom:20px; position: fixed; left: 0}
+	.guide-nav:after{content:'';display:block;clear: both;width:100%;}
+	.guide-nav li{vertical-align:middle;height:40px;background:#3d4044; line-height: 40px}
+	.guide-nav li:hover{background:#199da3;}
+	.guide-nav li a{display:block;color:#fff;padding:0 20px;font-weight: bold}
+	.box-g1{width:14px;height:10px;display:inline-block;background:#0770bb}
+	.source-wrap{border:1px solid #ccc;padding:10px;line-height:1.4;}
+</style>
+
+<section class="guide">
+	<section class="guide-title">인하대병원 가이드</section>
+	<section class="guide-nav">
+		<ul>
+			<li><a href="#guide-css">기본css</a></li>
+			<li><a href="#guide-color">컬러</a></li>
+			<li><a href="#guide-text">텍스트</a></li>
+			<li><a href="#guide-badge">뱃지</a></li>
+			<li><a href="#guide-btns">버튼</a></li>
+			<li><a href="#guide-input">입력박스</a></li>
+			<li><a href="#guide-select">선택박스</a></li>
+			<li><a href="#guide-component">컴포넌트</a></li>
+			<li><a href="#guide-agree">동의박스</a></li>
+			<li><a href="#guide-tab">탭</a></li>
+			<li><a href="#guide-table">테이블</a></li>
+			<li><a href="#guide-paging">페이징</a></li>
+			<li><a href="#guide-list">리스트</a></li>
+			<li><a href="#guide-err">에러박스</a></li>
+			<li><a href="#guide-etcbox">추가사항</a></li>
+		</ul>
+	</section>
+	<!-- css  가이드 -->
+	<section class="guide-section" id="guide-css">
+		<h2 class="guide-title2">기본 css 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					텍스트 왼쪽 정렬
+				</th>
+				<td>
+					textL
+				</td>
+				<th>
+					텍스트 가운데 정렬
+				</th>
+				<td>
+					textC
+				</td>
+				<th>
+					텍스트 오른쪽 정렬
+				</th>
+				<td>
+					textR
+				</td>
+			</tr>
+			<tr>
+				<th>
+					숨김 css 
+				</th>
+				<td>
+					offscreen
+				</td>
+				<th>
+					float 왼쪽 정렬
+				</th>
+				<td>
+					floatL
+				</td>
+				<th>
+					float 오른쪽 정렬
+				</th>
+				<td>
+					floatR
+				</td>
+			</tr>
+			<tr>
+				<th>
+					margin 상단
+				</th>
+				<td>
+					marT10
+				</td>
+				<th>
+					margin 왼쪽
+				</th>
+				<td>
+					marL5
+				</td>
+				<th colspan="2">
+					마진값 숫자변경하여 쓰되 없는 것은 common.css 추가 요망				
+				</td>
+			</tr>
+			<tr>
+				<th>글자굵기 </th>
+				<td>
+					<span class="NotoKrL">NotoKrL</span>
+				</td>
+				<td>					
+					<span class="NotoKrDL">NotoKrDL</span>
+				</td>
+				<td>					
+					<span class="NotoKrR">NotoKrR</span>
+				</td>
+				<td>					
+					<span class="NotoKrM">NotoKrM</span>
+				</td>
+				<td>					
+					<span class="NotoKrB">NotoKrB</span>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //css  가이드 -->
+	<!-- 컬러  가이드 -->
+	<section class="guide-section" id="guide-color">
+		<h2 class="guide-title2">컬러 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="color-style1">#0770bb</div>
+				</th>
+				<td>
+					<xmp><div class="color-style1">#0770bb</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="color-style2">#2ca48f</div>
+				</th>
+				<td>
+					<xmp><div class="color-style2">#2ca48f</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="color-style3">#e3751c</div>
+				</th>
+				<td>
+					<xmp><div class="color-style3">#e3751c</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="color-style4">#777777</div>
+				</th>
+				<td>
+					<xmp><div class="color-style4">#777777</div></xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //컬러  가이드 -->
+	<!-- 텍스트  가이드 -->
+	<section class="guide-section" id="guide-text">
+		<h2 class="guide-title2">텍스트 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="title-style1">타이틀 스타일1</div>
+				</th>
+				<td>
+					<xmp><div class="title-style1">타이틀 스타일1</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="title-style2">타이틀 스타일2</div>
+				</th>
+				<td>
+					<xmp><div class="title-style2">타이틀 스타일2</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="title-style3">타이틀 스타일3</div>
+				</th>
+				<td>
+					<xmp><div class="title-style3">타이틀 스타일3</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="title-style4">타이틀 스타일4</div>
+				</th>
+				<td>
+					<xmp><div class="title-style4">타이틀 스타일4</div></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<p class="text-style1">style1 서브카피</p>
+				</th>
+				<td>
+					<xmp><p class="text-style1">style1 서브카피</p></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<p class="text-style2">style2 본문텍스트</p>
+				</th>
+				<td>
+					<xmp><p class="text-style2">style2 본문텍스트</p></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<p class="text-style3">style3 주석등 보조텍스트1</p>
+				</th>
+				<td>
+					<xmp><p class="text-style3">style3 주석등 보조텍스트1</p></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<p class="text-style4">style4 주석등 보조텍스트2</p>
+				</th>
+				<td>
+					<xmp><p class="text-style4">style4 주석등 보조텍스트2</p></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<a href="" class="active-type1">공통 링크 스타일</a>
+				</th>
+				<td>
+					<xmp><a href="" class="active-type1">공통 링크 스타일</a></xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //텍스트 가이드 -->
+	<!-- badge  가이드 -->
+	<section class="guide-section" id="guide-badge">
+		<h2 class="guide-title2">badge 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<p class="badge badge-point">중요</p>
+				</th>
+				<td>
+					<xmp><p class="badge badge-point">중요</p></xmp>
+				</td>
+				<th>
+					<p class="badge">NEW</p>
+				</th>
+				<td>
+					<xmp><p class="badge">NEW</p></xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //badge  가이드 -->
+	<!-- 버튼 가이드 -->
+	<section class="guide-section" id="guide-btns">
+		<h2 class="guide-title2">버튼가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<button type="button" class="btn btn-m color01">m</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m color01">m</button></xmp>
+				</td>
+			</tr>
+				<th>
+					<button type="button" class="btn btn-m color02">m-mint</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m color02">m-mint</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-m color03">m-gray</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m color03">m-gray</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-m color04">m-그라데이션</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m color04">m-그라데이션</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-m color05">m-투명라인</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m color05">m-투명라인</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-m color06">m-그라데이션</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-m color06">m-그라데이션</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn download">서식 다운로드</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn download">서식 다운로드</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="more">+ 더보기 </button>
+				</th>
+				<td>
+					<xmp><button type="button" class="more">+ 더보기</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-l color01">large</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-l color01">large</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-l color02">l-mint</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-l color02">l-mint</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<button type="button" class="btn btn-l color03">l-gray</button>
+				</th>
+				<td>
+					<xmp><button type="button" class="btn btn-l color03">l-gray</button></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="btn-wrap">
+						<button type="button" class="btn btn-l color02">회원가입</button>
+						<button type="button" class="btn btn-l color03 ">메인으로</button>	
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="btn-wrap">
+	<button type="button" class="btn btn-l color02">회원가입</button>
+	<button type="button" class="btn btn-l color03 ">메인으로</button>	
+</div>
+					</xmp>
+				</td>
+			</tr>
+			
+		</table>
+	</section>
+	<!-- //버튼 가이드 -->
+	<!-- input  가이드 -->
+	<section class="guide-section" id="guide-input">
+		<h2 class="guide-title2">input 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<label for="" class="hide">text</label><input type="text" id="" />
+				</th>
+				<td>
+					<xmp><label for="" class="hide">text</label><input type="text" id="" /></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="" class="hide">text</label><input type="text" id="" disabled/>
+				</th>
+				<td>
+					<xmp><label for="" class="hide">text</label><input type="text" id="" disabled/></xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-email">
+						<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+						<span class="input-text">@</span>
+						<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+						<label class="select">
+						<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">    
+									<option value="" role="menuitem">직접입력</option>
+									<option value="chol.com" role="menuitem">chol.com</option>
+									<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+									<option value="empal.com" role="menuitem">empal.com</option>
+									<option value="freechal.com" role="menuitem">freechal.com</option>
+									<option value="hanmail.net" role="menuitem">hanmail.net</option>
+									<option value="hanmir.com" role="menuitem">hanmir.com</option>
+									<option value="hitel.net" role="menuitem">hitel.net</option>
+									<option value="hotmail.com" role="menuitem">hotmail.com</option>
+									<option value="inha.com" role="menuitem">inha.com</option>
+									<option value="intizen.com" role="menuitem">intizen.com</option>
+									<option value="kebi.com" role="menuitem">kebi.com</option>
+									<option value="korea.com" role="menuitem">korea.com</option>
+									<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+									<option value="nate.com" role="menuitem">nate.com</option>
+									<option value="naver.com" role="menuitem">naver.com</option>
+									<option value="netian.com" role="menuitem">netian.com</option>
+									<option value="orgio.net" role="menuitem">orgio.net</option>
+									<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	 
+						</select>
+						</label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-email">
+	<input type="text" id="email01-1" maxlength="20" title="이메일 앞 주소입력" class="emil" />
+	<span class="input-text">@</span>
+	<label><input type="text" id="email02" maxlength="20" title="이메일 뒷 주소입력" class="emil"/></label>
+	<label class="select">
+	<select id="selector" class="emil" aria-haspopup="true" aria-controls="select-menu" title="이메일 뒷주소 선택">   
+		<option value="" role="menuitem">직접입력</option>
+		<option value="chol.com" role="menuitem">chol.com</option>
+		<option value="dreamwiz.com" role="menuitem">dreamwiz.com</option>
+		<option value="empal.com" role="menuitem">empal.com</option>
+		<option value="freechal.com" role="menuitem">freechal.com</option>
+		<option value="hanmail.net" role="menuitem">hanmail.net</option>
+		<option value="hanmir.com" role="menuitem">hanmir.com</option>
+		<option value="hitel.net" role="menuitem">hitel.net</option>
+		<option value="hotmail.com" role="menuitem">hotmail.com</option>
+		<option value="inha.com" role="menuitem">inha.com</option>
+		<option value="intizen.com" role="menuitem">intizen.com</option>
+		<option value="kebi.com" role="menuitem">kebi.com</option>
+		<option value="korea.com" role="menuitem">korea.com</option>
+		<option value="lycos.co.kr" role="menuitem">lycos.co.kr</option>
+		<option value="nate.com" role="menuitem">nate.com</option>
+		<option value="naver.com" role="menuitem">naver.com</option>
+		<option value="netian.com" role="menuitem">netian.com</option>
+		<option value="orgio.net" role="menuitem">orgio.net</option>
+		<option value="wail.co.kr" role="menuitem">wail.co.kr</option>	  
+	</select>
+	</label>
+</div>
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-num">
+						<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text">-</span>	
+						<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text">-</span>
+						<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-num">
+	<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum" disabled/><span class="input-text">-</span>	
+	<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"  disabled/></label><span class="input-text">-</span>
+	<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum" disabled/></label>
+</div>	
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-add">
+						<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+						<button type="button" class="btn zip">우편번호 찾기</button><br/>
+						<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+						<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-add">
+	<input type="text" id="zip" maxlength="5" title="우편번호 입력" placeholder="우편번호"  disabled />
+	<button type="button" class="btn zip">우편번호 찾기</button><br/>
+	<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled placeholder="기본주소"/></label>
+	<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" placeholder="상세주소"/></label>
+</div>						
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+					<div class="input-rrn">
+						<input type="text" id="rrn01" maxlength="6" title="주민등록 앞번호 입력" class="rrn"/><span class="input-text">-</span><label><input type="text" id="rrn02" maxlength="7" title="주민등록 뒷번호 입력" class="rrn" /></label>
+					</div>		
+				</th>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<xmp>
+<div class="input-rrn">
+	<input type="text" id="rrn01" maxlength="6" title="주민등록 앞번호 입력" class="rrn"/><span class="input-text">-</span>
+	<label><input type="text" id="rrn02" maxlength="7" title="주민등록 뒷번호 입력" class="rrn" /></label>
+</div>					
+					</xmp>
+				</td>
+			</tr>				
+		</table>
+	</section>	
+	<!-- //input 가이드 -->		
+	<!-- select  가이드 -->
+	<section class="guide-section" id="guide-select">
+		<h2 class="guide-title2">select 가이드</h2>
+		<table class="table-guide">					
+			<tr>
+				<th>	 
+					<label class="select">
+						<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+							<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+							<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+						</select>	
+					</label>
+				</th>
+				<td>
+					<xmp>
+<label class="select">						
+	<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+		<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+		<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+	</select>
+</label>
+					</xmp>
+				</td>
+			</tr>				
+			<tr>
+				<th>
+					<label class="select" >	 
+						<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" disabled>    
+							<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+							<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+						</select>	
+					</label>
+				</th>
+				<td>
+					<xmp>	 
+<label class="select">
+	<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" disabled>  
+		<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+		<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+	</select>
+</label>
+					</xmp>
+				</td>
+			</tr>	
+		</table>
+	</section>
+	<!-- //select 가이드 -->	
+	<!-- 컴포넌트 가이드 -->
+	<section class="guide-section" id="guide-component">
+		<h2 class="guide-title2">컴포넌트</h2>
+		
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="checkbox">
+						<input type="checkbox" id="check" aria-checked=”false” >
+						<label for="check" >체크A</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check-a" aria-checked=”true” checked>
+						<label for="check-a" >체크A</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check-ad" aria-checked=”false” disabled >
+						<label for="check-ad" >체크A</label>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" id="check-acd" aria-checked=”true” checked disabled >
+						<label for="check-acd" >체크A</label>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="checkbox">
+	<input type="checkbox" id="check" aria-checked=”false” >
+	<label for="check" >체크A</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check-a" aria-checked=”true” checked>
+	<label for="check-a" >체크A</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check-ad" aria-checked=”false” disabled >
+	<label for="check-ad" >체크A</label>
+</div>
+<div class="checkbox">
+	<input type="checkbox" id="check-acd" aria-checked=”true” checked disabled >
+	<label for="check-acd" >체크A</label>
+</div>
+
+</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-b1" aria-checked=”false” >
+						<label for="check-b1" >체크B</label>
+					</div>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-b" aria-checked=”true” checked>
+						<label for="check-b" >체크B</label>
+					</div>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-bd" aria-checked=”false” disabled >
+						<label for="check-bd" >체크B</label>
+					</div>
+					<div class="checkbox-type2">
+						<input type="checkbox" id="check-bcd" aria-checked=”false” checked disabled >
+						<label for="check-bcd" >체크B</label>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-b1" aria-checked=”false” >
+	<label for="check-b1" >체크B</label>
+</div>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-b" aria-checked=”true” checked>
+	<label for="check-b" >체크B</label>
+</div>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-bd" aria-checked=”false” disabled >
+	<label for="check-bd" >체크B</label>
+</div>
+<div class="checkbox-type2">
+	<input type="checkbox" id="check-bcd" aria-checked=”false” checked disabled >
+	<label for="check-bcd" >체크B</label>
+</div>
+</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="radio">
+						<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+						<label for="radio-a2" >라디오</label>
+					</div>
+					<div class="radio">
+							<input type="radio" id="radio-b2" name="select1"  value="2" aria-checked=”false”>
+							<label for="radio-b2" >라디오</label>
+					</div>
+					<div class="radio">
+						<input type="radio" id="radio-c2" name="select1" value="3"  aria-checked=”false” disabled>
+						<label for="radio-c2" >라디오</label>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="radio">
+	<input type="radio" id="radio-a2" name="select1"  value="1" aria-checked=”true” checked>
+	<label for="radio-a2" >라디오</label>
+</div>
+<div class="radio">
+	<input type="radio" id="radio-b2" name="select1"  value="2" aria-checked=”false”>
+	<label for="radio-b2" >라디오</label>
+</div>
+<div class="radio">
+	<input type="radio" id="radio-c2" name="select1" value="3"  aria-checked=”false” disabled>
+	<label for="radio-c2" >라디오</label>
+</div>
+</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<div class="switch-wrap">
+						<div class="switch-button">
+							<input type="radio" id="switch-button1" name="switch"  value="1" aria-checked=”false”>
+							<label for="switch-button1" >네</label>
+						</div>
+						<div class="switch-button">
+							<input type="radio" id="switch-button2" name="switch"  value="2" aria-checked=”true” checked>
+							<label for="switch-button2" >아니오</label>
+						</div>
+					</div>
+					<div class="switch-wrap">
+						<div class="switch-button">
+							<input type="radio" id="switch-button3" name="switch2"  value="1" aria-checked=”false” disabled>
+							<label for="switch-button3" >네</label>
+						</div>
+						<div class="switch-button">
+							<input type="radio" id="switch-button4" name="switch2"  value="2" aria-checked=”true” checked>
+							<label for="switch-button4" >아니오</label>
+						</div>
+					</div>
+				</th>
+				<td>
+<xmp>
+<div class="switch-wrap">
+	<div class="switch-button">
+		<input type="radio" id="switch-button1" name="switch"  value="1" aria-checked=”false”>
+		<label for="switch-button1" >네</label>
+	</div>
+	<div class="switch-button">
+		<input type="radio" id="switch-button2" name="switch"  value="2" aria-checked=”true” checked>
+		<label for="switch-button2" >아니오</label>
+	</div>
+</div>
+<div class="switch-wrap">
+	<div class="switch-button">
+		<input type="radio" id="switch-button3" name="switch2"  value="1" aria-checked=”false” disabled>
+		<label for="switch-button3" >네</label>
+	</div>
+	<div class="switch-button">
+		<input type="radio" id="switch-button4" name="switch2"  value="2" aria-checked=”true” checked>
+		<label for="switch-button4" >아니오</label>
+	</div>
+</div>
+</xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //컴포넌트 가이드 -->
+	<!-- 동의 가이드 -->
+	<section class="guide-section" id="guide-agree">
+		<h2 class="guide-title2">동의안내 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="agree-area">                    
+						<h2 class="title-style4">마케팅 활용 안내 <span class="acc">[필수]</span></h2>
+						<textarea disabled class="scrollbox">
+컨텐츠 화인요망
+						</textarea>       
+						<div class="agree-box"> 
+							<div class="checkbox-type2">
+								<input type="checkbox" id="agree-b1" aria-checked=”false” >
+								<label for="agree-b1" >마케팅 활용안내에 동의합니다.</label>
+							</div>
+						</div>                
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<xmp>
+<div class="agree-area">                    
+	<h2 class="title-style4">마케팅 활용 안내 <span class="acc">[필수]</span></h2>
+	<textarea disabled class="scrollbox">
+컨텐츠 화인요망
+	</textarea>       
+	<div class="agree-box"> 
+		<div class="checkbox-type2">
+			<input type="checkbox" id="check-b1" aria-checked=”false” >
+			<label for="check-b1" >마케팅 활용안내에 동의합니다.</label>
+		</div>
+	</div>                
+</div>
+					</xmp>
+				</td>
+			</tr>	
+		</table>
+	</section>	
+	<!-- //동의 가이드 -->
+	<!-- 탭 가이드 -->
+	<section class="guide-section" id="guide-tab">
+		<h2 class="guide-title2">탭가이드</h2>
+
+		<!-- tab-type1 -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type1">
+				<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+				<a id="doctors-anchor" href="#doctors" role="tab" aria-selected="false">의료진</a>
+				<a id="time-anchor" href="#link" role="tab" aria-selected="false">진료시간표</a>
+				<a id="hinfo-anchor"href="#link" role="tab" aria-selected="false">건강정보</a>
+				<a id="news-anchor" href="#link" role="tab" aria-selected="false">언론소식</a>
+			</div>
+			<div id="info" tabindex="0" role="tabpanel" aria-labelledby="info-anchor">
+				소개
+			</div>
+			<div id="doctors" tabindex="0" role="tabpanel" aria-labelledby="doctors-anchor" hidden>
+				의료진
+			</div>
+		</div>
+		<!-- //tab-type1 -->
+<!-- tab source -->
+<div class="source-wrap">
+<xmp>
+<!-- tab -->
+<div class="tab-wrap">
+	<div role="tablist" class="tablist-type1">
+		<a id="info-anchor" href="#info" class="active" role="tab" aria-selected="true">소개</a>
+		<a id="doctors-anchor" href="#doctors" role="tab" aria-selected="false">의료진</a>
+		<a id="time-anchor" href="#link" role="tab" aria-selected="false">진료시간표</a>
+		<a id="hinfo-anchor"href="#link" role="tab" aria-selected="false">건강정보</a>
+		<a id="news-anchor" href="#link" role="tab" aria-selected="false">언론소식</a>
+	</div>
+	<div id="info" tabindex="0" role="tabpanel" aria-labelledby="info-anchor">
+		소개
+	</div>
+	<div id="doctors" tabindex="0" role="tabpanel" aria-labelledby="doctors-anchor" hidden>
+		의료진
+	</div>
+</div>
+<!-- tab -->
+</xmp>
+</div>
+<!-- //tab source -->
+		<!-- tab-type2 -->
+		<div class="tab-wrap">
+			<div role="tablist" class="tablist-type2">
+				<a id="have-anchor" href="#have" class="active" role="tab" aria-selected="true">구비서류</a>
+				<a id="guide-anchor" href="#guide" role="tab" aria-selected="false">발급안내</a>
+			</div>
+			<div id="have" tabindex="0" role="tabpanel" aria-labelledby="have-anchor">
+				구비서류
+			</div>
+			<div id="guide" tabindex="0" role="tabpanel" aria-labelledby="guide-anchor" hidden>
+				발급안내
+			</div>
+		</div>
+		<!-- //tab-type2 -->
+<!-- tab source -->
+<div class="source-wrap">
+<xmp>
+<!-- tab -->
+<div class="tab-wrap">
+	<div role="tablist" class="tablist-type2">
+		<a id="have-anchor" href="#have" class="active" role="tab" aria-selected="true">구비서류</a>
+		<a id="guide-anchor" href="#guide" role="tab" aria-selected="false">발급안내</a>
+	</div>
+	<div id="have" tabindex="0" role="tabpanel" aria-labelledby="have-anchor">
+		구비서류
+	</div>
+	<div id="guide" tabindex="0" role="tabpanel" aria-labelledby="guide-anchor" hidden>
+		발급안내
+	</div>
+</div>
+<!-- //tab -->
+</xmp>
+</div>
+<!-- //tab source -->
+
+	</section>
+	<!-- //탭 가이드 -->
+<!-- 테이블 가이드 -->
+<section class="guide-section" id="guide-table">
+		<h2 class="guide-title2">테이블 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<table class="table table-type1">	  
+						<caption><span class="offscreen">Type1</span></caption>	  
+						<colgroup>	    
+							<col style="width:10%"/>	    
+							<col style="width:10%"/>	    
+							<col style="width:10%"/>
+							<col style="width:;"/>	    
+							<col style="width:10%"/>	    
+							<col style="width:10%"/>	  
+						</colgroup>	  
+						<thead>	    
+							<tr>	     
+								<th scope="col">번호</th>
+								<th scope="col">구분-A</th>	
+								<th scope="col">구분-B</th>	
+								<th scope="col">제목</th>
+								<th scope="col">등록일</th>	
+								<th scope="col">조회수</th>	    
+							</tr>	  
+						</thead>	  
+						<tbody>	    
+							<tr>	         
+								<td>111</td>	      
+								<td>A</td>	 
+								<td>B</td>	      
+								<td class="textL"><p class="badge badge-new">NEW</p>게시물 내용</td> 
+								<td>2018.09.12</td>	      
+								<td>15,510</td>	    
+							</tr>   
+							<tr>	         
+								<td>111</td>	      
+								<td>A</td>	 
+								<td>B</td>	      
+								<td class="textL"><p class="badge badge-point">중요</p>게시물 내용</td>	 
+								<td>2018.09.12</td>	      
+								<td>15,510</td>	    
+							</tr>
+						</tbody>	
+					</table>
+				</th>			
+			</tr>
+			<tr>
+				<td>
+					<xmp>
+<table class="table table-type1">	  
+	<caption><span class="offscreen">Type1</span></caption>	  
+	<colgroup>	    
+		<col style="width:10%"/>	    
+		<col style="width:10%"/>	    
+		<col style="width:10%"/>
+		<col style="width:;"/>	    
+		<col style="width:10%"/>	    
+		<col style="width:10%"/>	  
+	</colgroup>	  
+	<thead>	    
+		<tr>	     
+			<th scope="col">번호</th>
+			<th scope="col">구분-A</th>	
+			<th scope="col">구분-B</th>	
+			<th scope="col">제목</th>
+			<th scope="col">등록일</th>	
+			<th scope="col">조회수</th>	    
+		</tr>	  
+	</thead>	  
+	<tbody>	    
+		<tr>	         
+			<td>111</td>	      
+			<td>A</td>	 
+			<td>B</td>	      
+			<td class="textL"><p class="badge badge-new">NEW</p>게시물 내용</td> 
+			<td>2018.09.12</td>	      
+			<td>15,510</td>	    
+		</tr>   
+		<tr>	         
+			<td>111</td>	      
+			<td>A</td>	 
+			<td>B</td>	      
+			<td class="textL"><p class="badge badge-point">중요</p>게시물 내용</td>	 
+			<td>2018.09.12</td>	      
+			<td>15,510</td>	    
+		</tr>
+	</tbody>	
+</table>
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<th> 
+					<table class="table table-type2">	  
+						<caption><span class="offscreen">Type2</span></caption>  
+						<colgroup>	    
+							<col style="width:280px"/>	    
+							<col style="width:35%"/>	    
+							<col style="width:35%"/>	  
+						</colgroup>	  	  
+						<tbody>	    
+							<tr>	     
+								<th scope="row">기본</th>
+								<td  class="acc">43,790원(변동가능)</td>	
+								<td rowspan="2" class="line">
+									<ul>
+										<li>년96회 보험급여</li>
+										<li>년96회 보험급여</li>
+										<li>년96회 보험급여</li>
+									</ul>								
+								</td>	  
+							</tr> 
+							<tr>	         
+								<th scope="row">방문료 처리 및 재료대</th>	      
+								<td class="acc">지정수가</td>   
+							</tr>   
+							<tr>	         
+								<th scope="row">교통비</th>	      
+								<td class="acc" rowspan="2">7,150원(변동가능)</td>	 
+								<td>교통비만 전액부탐</td>	 
+							</tr> 
+							<tr>	         
+								<th scope="row">교통비</th>	       
+								<td class="line">교통비만 전액부탐</td>	 
+							</tr>
+						</tbody>	
+					</table>
+				</th>			
+			</tr>	
+			<tr>
+				<td>
+					<xmp>
+<table class="table table-type2">	  
+	<caption><span class="offscreen">Type2</span></caption>  
+	<colgroup>	    
+		<col style="width:280px"/>	    
+		<col style="width:35%"/>	    
+		<col style="width:35%"/>	  
+	</colgroup>	  	  
+	<tbody>	    
+		<tr>	     
+			<th scope="row">기본</th>
+			<td class="acc">43,790원(변동가능)</td>	
+			<td rowspan="2" class="line">
+				<ul>
+					<li>년96회 보험급여</li>
+					<li>년96회 보험급여</li>
+					<li>년96회 보험급여</li>
+				</ul>								
+			</td>	  
+		</tr> 
+		<tr>	         
+			<th scope="row">방문료 처리 및 재료대</th>	      
+			<td class="acc">지정수가</td>   
+		</tr>   
+		<tr>	         
+			<th scope="row" >교통비</th>	      
+			<td class="acc" rowspan="2">7,150원(변동가능)</td>	 
+			<td>교통비만 전액부탐</td>	 
+		</tr> 
+		<tr>	         
+			<th scope="row">교통비</th>	       
+			<td class="line">교통비만 전액부탐</td>	 
+		</tr>
+	</tbody>	
+</table>
+					</xmp>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="table table-type3">	  
+						<caption><span class="offscreen">Type3</span></caption> 	  
+						<colgroup>	    
+							<col style="width:200px"/>	    
+							<col style=""/>	  
+						</colgroup>	  
+						<tbody>	    
+							<tr>	         
+								<th>
+									이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+								</th>	      
+								<td>
+									송헌호
+								</td>	 	    
+							</tr>    
+							<tr>	         
+								<th>
+									<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+								</th>	      
+								<td>
+									<input type="text" id="id" maxlength="10" title="아이디입력"/>
+									<button type="button" class="btn">중복확인</button>
+									<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세</p>
+								</td>	 	    
+							</tr>   
+						</tbody>	
+					</table>
+				</td>
+			</tr> 
+			<tr>
+				<td><xmp>
+<table class="table table-type3">	  
+	<caption><span class="offscreen">Type3</span></caption> 	  
+	<colgroup>	    
+		<col style="width:200px"/>	    
+		<col style=""/>	  
+	</colgroup>	  
+	<tbody>	    
+		<tr>	         
+			<th>
+				이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+			</th>	      
+			<td>
+				송헌호
+			</td>	 	    
+		</tr>    
+		<tr>	         
+			<th>
+				<label for="id">아이디<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+			</th>	      
+			<td>
+				<input type="text" id="id" maxlength="10" title="아이디입력"/>
+				<button type="button" class="btn">중복확인</button>
+				<p class="info-text"><span>*</span>아이디는 6자리 이상 10자리 이하로 입력해주세요</p>
+			</td>	 	    
+		</tr>   
+	</tbody>	
+</table>					
+				</xmp></td>
+			</tr> 
+		</table>
+	</section>
+	<!-- //테이블 가이드 -->
+
+	<!-- paging  가이드 -->
+	<section class="guide-section" id="guide-paging">
+		<h2 class="guide-title2">paging 가이드</h2>
+		<table class="table-guide">					
+			<tr>
+				<th>
+					<div class="pager" role="navigation" aria-label="페이지 선택 영역">	 
+						<div class="page"> 
+							<ul>							
+								<li>	        
+									<a href="#first" class="jump first">	 
+										<span>처음 페이지 보기</span>	        
+									</a>								
+								</li>								
+								<li>
+									<a href="#prev" class="jump prev">	          
+										<span>이전 10 페이지 보기</span>	        
+									</a>
+								</li>	
+								<li class="active"> 
+									<span>	
+										<span class="offscreen">현재 페이지</span>  
+										1
+									</span>
+								</li>
+								<li>  
+									<a href="#2">
+										<span>
+											<span class="offscreen">  페이지 보기 </span>	
+											<span>2</span>	          
+										</span>	        
+									</a>								
+								</li>								
+								<li>	
+									<a href="#3">	            
+										<span>	            
+											<span class="offscreen">  페이지 보기  </span>	            
+											<span>3 </span>	          
+										</span>	        
+									</a>
+								</li>								
+								<li>	        
+									<a href="#4">	          
+										<span>
+											<span class="offscreen">  페이지 보기 </span>	            
+											<span>4 </span>
+										</span>	        
+									</a>								
+								</li>								
+								<li>	        
+									<a href="#5">	
+										<span>	            
+											<span class="offscreen">  페이지 보기</span>	 
+											<span>5</span>	          
+										</span>	        
+									</a>								
+								</li>								
+								<li>
+									<a href="#6">	          
+										<span>	            
+											<span class="offscreen">  페이지 보기</span>	            
+											<span>6</span>	          
+										</span>	        
+									</a>
+								</li>								
+								<li>	        
+									<a href="#7">	          
+										<span>
+											<span class="offscreen">  페이지 보기 </span>	            
+											<span>7</span>	
+										</span>	        
+									</a>								
+								</li>								
+								<li>	        
+									<a href="#8">
+										<span>	            
+											<span class="offscreen">  페이지 보기 </span>
+											<span>8</span>	          
+										</span>	        
+									</a>								
+								</li>								
+								<li>	 
+									<a href="#9">	          
+										<span>	            
+											<span class="offscreen">  페이지 보기 </span>	            
+											<span>9</span>	          
+										</span>	        
+									</a>
+								</li>								
+								<li>	        
+									<a href="#10">	          
+										<span>	
+											<span class="offscreen">  페이지 보기  </span>	            
+											<span>10</span>	          
+
+										</span>	        
+									</a>								
+								</li>								
+								<li>	        
+									<a href="#next" class="jump next">	 
+										<span>다음 10 페이지 보기</span>	        
+									</a>								
+								</li>								
+								<li>
+									<a href="#last" class="jump last">	          
+										<span>마지막 페이지 보기</span>	        
+									</a>
+								</li>	    
+							</ul>	  
+						</div>	
+					</div>
+				</th>
+			</tr>
+			<tr>				
+				<td>
+<xmp>
+<div class="pager" role="navigation" aria-label="페이지 선택 영역">	 
+	<div class="page"> 
+		<ul>							
+			<li>	        
+				<a href="#first" class="jump first">	 
+					<span>처음 페이지 보기</span>	        
+				</a>								
+			</li>								
+			<li>
+				<a href="#prev" class="jump prev">	          
+					<span>이전 10 페이지 보기</span>	        
+				</a>
+			</li>	
+			<li class="active"> 
+				<span>	
+					<span class="offscreen">현재 페이지</span>  
+					1
+				</span>
+			</li>
+			<li>  
+				<a href="#2">
+					<span>
+						<span class="offscreen">  페이지 보기 </span>	
+						<span>2</span>	          
+					</span>	        
+				</a>								
+			</li>								
+			<li>	
+				<a href="#3">	            
+					<span>	            
+						<span class="offscreen">  페이지 보기  </span>	            
+						<span>3 </span>	          
+					</span>	        
+				</a>
+			</li>								
+			<li>	        
+				<a href="#4">	          
+					<span>
+						<span class="offscreen">  페이지 보기 </span>	            
+						<span>4 </span>
+					</span>	        
+				</a>								
+			</li>								
+			<li>	        
+				<a href="#5">	
+					<span>	            
+						<span class="offscreen">  페이지 보기</span>	 
+						<span>5</span>	          
+					</span>	        
+				</a>								
+			</li>								
+			<li>
+				<a href="#6">	          
+					<span>	            
+						<span class="offscreen">  페이지 보기</span>	            
+						<span>6</span>	          
+					</span>	        
+				</a>
+			</li>								
+			<li>	        
+				<a href="#7">	          
+					<span>
+						<span class="offscreen">  페이지 보기 </span>	            
+						<span>7</span>	
+					</span>	        
+				</a>								
+			</li>								
+			<li>	        
+				<a href="#8">
+					<span>	            
+						<span class="offscreen">  페이지 보기 </span>
+						<span>8</span>	          
+					</span>	        
+				</a>								
+			</li>								
+			<li>	 
+				<a href="#9">	          
+					<span>	            
+						<span class="offscreen">  페이지 보기 </span>	            
+						<span>9</span>	          
+					</span>	        
+				</a>
+			</li>								
+			<li>	        
+				<a href="#10">	          
+					<span>	
+						<span class="offscreen">  페이지 보기  </span>	            
+						<span>10</span>	          
+
+					</span>	        
+				</a>								
+			</li>								
+			<li>	        
+				<a href="#next" class="jump next">	 
+					<span>다음 10 페이지 보기</span>	        
+				</a>								
+			</li>								
+			<li>
+				<a href="#last" class="jump last">	          
+					<span>마지막 페이지 보기</span>	        
+				</a>
+			</li>	    
+		</ul>	  
+	</div>	
+</div>
+</xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //paging 가이드 -->
+	<!-- 리스트  가이드 -->
+	<section class="guide-section" id="guide-list">
+		<h2 class="guide-title2">리스트 가이드</h2>
+		<ul class="list-type1">
+			<li>포괄적인 진료</li>
+			<li>가족 단위의 지속적인 건강관리</li>
+			<li>치료 중 진찰 및 치료 후 진찰 </li>
+		</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type1">
+	<li>포괄적인 진료</li>
+	<li>가족 단위의 지속적인 건강관리</li>
+	<li>치료 중 진찰 및 치료 후 진찰 </li>
+</ul>
+</xmp>
+</div>
+<br><br>
+
+		<ul class="list-type1">
+			<li>
+				스스로의 주의 또는 보호가 필요한 경우
+				<ul>
+					<li>1) 임산부, 만 70세 이상의 노약자, 미취학 아동, 지속적 치료(항암치료 등)로 면역기능이 저하된 분</li>
+					<li>2) 특히, 만 12세 이하 어린이는 전염성 질환에 감염될 우려가 있으므로 병실 출입을 금합니다.</li>
+				</ul>
+			</li>
+			<li>환자 증상에 따라 면회가 제한되는 경우도 있습니다.</li>
+			<li>중환자실 면회는 1회 1명으로 제한되며, 짧은 면회시간으로 환자 안정에 도움을 주시기 바랍니다.</li>
+		</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type1">
+	<li>
+		스스로의 주의 또는 보호가 필요한 경우
+		<ul>
+			<li>1) 임산부, 만 70세 이상의 노약자, 미취학 아동, 지속적 치료(항암치료 등)로 면역기능이 저하된 분</li>
+			<li>2) 특히, 만 12세 이하 어린이는 전염성 질환에 감염될 우려가 있으므로 병실 출입을 금합니다.</li>
+		</ul>
+	</li>
+	<li>환자 증상에 따라 면회가 제한되는 경우도 있습니다.</li>
+	<li>중환자실 면회는 1회 1명으로 제한되며, 짧은 면회시간으로 환자 안정에 도움을 주시기 바랍니다.</li>
+</ul>
+</xmp>
+</div>
+<br><br>
+
+		<ul class="list-type2">
+			<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+			<li>검사 시 금식하지 않으셔도 됩니다.</li>
+			<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+			<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+		</ul>
+<div class="source-wrap">
+<xmp>
+<ul class="list-type2">
+	<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+	<li>검사 시 금식하지 않으셔도 됩니다.</li>
+	<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+	<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+</ul>
+</xmp>
+</div>
+		<ul class="box-line marT15">
+			<li><p>통합 ONE창구<br/>(접수 및 신청)</p></li>
+			<li><p>통합 ONE 창구<br/>(수수료 납부 및 수령)</p></li>
+		</ul>	
+<div class="source-wrap">
+<xmp>
+<ul class="box-line marT15">
+	<li><p>통합 ONE창구<br/>(접수 및 신청)</p></li>
+	<li><p>통합 ONE 창구<br/>(수수료 납부 및 수령)</p></li>
+</ul>	
+</xmp>
+</div>
+
+
+
+<ul class="box-line style2 marT15">
+	<li><p>증명서 발급 요청<br/>(병동간호사)</p></li>
+	<li><p>증명서 작성<br/>(해당 주치의)</p></li>
+	<li class="or">
+		<ul>
+			<li><p>병동 수령 수수료 입원비 포함<br/>(입원 병동)</p></li>
+			<li><p>퇴원 시 수령<br/>(통합 ONE창구에서 수수료 납부 및 수령)</p></li>
+		</ul>
+	</li>
+</ul>
+
+<div class="source-wrap">
+<xmp>
+<ul class="box-line style2 marT15">
+	<li><p>증명서 발급 요청<br/>(병동간호사)</p></li>
+	<li><p>증명서 작성<br/>(해당 주치의)</p></li>
+	<li class="or">
+		<ul>
+			<li><p>병동 수령 수수료 입원비 포함<br/>(입원 병동)</p></li>
+			<li><p>퇴원 시 수령<br/>(통합 ONE창구에서 수수료 납부 및 수령)</p></li>
+		</ul>
+	</li>
+</ul>	
+</xmp>
+</div>
+
+
+
+
+
+</div>
+	</section>
+	<!-- //리스트 가이드 -->
+	<!-- err  가이드 -->
+	<section class="guide-section" id="guide-err">
+		<h2 class="guide-title2">에러박스 가이드</h2>
+		<table class="table-guide">
+			<tr>
+				<th>
+					<div class="error-box">
+						<div class="box-top-logo"><span class="offscreen">인하대학교병원</span></div>
+						<div class="err-icon"></div>
+						<p class="err-tit">죄송합니다.<br/>현재 찾을 수 없는 페이지를 요청하셨습니다.</p>
+						<p class="err-cont">존재하지 않는 주소를 입력하셨거나 변경 또는 삭제되어 찾을 수 없습니다.<br/>이전 페이지로 되돌아가시거나 메인화면으로 이동하여 서비스를 이용해주시기 바랍니다.</p>		
+					</div>
+				</th>
+			<tr>				
+			</tr>
+				<td>
+					<xmp>
+<div class="error-box">
+	<div class="box-top-logo"><span class="offscreen">인하대학교병원</span></div>
+	<div class="err-icon"></div>
+	<p class="err-tit">죄송합니다.<br/>현재 찾을 수 없는 페이지를 요청하셨습니다.</p>
+	<p class="err-cont">존재하지 않는 주소를 입력하셨거나 변경 또는 삭제되어 찾을 수 없습니다.<br/>이전 페이지로 되돌아가시거나 메인화면으로 이동하여 서비스를 이용해주시기 바랍니다.</p>		
+</div>
+				</xmp>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!-- //err  가이드 -->
+	<!-- etcbox 가이드 -->
+	<section class="guide-section" id="guide-etcbox">
+		<h2 class="guide-title2">etcbox 가이드</h2>
+		<div class="etcbox etcbox-type1">
+			<div class="etcbox-title1">증명서 발급안내 (진단서 등)</div>
+			<div class="etcbox-cont">
+				<ul>
+					<li>환자에 대한 증명서 발급은 단순한 서류의 발급이 아니라,환자의 수술 및 경과 기록, 입원 병력 등 치료와 관련된 내용들이 포함되어 있는 개인정보 입니다.</li>
+					<li>따라서, 환자 본인 외에 발급이 어려우며, 부득이할 경우 위의 의무 기록 사본 발급과 동일한 신청자 별 구비 서류를 지참하여야만 서류 발행이 가능함을 알려드립니다.</li>
+					<li>(의료법 시행규칙 제 13조의 3항 준용)</li>
+				</ul>
+			</div>
+		</div><br><br>
+		<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type1">
+	<div class="etcbox-title1">증명서 발급안내 (진단서 등)</div>
+	<div class="etcbox-cont">
+		<ul>
+			<li>환자에 대한 증명서 발급은 단순한 서류의 발급이 아니라,환자의 수술 및 경과 기록, 입원 병력 등 치료와 관련된 내용들이 포함되어 있는 개인정보 입니다.</li>
+			<li>따라서, 환자 본인 외에 발급이 어려우며, 부득이할 경우 위의 의무 기록 사본 발급과 동일한 신청자 별 구비 서류를 지참하여야만 서류 발행이 가능함을 알려드립니다.</li>
+			<li>(의료법 시행규칙 제 13조의 3항 준용)</li>
+		</ul>
+	</div>
+</div>
+</xmp>
+</div>
+<Br><br>
+	<div class="etcbox etcbox-type2">
+		<div class="etcbox-title1">유의사항</div>
+		<ul class="list-type2">
+			<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+			<li>검사 시 금식하지 않으셔도 됩니다.</li>
+			<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+			<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+		</ul>
+	</div><br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type2">
+	<div class="etcbox-title1">유의사항</div>
+	<ul class="list-type2">
+		<li>안경이나 렌즈를 사용하고 계시면 병원에 오실 때 안경이나 렌즈를 지참하시기 바랍니다.</li>
+		<li>검사 시 금식하지 않으셔도 됩니다.</li>
+		<li>여성의 경우 생리가 완전히 끝난 후 소변 검사 가능합니다.</li>
+		<li>임신중인 여성은 반드시 의사에게 상담 후 흉부 촬영 여부를 결정하시기 바랍니다.</li>
+	</ul>
+</div>
+</xmp>			
+</div>
+<Br><br>
+		<div class="etcbox etcbox-type3 marT50">
+			<div class="etcbox-title1">보다 빠른 예약을 원하시나요?<br/>전화번호를 남기시면 전문상담원이 빠른 예약을 도와드립니다</div>
+			<div class="input-num">
+				<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum"/><span class="input-text">-</span>	
+				<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"/></label><span class="input-text">-</span>
+				<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum"/></label>
+				<button type="button" class="btn marL10">인증하기</button>
+			</div>
+		</div>
+		<br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type3 marT50">
+	<div class="etcbox-title1">보다 빠른 예약을 원하시나요?<br/>전화번호를 남기시면 전문상담원이 빠른 예약을 도와드립니다</div>
+	<div class="input-num">
+		<input type="text" id="hp01" maxlength="3" title="핸드폰 앞번호 입력" value="010" class="phoneNum"/><span class="input-text">-</span>	
+		<label><input type="text" id="hp02" maxlength="4" title="핸드폰 중간번호 입력" value="1234"  class="phoneNum"/></label><span class="input-text">-</span>
+		<label><input type="text" id="hp03" maxlength="4" title="핸드폰 뒷번호 입력" value="1234" class="phoneNum"/></label>
+		<button type="button" class="btn marL10">인증하기</button>
+	</div>
+</div>
+</xmp>
+</div>
+<Br><br>
+	<div class="etcbox etcbox-type4">
+		<div class="etcbox-cont">
+			<ul>
+				<li>암 환자나 암 질환이 의심되는 분은 암진료 상담실로 연락주시면 상담을 통하여 신속하게 진료를 받을 수 있도록 도와드립니다.</li>
+				<li>암진료 상담실      ☎ 032-890-3600, 3637, 3638 </li>
+			</ul>
+		</div>
+	</div><br><br>
+	<div class="source-wrap">
+<xmp>
+<div class="etcbox etcbox-type4">
+	<div class="etcbox-cont">
+		<ul>
+			<li>암 환자나 암 질환이 의심되는 분은 암진료 상담실로 연락주시면 상담을 통하여 신속하게 진료를 받을 수 있도록 도와드립니다.</li>
+			<li>암진료 상담실      ☎ 032-890-3600, 3637, 3638 </li>
+		</ul>
+	</div>
+</div>
+</xmp>			
+</div>
+</section>
+	<!-- //etcbox 가이드 -->	
+
+
+</section>
+</body>
+</html>

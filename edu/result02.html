@@ -1,0 +1,206 @@
+<?
+
+
+
+$p_sex = $_POST["p_sex"]; 
+$p_age = $_POST["p_age"]; 
+$p_ky = $_POST["p_ky"]; 
+$p_wg = $_POST["p_wg"]; 
+$p_pressure = $_POST["p_pressure"]; 
+$cc2 = $_POST["cc2"]; 
+$cc3 = $_POST["cc3"]; 
+$cc4 = $_POST["cc4"]; 
+$cc7 = $_POST["cc7"]; 
+$cc9 = $_POST["cc9"]; 
+$cc10 = $_POST["cc10"]; 
+
+$bmiky = $p_ky / 100;
+$bmi = round( $p_wg / ( $bmiky * $bmiky ) , 2 );
+
+$points = 0;
+$heart_age = 0;
+switch($p_sex){
+	case "m" : 
+		if( $p_age >= 30 && $p_age < 35 ) $points += 0;
+		if( $p_age >= 35 && $p_age < 40 ) $points += 2;
+		if( $p_age >= 40 && $p_age < 45 ) $points += 5;
+		if( $p_age >= 45 && $p_age < 50 ) $points += 7;
+		if( $p_age >= 50 && $p_age < 55 ) $points += 8;
+		if( $p_age >= 55 && $p_age < 60 ) $points += 10;
+		if( $p_age >= 60 && $p_age < 65 ) $points += 11;
+		if( $p_age >= 65 && $p_age < 70 ) $points += 13;
+		if( $p_age >= 70 && $p_age < 75 ) $points += 14;
+		if( $p_age >= 75 ) $points += 15;
+
+		//BMI 따른 포인트
+		if( $bmi >= 25 && $bmi < 30 ) $points += 1;
+		if( $bmi >= 30 ) $points += 2;
+		
+		switch($cc2){ //고혈압치료중
+			case 0 : //치료중아님
+				if( $p_pressure <120) $points -= 2;
+				if( $p_pressure >= 120 && $p_pressure < 130 ) $points += 0; 
+				if( $p_pressure >= 130 && $p_pressure < 140 ) $points += 1; 
+				if( $p_pressure >= 140 && $p_pressure < 160 ) $points += 2; 
+				if( $p_pressure >= 160 ) $points += 3; 
+				break;
+			case 1 : //치료중 
+				if( $p_pressure <120) $points += 0;
+				if( $p_pressure >= 120 && $p_pressure < 130 ) $points += 2; 
+				if( $p_pressure >= 130 && $p_pressure < 140 ) $points += 3; 
+				if( $p_pressure >= 140 && $p_pressure < 160 ) $points += 4; 
+				if( $p_pressure >= 160 ) $points += 5; 
+				break;
+		}
+		if($cc3) $points += 4; //흡연
+		if($cc4) $points += 3; //당뇨
+		
+		if( $p_age < 30 ) $points = -99;
+		
+		if($points == -1 ) $heart_age = 30;
+		if($points == 0 ) $heart_age = 33;
+		if($points == 1 ) $heart_age = 35;
+		if($points == 2 ) $heart_age = 37;
+		if($points == 3 ) $heart_age = 39;
+		if($points == 4 ) $heart_age = 41;
+		if($points == 5 ) $heart_age = 44;
+		if($points == 6 ) $heart_age = 46;
+		if($points == 7 ) $heart_age = 49;
+		if($points == 8 ) $heart_age = 52;
+		if($points == 9 ) $heart_age = 55;
+		if($points == 10) $heart_age = 58;
+		if($points == 11) $heart_age = 62;
+		if($points == 12) $heart_age = 65;
+		if($points == 13) $heart_age = 69;
+		if($points == 14) $heart_age = 73;
+		if($points == 15) $heart_age = 78;
+		if($points >= 16) $heart_age = 80;
+
+		break;
+	case "f" :
+		if( $p_age >= 30 && $p_age < 35 ) $points += 0;
+		if( $p_age >= 35 && $p_age < 40 ) $points += 2;
+		if( $p_age >= 40 && $p_age < 45 ) $points += 5;
+		if( $p_age >= 45 && $p_age < 50 ) $points += 6;
+		if( $p_age >= 50 && $p_age < 55 ) $points += 8;
+		if( $p_age >= 55 && $p_age < 60 ) $points += 10;
+		if( $p_age >= 60 && $p_age < 65 ) $points += 11;
+		if( $p_age >= 65 && $p_age < 70 ) $points += 12;
+		if( $p_age >= 70 && $p_age < 75 ) $points += 14;
+		if( $p_age >= 75 ) $points += 15;
+		
+		//BMI 따른 포인트
+		if( $bmi >= 25 && $bmi < 30 ) $points += 1;
+		if( $bmi >= 30 ) $points += 2;
+
+		switch($cc2){ //고혈압치료중
+			case 0 : //치료중아님
+				if( $p_pressure <120) $points -= 3;
+				if( $p_pressure >= 120 && $p_pressure < 130 ) $points += 0; 
+				if( $p_pressure >= 130 && $p_pressure < 140 ) $points += 1; 
+				if( $p_pressure >= 140 && $p_pressure < 150 ) $points += 3; 
+				if( $p_pressure >= 150 && $p_pressure < 160 ) $points += 4; 
+				if( $p_pressure >= 160 ) $points += 5; 
+				break;
+			case 1 : //치료중 
+				if( $p_pressure <120) $points -= 1;
+				if( $p_pressure >= 120 && $p_pressure < 130 ) $points += 2; 
+				if( $p_pressure >= 130 && $p_pressure < 140 ) $points += 3; 
+				if( $p_pressure >= 140 && $p_pressure < 150 ) $points += 5; 
+				if( $p_pressure >= 150 && $p_pressure < 160 ) $points += 6; 
+				if( $p_pressure >= 160 ) $points += 8; 
+				break;
+		}
+		if($cc3) $points += 4; //흡연
+		if($cc4) $points += 5; //당뇨
+		
+		if( $p_age < 30 ) $points = -99;
+		
+		if($points == -1 ) $heart_age = 30;
+		if($points == 0 ) $heart_age = 32;
+		if($points == 1 ) $heart_age = 34;
+		if($points == 2 ) $heart_age = 36;
+		if($points == 3 ) $heart_age = 38;
+		if($points == 4 ) $heart_age = 41;
+		if($points == 5 ) $heart_age = 43;
+		if($points == 6 ) $heart_age = 46;
+		if($points == 7 ) $heart_age = 48;
+		if($points == 8 ) $heart_age = 51;
+		if($points == 9 ) $heart_age = 54;
+		if($points == 10) $heart_age = 58;
+		if($points == 11) $heart_age = 61;
+		if($points == 12) $heart_age = 65;
+		if($points == 13) $heart_age = 69;
+		if($points == 14) $heart_age = 73;
+		if($points == 15) $heart_age = 77;
+		if($points >= 16) $heart_age = 80;
+		break;
+}
+
+$str_age = "";
+$str_bmi = "";
+if($heart_age < 30 ) $str_age = "30세이하" ; else $str_age = $heart_age."세";
+if($heart_age == 800 ) $str_age = "80세이상" ;
+
+if( $bmi <18.5) $str_bmi = "저체중" ;
+if( $bmi >= 18.5 && $bmi < 23 ) $str_bmi = "정상" ;
+if( $bmi >= 23 && $bmi < 25 ) $str_bmi = "위험체중" ;
+if( $bmi >= 25 && $bmi < 30 ) $str_bmi = "1단계비만" ;
+if( $bmi >= 30 ) $str_bmi = "2단계비만" ; 
+
+
+?>
+
+
+
+@@include('../inc/head.html')
+
+	
+			
+				
+					
+					
+					
+				
+
+				<div class="content">
+					<div class="top_cont1">
+						<div class="location1">홈 &gt; 소개 &gt; <span>나의 심장나이는?(BMI지수)</span></div>
+						<h3 class="sub_title1"><img src="./img/self/sub_title2.png" alt="나의 심장나이는?" /></h3>
+					</div><!-- /top_cont1 -->
+					<div class="swap">
+
+
+
+
+ <p class="hd_end">나의<span class="cblue2">심장 나이</span>는?</p>    
+  <div class="bx_wrap">  
+		<div class="bx_img"><img src="./img/r2.png"></div>  
+		<div class="box01">    
+		  <p class="fs15">당신의 현재 심장나이는</p>
+		  <p class="fs19"><i class="cblue"><?=$str_age?></i> 입니다.</p>       
+		  <p class="fs13 mt20">당신의 체질량지수(BMI)는</p>
+		  <p class="fs17"><i class="cblue"><?=$bmi?> kg/m²</i>로 <i class="cblue"><?=$str_bmi?></i> 입니다.</p>
+    </div>
+  </div>
+
+
+   <p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘BMI 지수를 통한 심장 나이 자가 평가’입니다.</p> 
+    
+   <p class="btnbox">  
+      <a href="info02.php" class="btn2 btnblue btnmo">다시하기</a>
+      <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=94&bbs_cd=20" class="btn2 btnblue2 btnmo">더 알아보기</a>
+   </p>
+
+
+
+
+					</div>
+				</div><!-- /content -->
+			
+		
+
+		
+<?php
+
+?>

@@ -1,0 +1,173 @@
+<?
+
+
+?>
+
+
+
+@@include('../inc/head.html')
+
+	
+			
+				
+					
+					
+					
+				
+
+				<div class="content">
+					<div class="top_cont1">
+						<div class="location1">홈 &gt; 소개 &gt; <span>나의 심장나이는?(콜레스테롤 지수)</span></div>
+						<h3 class="sub_title1"><img src="./img/self/sub_title3.png" alt="나의 심장나이는?" /></h3>
+					</div><!-- /top_cont1 -->
+					<div class="swap">
+
+
+
+  <div class="da_txt2" >
+    <p><img src="img/r3.png"><p>
+    <p class="fs23">콜레스테롤 지수로 알아본<p>
+    <p class="fs23">나의 <i class="cblue">심장나이</i>는?<p>
+  </div> 
+
+  <form name="ftst" method=post>
+  <div class="f_wrap">
+
+    
+  <div class="box_wrap bc">
+    <p class="flo wa">성별 </p>
+    <div class="flo wb">
+      <p class="flo sew"><input type="radio" id="c1" name="p_sex" value="m" checked><label for="c1"></label>남성</p>
+      <p class="flo"><input type="radio" id="c2" name="p_sex" value="f" ><label for="c2"></label>여성</p>
+    </div>
+  </div>
+  
+   <div class="box_wrap">
+    <p class="flo wa">연령 </p>
+    <div class="flo wb">
+      <div class="we">
+      <p class="flo"><input type="text" name="p_age" id="p_age"></p>
+      <p class="flo txa">세</p>
+      </div>        
+      <p class="tx01">(만30세 ~ 74세)</p>   
+    </div>
+  </div>
+    
+     
+      
+   <div class="box_wrap bc">
+    <p class="flo wa">수축기 혈압 </p>
+    <div class="flo wb">
+      <div class="we">
+      <p class="flo"><input type="text" name="p_pressure" id="p_pressure"></p>
+      </div>
+      <p class="tx01">(예) 120mmHg/70mmHg이면 120을 입력하세요.)</p>   
+    </div>
+  </div>
+  
+
+   <div class="box_wrap">
+    <p class="wc">고혈압 치료를 받고 계십니까?</p>
+    <div class="wd">
+      <div class="we">
+      <p class="flo sew"><input type="radio" id="r1" name="cc2" value="1"><label for="r1"></label>예</p>
+      <p class="flo"><input type="radio" id="r2" name="cc2" value="0" checked><label for="r2"></label>아니오</p>      
+      </div>
+      </div>
+  </div>
+  
+      
+   <div class="box_wrap bc">
+    <p class="wc">흡연을 하십니까?</p>
+    <div class="wd">
+      <div class="we">
+      <p class="flo sew"><input type="radio" id="r3" name="cc3" value="1"><label for="r3"></label>예</p>
+      <p class="flo"><input type="radio" id="r4" name="cc3" value="0" checked><label for="r4"></label>아니오</p>      
+      </div>
+      </div>
+  </div>
+      
+   <div class="box_wrap">
+    <p class="wc">당뇨가 있습니까?</p>
+    <div class="wd">
+      <div class="we">
+      <p class="flo sew"><input type="radio" id="r5" name="cc4" value="1"><label for="r5"></label>예</p>
+      <p class="flo"><input type="radio" id="r6" name="cc4" value="0" checked><label for="r6"></label>아니오</p>      
+      </div>
+      </div>
+  </div>
+      
+       <div class="box_wrap bc">
+	 <div class="flo wa">HDL <p>고밀도콜레스테롤</p></div>
+    <div class="flo wb">
+      <p class="flo"><input type="text" name="p_hicol" id="p_hicol"></p>
+ 
+    </div>
+  </div>
+    
+          <div class="box_wrap">
+    <p class="flo wa">총 콜레스테롤</p>
+    <div class="flo wb">
+      <p class="flo"><input type="text" name="p_totalcol" id="p_totalcol"></p>   
+    </div>
+  </div>
+  </form>     
+
+     
+</div>
+
+   <p class="btnbox">  
+         <a href="javascript:fsubmit()" class="btn btnblue btnmo">결과보기</a>
+   </p>
+
+
+
+
+					</div>
+				</div><!-- /content -->
+			
+		
+
+		
+<?php
+
+?>
+<script type="text/javascript">
+<!--
+function fsubmit(){
+	var p_age = document.getElementById("p_age").value;
+	if( p_age == ""){
+		alert("나이를 입력해주세요");
+		document.getElementById("p_age").focus();
+		return;
+	}
+	if( p_age > 120){
+		alert("나이를 제대로 입력해주세요");
+		document.getElementById("p_age").focus();
+		return;
+	}
+	var p_pressure = $("#p_pressure option:selected").val();
+	if( p_pressure < 1){
+		alert("수축기 혈압을 선택 해주세요");
+		document.getElementById("p_pressure").focus();
+		return;
+	}
+
+	var p_hicol = $("#p_hicol").val();
+	if( p_hicol < 1){
+		alert("고밀도 콜레스테롤를 입력 해주세요");
+		document.getElementById("p_hicol").focus();
+		return;
+	}
+
+	var p_totalcol = $("#p_totalcol").val();
+	if( p_totalcol < 1){
+		alert("고밀도 콜레스테롤를 입력 해주세요");
+		document.getElementById("p_totalcol").focus();
+		return;
+	}
+	document.ftst.action = "result03.php";
+	document.ftst.submit();
+}
+//-->
+</script>

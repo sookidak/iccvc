@@ -1,0 +1,202 @@
+<?
+
+
+
+
+
+$p_sex = $_POST["p_sex"]; 
+$p_age = $_POST["p_age"]; 
+$p_pressure = $_POST["p_pressure"]; 
+$cc2 = $_POST["cc2"]; 
+$cc3 = $_POST["cc3"]; 
+$cc4 = $_POST["cc4"]; 
+$p_hicol = $_POST["p_hicol"]; 
+$p_totalcol = $_POST["p_totalcol"]; 
+
+$points = 0;
+$h_age = 0;
+switch($p_sex){
+	case "m" : 
+		if( $p_age >= 35 && $p_age < 40 ) $points += 2;
+		if( $p_age >= 40 && $p_age < 45 ) $points += 5;
+		if( $p_age >= 45 && $p_age < 50 ) $points += 6;
+		if( $p_age >= 50 && $p_age < 55 ) $points += 8;
+		if( $p_age >= 55 && $p_age < 60 ) $points += 10;
+		if( $p_age >= 60 && $p_age < 65 ) $points += 11;
+		if( $p_age >= 65 && $p_age < 70 ) $points += 12;
+		if( $p_age >= 70 && $p_age < 75 ) $points += 14;
+		if( $p_age >= 75 ) $points += 15;
+		
+		switch($cc2){
+			case 0 :
+				if( $p_pressure <120) $points -= 2;
+				if( $p_pressure >=120 && $p_pressure < 130) $points += 0; 
+				if( $p_pressure >=130 && $p_pressure < 140) $points += 1; 
+				if( $p_pressure >=140 && $p_pressure < 150) $points += 2; 
+				if( $p_pressure >=150 && $p_pressure < 160) $points += 3; 
+				if( $p_pressure >=160) $points += 6; 
+				break;
+			case 1 : 
+				if( $p_pressure <120) $points -= 0;
+				if( $p_pressure >=120 && $p_pressure < 130) $points += 2; 
+				if( $p_pressure >=130 && $p_pressure < 140) $points += 3; 
+				if( $p_pressure >=140 && $p_pressure < 160) $points += 4; 
+				if( $p_pressure >=160) $points += 5; 
+				break;
+		}
+		if($cc3) $points += 4; //흡연
+		if($cc4) $points += 3; //당뇨
+
+		//고밀도콜레스테롤
+		if( $p_hicol >= 60 ) $points -= 2;
+		if( $p_hicol >= 50 && $p_hicol < 60 ) $points -= 1;
+		if( $p_hicol >= 45 && $p_hicol < 50 ) $points += 0;
+		if( $p_hicol >= 35 && $p_hicol < 45 ) $points += 1;
+		if( $p_hicol <= 35 ) $points += 2;
+
+		//전체 콜레스테롤
+		if( $p_hicol < 160 ) $points += 0;
+		if( $p_hicol >= 160 && $p_hicol < 200 ) $points += 1;
+		if( $p_hicol >= 200 && $p_hicol < 240 ) $points += 2;
+		if( $p_hicol >= 240 && $p_hicol < 280 ) $points += 3;
+		if( $p_hicol >= 280 ) $points += 4;
+
+
+		if($points < 1 ) $h_age = 30;
+		if($points == 1) $h_age = 32;
+		if($points == 2) $h_age = 34;
+		if($points == 3) $h_age = 36;
+		if($points == 4) $h_age = 38;
+		if($points == 5) $h_age = 40;
+		if($points == 6) $h_age = 42;
+		if($points == 7) $h_age = 45;
+		if($points == 8) $h_age = 48;
+		if($points == 9) $h_age = 51;
+		if($points == 10) $h_age = 54;
+		if($points == 11) $h_age = 57;
+		if($points == 12) $h_age = 60;
+		if($points == 13) $h_age = 64;
+		if($points == 14) $h_age = 68;
+		if($points == 15) $h_age = 72;
+		if($points == 16) $h_age = 76;
+		if($points >= 17) $h_age = 80;
+		break;
+	case "f" :
+		if( $p_age >= 35 && $p_age < 40 ) $points += 2;
+		if( $p_age >= 40 && $p_age < 45 ) $points += 4;
+		if( $p_age >= 45 && $p_age < 50 ) $points += 5;
+		if( $p_age >= 50 && $p_age < 55 ) $points += 7;
+		if( $p_age >= 55 && $p_age < 60 ) $points += 8;
+		if( $p_age >= 60 && $p_age < 65 ) $points += 9;
+		if( $p_age >= 65 && $p_age < 70 ) $points += 10;
+		if( $p_age >= 70 && $p_age < 75 ) $points += 11;
+		if( $p_age >= 75 ) $points += 12;
+		
+		switch($cc2){
+			case 0 :
+				if( $p_pressure <120) $points -= 3;
+				if( $p_pressure >=120 && $p_pressure < 130) $points += 0; 
+				if( $p_pressure >=130 && $p_pressure < 140) $points += 1; 
+				if( $p_pressure >=140 && $p_pressure < 150) $points += 2; 
+				if( $p_pressure >=150 && $p_pressure < 160) $points += 4; 
+				if( $p_pressure >=160) $points += 6; 
+				break;
+			case 1 : 
+				if( $p_pressure <120) $points -= 1;
+				if( $p_pressure >=120 && $p_pressure < 130) $points += 2; 
+				if( $p_pressure >=130 && $p_pressure < 140) $points += 3; 
+				if( $p_pressure >=140 && $p_pressure < 150) $points += 5; 
+				if( $p_pressure >=150 && $p_pressure < 160) $points += 6; 
+				if( $p_pressure >=160) $points += 7; 
+				break;
+		}
+		if($cc3) $points += 3; //흡연
+		if($cc4) $points += 4; //당뇨
+
+		//고밀도콜레스테롤
+		if( $p_hicol >= 60 ) $points -= 2;
+		if( $p_hicol >= 50 && $p_hicol < 60 ) $points -= 1;
+		if( $p_hicol >= 45 && $p_hicol < 50 ) $points += 0;
+		if( $p_hicol >= 35 && $p_hicol < 45 ) $points += 1;
+		if( $p_hicol <= 35 ) $points += 2;
+
+		//전체 콜레스테롤
+		if( $p_hicol < 160 ) $points += 0;
+		if( $p_hicol >= 160 && $p_hicol < 200 ) $points += 1;
+		if( $p_hicol >= 200 && $p_hicol < 240 ) $points += 3;
+		if( $p_hicol >= 240 && $p_hicol < 280 ) $points += 4;
+		if( $p_hicol >= 280 ) $points += 5;
+
+
+		if($points < 1 ) $h_age = 30;
+		if($points == 1) $h_age = 31;
+		if($points == 2) $h_age = 34;
+		if($points == 3) $h_age = 36;
+		if($points == 4) $h_age = 39;
+		if($points == 5) $h_age = 42;
+		if($points == 6) $h_age = 45;
+		if($points == 7) $h_age = 48;
+		if($points == 8) $h_age = 51;
+		if($points == 9) $h_age = 55;
+		if($points == 10) $h_age = 59;
+		if($points == 11) $h_age = 64;
+		if($points == 12) $h_age = 68;
+		if($points == 13) $h_age = 73;
+		if($points == 14) $h_age = 79;
+		if($points >= 15) $h_age = 80;
+		break;
+}
+?>
+
+
+
+@@include('../inc/head.html')
+
+	
+			
+				
+					
+					
+					
+				
+
+				<div class="content">
+					<div class="top_cont1">
+						<div class="location1">홈 &gt; 소개 &gt; <span>나의 심장나이는?(콜레스테롤 지수)</span></div>
+						<h3 class="sub_title1"><img src="./img/self/sub_title3.png" alt="나의 심장나이는?" /></h3>
+					</div><!-- /top_cont1 -->
+					<div class="swap">
+
+
+
+
+ <p class="hd_end">나의<span class="cblue2">심장 나이</span>는?</p>    
+  <div class="bx_wrap">  
+		<div class="bx_img"><img src="./img/r3.png"></div>  
+		<div class="box01">    
+		  <p class="fs15">당신의 현재 심장나이는</p>
+		  <p class="fs19"><i class="cblue"><?=$h_age?></i> 입니다.</p>       
+    </div>
+  </div>
+
+
+   <p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘콜레스테롤 지수를 통한 심장 나이 자가 평가’입니다.</p> 
+    
+   <p class="btnbox">  
+      <a href="info03.php" class="btn2 btnblue btnmo">다시하기</a>
+      <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=94&bbs_cd=20" class="btn2 btnblue2 btnmo">더 알아보기</a>
+   </p>
+
+
+
+
+
+					</div>
+				</div><!-- /content -->
+			
+		
+
+		
+<?php
+
+?>

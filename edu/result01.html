@@ -1,0 +1,222 @@
+<?
+
+
+
+$p_sex = $_POST["p_sex"]; 
+$p_age = $_POST["p_age"]; 
+$p_pressure = $_POST["p_pressure"]; 
+$cc2 = $_POST["cc2"]; 
+$cc3 = $_POST["cc3"]; 
+$cc4 = $_POST["cc4"]; 
+$cc7 = $_POST["cc7"]; 
+$cc9 = $_POST["cc9"]; 
+$cc10 = $_POST["cc10"]; 
+
+$points = 0;
+$percent = 0;
+switch($p_sex){
+	case "m" : 
+		if( $p_age >= 57 && $p_age < 60 ) $points += 1;
+		if( $p_age >= 60 && $p_age < 63 ) $points += 2;
+		if( $p_age >= 63 && $p_age < 66 ) $points += 3;
+		if( $p_age >= 66 && $p_age < 69 ) $points += 4;
+		if( $p_age >= 69 && $p_age < 73 ) $points += 5;
+		if( $p_age >= 73 && $p_age < 76 ) $points += 6;
+		if( $p_age >= 76 && $p_age < 79 ) $points += 7;
+		if( $p_age >= 79 && $p_age < 82 ) $points += 8;
+		if( $p_age >= 82 && $p_age < 85 ) $points += 9;
+		if( $p_age >= 85 ) $points += 10;
+		
+		switch($cc2){
+			case 0 :
+				if( $p_pressure >=95 && $p_pressure < 106 ) $points += 0;
+				if( $p_pressure >=106 && $p_pressure < 116 ) $points += 1; 
+				if( $p_pressure >=116 && $p_pressure < 126 ) $points += 2; 
+				if( $p_pressure >=126 && $p_pressure < 136 ) $points += 3; 
+				if( $p_pressure >=136 && $p_pressure < 146 ) $points += 4; 
+				if( $p_pressure >=146 && $p_pressure < 156 ) $points += 5; 
+				if( $p_pressure >=156 && $p_pressure < 166 ) $points += 6; 
+				if( $p_pressure >=166 && $p_pressure < 176 ) $points += 7; 
+				if( $p_pressure >=176 && $p_pressure < 186 ) $points += 8; 
+				if( $p_pressure >=186 && $p_pressure < 196 ) $points += 9; 
+				if( $p_pressure >=196 ) $points += 10; 
+				break;
+			case 1 : 
+				if( $p_pressure >=97 && $p_pressure < 106 ) $points += 0;
+				if( $p_pressure >=106 && $p_pressure < 113 ) $points += 1; 
+				if( $p_pressure >=113 && $p_pressure < 118 ) $points += 2; 
+				if( $p_pressure >=118 && $p_pressure < 124 ) $points += 3; 
+				if( $p_pressure >=124 && $p_pressure < 130 ) $points += 4; 
+				if( $p_pressure >=130 && $p_pressure < 136 ) $points += 5; 
+				if( $p_pressure >=136 && $p_pressure < 143 ) $points += 6; 
+				if( $p_pressure >=143 && $p_pressure < 151 ) $points += 7; 
+				if( $p_pressure >=151 && $p_pressure < 162 ) $points += 8; 
+				if( $p_pressure >=162 && $p_pressure < 177 ) $points += 9; 
+				if( $p_pressure >=177 ) $points += 10; 
+				break;
+		}
+		if($cc3) $points += 3; //흡연
+		if($cc4) $points += 2; //당뇨
+		if($cc7) $points += 4; //관상동맥질환
+		if($cc9) $points += 4; //심박세동
+		if($cc10) $points += 5; //좌심실대
+
+		if($points == 1 || $points == 2 ) $percent = 3;
+		if($points == 3 || $points == 4  ) $percent = 4;
+		if($points == 5 || $points == 6  ) $percent = 5;
+		if($points == 7) $percent = 6;
+		if($points == 8) $percent = 7;
+		if($points == 9) $percent = 8;
+		if($points == 10) $percent = 10;
+		if($points == 11) $percent = 11;
+		if($points == 12) $percent = 13;
+		if($points == 13) $percent = 15;
+		if($points == 14) $percent = 17;
+		if($points == 15) $percent = 20;
+		if($points == 16) $percent = 22;
+		if($points == 17) $percent = 26;
+		if($points == 18) $percent = 29;
+		if($points == 19) $percent = 33;
+		if($points == 20) $percent = 37;
+		if($points == 21) $percent = 42;
+		if($points == 22) $percent = 47;
+		if($points == 23) $percent = 52;
+		if($points == 24) $percent = 57;
+		if($points == 25) $percent = 63;
+		if($points == 26) $percent = 68;
+		if($points == 27) $percent = 74;
+		if($points == 28) $percent = 79;
+		if($points == 29) $percent = 84;
+		if($points == 30) $percent = 88;
+
+		break;
+	case "f" :
+		if( $p_age >= 57 && $p_age < 60 ) $points += 1;
+		if( $p_age >= 60 && $p_age < 63 ) $points += 2;
+		if( $p_age >= 63 && $p_age < 66 ) $points += 3;
+		if( $p_age >= 66 && $p_age < 69 ) $points += 4;
+		if( $p_age >= 69 && $p_age < 73 ) $points += 5;
+		if( $p_age >= 73 && $p_age < 76 ) $points += 6;
+		if( $p_age >= 76 && $p_age < 79 ) $points += 7;
+		if( $p_age >= 79 && $p_age < 82 ) $points += 8;
+		if( $p_age >= 82 && $p_age < 85 ) $points += 9;
+		if( $p_age >= 85 ) $points += 10;
+		
+		switch($cc2){
+			case 0 :
+				if( $p_pressure >=95 && $p_pressure < 107 ) $points += 1;
+				if( $p_pressure >=107 && $p_pressure < 119 ) $points += 2; 
+				if( $p_pressure >=119 && $p_pressure < 131 ) $points += 3; 
+				if( $p_pressure >=131 && $p_pressure < 144 ) $points += 4; 
+				if( $p_pressure >=144 && $p_pressure < 156 ) $points += 5; 
+				if( $p_pressure >=156 && $p_pressure < 168 ) $points += 6; 
+				if( $p_pressure >=168 && $p_pressure < 181 ) $points += 7; 
+				if( $p_pressure >=181 && $p_pressure < 193 ) $points += 8; 
+				if( $p_pressure >=193 && $p_pressure < 205 ) $points += 9; 
+				if( $p_pressure >=205 ) $points += 10; 
+				break;
+			case 1 : 
+				if( $p_pressure >=95 && $p_pressure < 107 ) $points += 1;
+				if( $p_pressure >=107 && $p_pressure < 114 ) $points += 2; 
+				if( $p_pressure >=114 && $p_pressure < 120 ) $points += 3; 
+				if( $p_pressure >=120 && $p_pressure < 126 ) $points += 4; 
+				if( $p_pressure >=126 && $p_pressure < 132 ) $points += 5; 
+				if( $p_pressure >=132 && $p_pressure < 140 ) $points += 6; 
+				if( $p_pressure >=140 && $p_pressure < 149 ) $points += 7; 
+				if( $p_pressure >=149 && $p_pressure < 161 ) $points += 8; 
+				if( $p_pressure >=161 && $p_pressure < 205 ) $points += 9; 
+				if( $p_pressure >=205 ) $points += 10; 
+				break;
+		}
+		if($cc3) $points += 3; //흡연
+		if($cc4) $points += 3; //당뇨
+		if($cc7) $points += 2; //관상동맥질환
+		if($cc9) $points += 6; //심박세동
+		if($cc10) $points += 5; //좌심실대
+
+		if($points == 1) $percent = 1;
+		if($points == 2) $percent = 1;
+		if($points == 3) $percent = 2;
+		if($points == 4) $percent = 2;
+		if($points == 5) $percent = 2;
+		if($points == 6) $percent = 3;
+		if($points == 7) $percent = 4;
+		if($points == 8) $percent = 4;
+		if($points == 9) $percent = 5;
+		if($points == 10) $percent = 6;
+		if($points == 11) $percent = 8;
+		if($points == 12) $percent = 9;
+		if($points == 13) $percent = 11;
+		if($points == 14) $percent = 13;
+		if($points == 15) $percent = 16;
+		if($points == 16) $percent = 19;
+		if($points == 17) $percent = 23;
+		if($points == 18) $percent = 27;
+		if($points == 19) $percent = 32;
+		if($points == 20) $percent = 37;
+		if($points == 21) $percent = 43;
+		if($points == 22) $percent = 50;
+		if($points == 23) $percent = 57;
+		if($points == 24) $percent = 64;
+		if($points == 25) $percent = 71;
+		if($points == 26) $percent = 78;
+		if($points == 27) $percent = 84;
+
+		break;
+}
+
+
+?>
+
+
+
+@@include('../inc/head.html')
+
+	
+			
+				
+					
+					
+					
+				
+
+				<div class="content">
+					<div class="top_cont1">
+						<div class="location1">홈 &gt; 소개 &gt; <span>뇌졸중 위험도 자가 평가</span></div>
+						<h3 class="sub_title1"><img src="./img/self/sub_title2.png" alt="나의 심장나이는?" /></h3>
+					</div><!-- /top_cont1 -->
+					<div class="swap">
+
+
+
+
+
+ <p class="hd_end">내가 <span class="cblue2">뇌졸중</span>에 걸릴위험도는?</p>    
+  <div class="bx_wrap">  
+		<div class="bx_img"><img src="./img/r1.png"></div>  
+		<div class="box01">    
+		  <p class="fs15">당신이 10년 내 <i class="cblue">뇌졸중</i>에 발생할 확률은</p>
+		  <p class="fs19"><i class="cblue"><?=$percent?>%</i> 입니다.</p>            
+    </div>
+  </div>
+
+   <p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘뇌졸중의 위험도 자가평가’입니다.</p> 
+
+   <p class="btnbox">  
+     <a href="info01.php" class="btn2 btnblue btnmo">다시하기</a>
+     <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=95&bbs_cd=21" class="btn2 btnblue2 btnmo">더 알아보기</a>
+   </p>
+
+
+
+
+
+					</div>
+				</div><!-- /content -->
+			
+		
+
+		
+<?php
+
+?>

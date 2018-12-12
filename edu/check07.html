@@ -1,0 +1,143 @@
+<?
+
+
+?>
+
+
+
+@@include('../inc/head.html')
+
+	
+			
+				
+					
+					
+					
+				
+
+				<div class="content">
+					<div class="top_cont1">
+						<div class="location1">홈 &gt; 소개 &gt; <span>나는 얼마나 담배에 의존할까</span></div>
+						<h3 class="sub_title1"><img src="./img/self/sub_title7.png" alt="나는 얼마나 담배에 의존할까" /></h3>
+					</div><!-- /top_cont1 -->
+					<div class="swap">
+
+
+
+  <div class="da_txt2" >
+    <p><img src="img/r7.png"><p>
+    <p class="fs23">나는 얼마나<i class="cblue">담배</i>에 <i class="cblue">의존</i>할까?<p>
+  </div> 
+
+  <form name="ftst" method=post>
+  <div class="box4">
+     <div class="hd1 bgcyan fb">1. 하루에 보통 몇 개피나 피우십니까?</div>   
+     <ul class="clist fb fs13">
+       <li><input type="radio" id="r1" name="cc0" value=0><label for="r1"></label>10개피 이하<li>
+       <li><input type="radio" id="r2" name="cc0" value=1><label for="r2"></label>11~12개피<li>
+       <li><input type="radio" id="r3" name="cc0" value=2><label for="r3"></label>21~30개피<li>
+       <li><input type="radio" id="r4" name="cc0" value=3><label for="r4"></label>31개피 이상<li>
+     </ul>
+  </div>
+
+  <div class="box4">
+     <div class="hd1 bgcyan fb">2. 아침에 일어나서 얼마 만에 첫 담배를 피우십니까?</div>   
+     <ul class="clist fb fs13">
+       <li><input type="radio" id="r5" name="cc1" value=3><label for="r5"></label>5분 이내<li>
+       <li><input type="radio" id="r6" name="cc1" value=2><label for="r6"></label>6~30분 사이<li>
+       <li><input type="radio" id="r7" name="cc1" value=1><label for="r7"></label>31분~1시간 사이<li>
+       <li><input type="radio" id="r8" name="cc1" value=0><label for="r8"></label>1시간 이후<li>
+     </ul>
+  </div>
+  
+  <div class="box4">
+     <div class="hd1 bgcyan fb">3. 금연구역(도서관, 극장, 병원 등)에서 담배를 참기가 어렵습니까?</div>   
+     <ul class="clist fb fs13">
+       <li><input type="radio" id="r9" name="cc2" value=1><label for="r9"></label>예<li>
+       <li><input type="radio" id="r10" name="cc2" value=0><label for="r10"></label>아니오<li>
+     </ul>
+  </div>
+  
+  <div class="box4">
+     <div class="hd1 bgcyan fb">4. 하루 중 담배 맛이 가장 좋은 때는 언제입니까?</div>   
+     <ul class="clist fb fs13">
+       <li><input type="radio" id="r11" name="cc3" value=1><label for="r11"></label>아침 첫 담배<li>
+       <li><input type="radio" id="r12" name="cc3" value=0><label for="r12"></label>그 외의 담배<li>
+     </ul>
+  </div>
+  
+ 
+    <div class="box4">
+     <div class="hd1 bgcyan fb">5. 오후와 저녁시간보다 오전 중에 담배를 더 자주 피우십니까?</div>   
+     <ul class="clist fb fs13">
+       <li><input type="radio" id="r13" name="cc4" value=1><label for="r13"></label>예<li>
+       <li><input type="radio" id="r14" name="cc4" value=0><label for="r14"></label>가끔씩 있다<li>
+     </ul>
+  </div>
+  
+    <div class="box4">
+     <div class="hd1 bgcyan fb">6. 몸이 아파 하루 종일 누워있을 때에도 담배를 피우십니까?</div>   
+     <ul class="clist fb fs13">
+       <li><input type="radio" id="r15" name="cc5" value=1><label for="r15"></label>예<li>
+       <li><input type="radio" id="r16" name="cc5" value=0><label for="r16"></label>아니오<li>
+     </ul>
+  </div>
+	</form>
+  
+  
+  <p class="btnbox">  
+         <a href="javascript:fsubmit()" class="btn2 btnblue btnmo">결과보기</a>
+   </p>
+</div>
+  
+
+
+
+					</div>
+				</div><!-- /content -->
+			
+		
+
+		
+<?php
+
+?>
+
+<script type="text/javascript">
+<!--
+function fsubmit(){
+	var cc0 = $('input:radio[name=cc0]').is(':checked');
+	if( cc0 == false){
+		alert("1. 하루에 보통 몇 개피나 피우십니까 항목을 체크해주세요");
+		return;
+	}
+	var cc1 = $('input:radio[name=cc1]').is(':checked');
+	if( cc1 == false){
+		alert("2. 아침에 일어나서 얼마 만에 첫 담배를 피우십니까 항목을 체크해주세요");
+		return;
+	}
+	var cc2 = $('input:radio[name=cc2]').is(':checked');
+	if( cc2 == false){
+		alert("3. 금연구역(도서관, 극장, 병원 등)에서 담배를 참기가 어렵습니까 항목을 체크해주세요");
+		return;
+	}
+	var cc3 = $('input:radio[name=cc3]').is(':checked');
+	if( cc3 == false){
+		alert("4. 하루 중 담배 맛이 가장 좋은 때는 언제입니까  항목을 체크해주세요");
+		return;
+	}
+	var cc4 = $('input:radio[name=cc4]').is(':checked');
+	if( cc4 == false){
+		alert("5. 오후와 저녁시간보다 오전 중에 담배를 더 자주 피우십니까 항목을 체크해주세요");
+		return;
+	}
+	var cc5 = $('input:radio[name=cc5]').is(':checked');
+	if( cc5 == false){
+		alert("6. 몸이 아파 하루 종일 누워있을 때에도 담배를 피우십니까 항목을 체크해주세요");
+		return;
+	}
+	document.ftst.action = "result07.php";
+	document.ftst.submit();
+}
+//-->
+</script>

@@ -570,6 +570,32 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .doc-list.style2 .doc-box:hover, .doc-list.style2 .doc-box:focus{border-color:#0770bb }
 .doc-list.style2 .doc-box .doc_photo{margin-top: 10px}
 
+/* 진료과/의료진 - 의료진 상세 */
+.docter-wrap{ height: 630px; width: 100%; background: url(../img/docter_bg.jpg) repeat-x top center }
+.docter-wrap .doc_photo{width: 580px; height: 630px; float: left;}
+.docter-wrap .docter-cont{width: 1180px; margin: 0 auto; position: relative;}
+.docter-wrap .docter-cont .doc-time{width: 480px; position: absolute; top: 150px; right: 100px;}
+.docter-wrap .docter-cont .doc-time .dept{font-family: 'NotoKrL'; font-size: 24px; color: #000; margin-bottom: 10px; }
+.docter-wrap .docter-cont .doc-time .name{font-family: 'NotoKrM'; font-size: 65px; color: #000; margin-bottom: 45px; }
+.docter-wrap .docter-cont .doc-time .mydoc{width: 45px; height: 45px; position: absolute;top: 63px; right: 0; }
+.docter-wrap .docter-cont .doc-time .mydoc > div{position:relative;display: inline-block;vertical-align: middle;width: 50px; height: 50px;}
+.docter-wrap .docter-cont .doc-time .mydoc input[type=checkbox]{position:absolute;left:0;top:-1000px;}
+.docter-wrap .docter-cont .doc-time .mydoc label{display:inline-block;position:relative;padding-left:35px;min-width:50px;min-height:50px;line-height:25px;color:#777;}
+.docter-wrap .docter-cont .doc-time .mydoc label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:45px;height:45px;background: url(../img/icon_contents.png) no-repeat -43px 0 ;cursor:pointer;z-index:10;}
+.docter-wrap .docter-cont .doc-time .mydoc input[type=checkbox]:checked +label:before{background-position:  -95px 0}
+.docter-wrap .docter-cont .doc-time .table{ margin-top: 10px}
+.docter-wrap .docter-cont .doc-time .table th{height: 40px;background: transparent; border:0; border-bottom: 1px solid #9f9a94; border-top: 2px solid #000 ; font-family: 'NotoKrR'; font-size: 16px; color: #333;}
+.docter-wrap .docter-cont .doc-time .table td{height: 40px;background: transparent;  border:0;border-bottom: 1px solid #9f9a94; font-family: 'NotoKrR'; font-size: 16px; color: #333; padding: 0}
+.docter-wrap .docter-cont .doc-time .dept-icon{font-size: 14px !important;}
+.docter-wrap .docter-cont .doc-time .center-icon{font-size: 16px !important;}
+.docter-wrap .docter-cont .doc-time .etc{margin-top: 10px;font-size: 14px; color: #000;}
+.docter-wrap .docter-cont .doc-time .btn-wrap{margin-top: 20px}
+.docter-wrap .docter-cont .doc-time .btn{width: 480px !important;width: 50px;}
+
+.profile ul{ border-top:1px solid #bbb; margin-top: 10px; margin-bottom:50px; }
+#profile > div:last-child ul{margin-bottom:0px; }
+.profile ul li{font-family: 'NotoKrL'; font-size: 16px; color: #333; border-bottom:1px solid #eeeeee; vertical-align: middle; line-height: 24px; padding: 12px 0 12px 215px; position: relative; }
+.profile ul li p{font-family: 'NotoKrR'; font-size: 16px; color: #333; width:170px; position: absolute;left: 30px;}
 
 
 /* 자주하는 질문 */

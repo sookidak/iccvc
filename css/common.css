@@ -571,6 +571,10 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .doc-list.style2 .doc-box .doc_photo{margin-top: 10px}
 
 /* 진료과/의료진 - 의료진 상세 */
+.dept-icon{color: #0770bb !important; font-size: 16px !important}
+.center-icon{color: #e3751c !important;font-size: 18px !important}
+.time-info{font-family: 'NotoKrL'; font-size: 14px; color: #333;font-weight: normal;}
+.time-info > span{margin-right: 7px; margin-left:17px }
 .docter-wrap{ height: 630px; width: 100%; background: url(../img/docter_bg.jpg) repeat-x top center }
 .docter-wrap .doc_photo{width: 580px; height: 630px; float: left;}
 .docter-wrap .docter-cont{width: 1180px; margin: 0 auto; position: relative;}
@@ -586,8 +590,8 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .docter-wrap .docter-cont .doc-time .table{ margin-top: 10px}
 .docter-wrap .docter-cont .doc-time .table th{height: 40px;background: transparent; border:0; border-bottom: 1px solid #9f9a94; border-top: 2px solid #000 ; font-family: 'NotoKrR'; font-size: 16px; color: #333;}
 .docter-wrap .docter-cont .doc-time .table td{height: 40px;background: transparent;  border:0;border-bottom: 1px solid #9f9a94; font-family: 'NotoKrR'; font-size: 16px; color: #333; padding: 0}
-.docter-wrap .docter-cont .doc-time .dept-icon{font-size: 14px !important;}
-.docter-wrap .docter-cont .doc-time .center-icon{font-size: 16px !important;}
+.docter-wrap .docter-cont .doc-time .dept-icon{font-size: 14px !important;color: #0770bb !important;}
+.docter-wrap .docter-cont .doc-time .center-icon{font-size: 16px !important;color: #e3751c !important;}
 .docter-wrap .docter-cont .doc-time .etc{margin-top: 10px;font-size: 14px; color: #000;}
 .docter-wrap .docter-cont .doc-time .btn-wrap{margin-top: 20px}
 .docter-wrap .docter-cont .doc-time .btn{width: 480px !important;width: 50px;}

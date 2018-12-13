@@ -17,6 +17,27 @@ $(document).ready(function() {
 	$location=$(".location-nav-wrap"),
 	$lang=$(".lang");
 
+	//메인 확인
+	var mainCheck = function(){
+		if ($('#main').length==1) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+	//메인 탑 버튼 숨기기
+	if (mainCheck()) {
+		$('.footer .top-btn').hide();
+
+	}
+
+	//메인 슬라이드 적용
+    $('.bxSlider').bxSlider({
+      auto: true,
+      autoControls: true
+    });
+
+
 
 	//메뉴 열기
 	var openMenu = function(){	

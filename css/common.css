@@ -217,7 +217,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 /* .prg-wrap:first-child{border-top:none;} */
 .prg-wrap:last-child{padding-bottom:0;}
 .prg-wrap .prg-left{float:left;width:200px;}
-.prg-wrap .prg-title{font-size:24px;color: #000;line-height:32px;}
+.prg-wrap .prg-title{font-size:24px;color: #000;line-height:32px;font-family:'NotoKrM',sans-serif; font-weight: normal;}
 .prg-wrap .prg-title .marL{display:inline-block; padding-left:23px;}
 .prg-wrap .prg-right{float:right;width:980px;}
 .prg-cont{line-height:24px;font-size:16px;color: #333;letter-spacing:-0.068em;}

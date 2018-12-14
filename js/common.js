@@ -28,8 +28,12 @@ $(document).ready(function() {
 	//메인 탑 버튼 숨기기
 	if (mainCheck()) {
 		$('.footer .top-btn').hide();
-
 	}
+
+	//위로가기 버튼 이벤트
+	$('.top-btn').on('click', function(event) {		
+		$('html, body').animate({scrollTop : 0}, 400);
+	});
 
 	//메인 슬라이드 적용
     $('.bxSlider').bxSlider({

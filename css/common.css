@@ -539,6 +539,26 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .marL10{margin-left: 10px !important}
 .marL20{margin-left: 20px !important}
 
+/* 인사말 */
+.greet-wrap{display: block;overflow: hidden;}
+.greet-wrap .greet-left{float:left;width:430px;}
+.greet-wrap .greet-left .greet-photo img{width: 430px; height: 460px; display: block;}
+.greet-photo .photo-name {float: right; text-align: right; margin-top: 10px;}
+.greet-photo .photo-name .name {font-family:'notoKrM',sans-serif; font-size: 30px; color: #000; margin-top: 5px;}
+.greet-wrap .greet-right{float:left;width:700px; margin-left: 50px;}
+.greet-cont{overflow: hidden}
+.greet-cont .title-style2{letter-spacing: -1.5px;line-height: 37px;margin-top: -7px;}
+.greet-cont .text-style2{letter-spacing: -0.8px;line-height: 24px;padding-top: 24px;}
+.greet-cont .title-style2+.text-style2 {padding-top: 19px;}
+
+/* 사업소개 */
+.prg-cont.business {letter-spacing: -0.8px;}
+.prg-cont.business p + p{padding-top: 24px;}
+
+/* 연혁 */
+.prg-cont.history {letter-spacing: -0.8px;}
+.prg-cont.history .list-type1 li .month {display: inline-block;margin-right: 10px;font-family:'notoKrM',sans-serif;vertical-align: top;}
+.prg-cont.history .list-type1 li .desc {display: inline-block;}
 
 /* 찾아오시는 길 */
 .map-wrap{ height: 490px; width: 1180px; border-radius: 8px; background: #eee }

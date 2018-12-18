@@ -1,4 +1,4 @@
-<?
+<!-- 
 
 
 
@@ -15,83 +15,47 @@ $step = 1;
 if($is1) $step = 2;
 if($is2) $step = 3;
 
-?>
-
-
-
+-->
 @@include('../inc/head.html')
-
-	
-			
-				
-					
-					
-					
-				
-
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>나의 삼킴 장애 정도는</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title6.png" alt="나의 삼킴 장애 정도는" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
-
-
-
-  <p class="hd_end">나의<span class="cblue">삼킴 장애</span>정도는?</p>
-
-	<?if($step == 1){?>
-  <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r6.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue">1단계</p>
-			  <p class="fs13">연하장애 증상이 없습니다.</p>   
-    </div>
-  </div>
-	<?}?>
-
-<!-- 2단계 -->
-	<?if($step == 2){?>
-  <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r6.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue">2단계</p>
-			  <p class="fs13">경미한 연하장애 증상이 있으니 주의하여 식사하세요. 증상이 지속되거나 심해지는 경우 인하대병원 뇌혈관질환재활센터 삼킴 장애 클리닉에서 정밀 검사와 상담을 받으세요.</p>   
-    </div>
-  </div>
-	<?}?>
-
-<!-- 3단계 -->
-	<?if($step == 3){?>
-  <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r6.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue">3단계</p>
-			  <p class="fs13">연하장애 증상이 심각한 단계입니다. 인하대병원 심뇌재활센터 삼킴 장애 클리닉에서 정밀 검사와 상담을 받으세요. </p>   
-    </div>
-  </div>
-	<?}?>
-
-
-   <p class="fs04" id="font03">본 평가는 ‘Prevalence of dysphagia among community-dwelling elderly individuals as estimated using a questionnaire for dysphagia screening’을 바탕으로 작성된 ‘삼킴 장애 자가 평가’입니다.</p> 
-    
-
-     
-   <p class="btnbox">  
-         <a href="info06.php" class="btn2 btnblue btnmo">다시하기</a>
-     <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=93&bbs_cd=22" class="btn2 btnblue2 btnmo">더 알아보기</a>
-   </p>
-
-
-
-
-
-					</div>
-				</div><!-- /content -->
-			
-		
-
-		
-<?php
-
-?>
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+	<div class="swap">
+		<p class="hd_end">나의<span class="cblue">삼킴 장애</span>정도는?</p>
+		<!-- 1단계 -->
+		<div class="bx_wrap">  
+			<div>    
+				<div class="bx_img"><img src="../img/img_old/r6.png"></div>  
+				<div class="box01">
+					<p class="fs18"><i class="cblue big">1단계</i><br/>연하장애 증상이 없습니다.</p>   
+				</div>
+			</div>
+		</div>
+		<!-- 2단계 
+		<div class="bx_wrap">   
+			<div> 
+				<div class="bx_img"><img src="../img/img_old/r6.png"></div>  
+				<div class="box01">  
+					<p class="fs18"><i class="cblue big">2단계</i><br/>경미한 연하장애 증상이 있으니 주의하여 식사하세요.</p>  
+					<p class="text">증상이 지속되거나 심해지는 경우 인하대병원 뇌혈관질환재활센터 <br/>삼킴 장애 클리닉에서 정밀 검사와 상담을 받으세요.</p>   
+				</div>
+			</div>
+		</div>  -->
+		<!-- 3단계  
+		<div class="bx_wrap">  
+			<div>
+				<div class="bx_img"><img src="../img/img_old/r6.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">3단계</i><br/>연하장애 증상이 심각한 단계입니다. </p>   
+					<p class="text">인하대병원 심뇌재활센터 삼킴 장애 클리닉에서 정밀 검사와 상담을 받으세요. </p>   
+				</div>
+			</div>
+		</div>-->
+		<p class="fs04" id="font03">본 평가는 ‘Prevalence of dysphagia among community-dwelling elderly individuals as<br/> estimated using a questionnaire for dysphagia screening’을 바탕으로 작성된 ‘삼킴 장애 자가 평가’입니다.</p> 
+		<p class="btn-wrap">  
+			<a href="info06.html" class="btn color03">다시하기</a>
+			<a href="https://inha.com/iccvc/edu/edu_data_view.html?idx=93&bbs_cd=22" class="btn color01">더 알아보기</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

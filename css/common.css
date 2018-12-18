@@ -196,7 +196,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 /* radio */
 .radio{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;}
 .radio input[type=radio]{position:absolute;left:3px;top:3px;}
-.radio label{display:inline-block;position:relative;padding-left:35px;min-width:30px;min-height:30px;line-height:30px;color:#777;}
+.radio label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
 .radio label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:#fff;cursor:pointer;border:1px solid #ddd;box-sizing:border-box;border-radius:25px;z-index:10;}
 .radio input[type=radio]:checked +label:before{border:6px solid #199da3;}
 .radio input[type=radio]:disabled +label:before{background: #eee;}

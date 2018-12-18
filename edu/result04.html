@@ -1,7 +1,4 @@
-<?
-
-
-
+<!--  
 for($i=0;$i<15;$i++){
 	$data["cc".$i] = (int)$_POST["cc".$i];
 }
@@ -27,91 +24,29 @@ if( $point < 4 ) { $step = 1; $str = "집안일정도의 활동이 가능합니�
 if( $point >= 4 && $point < 24 ) { $step = 2; $str = "줄넘기, 계단오르기, 산책 정도의 활동이 가능합니다."; }
 if( $point >= 24 && $point < 46 ) { $step = 3; $str = "등산, 달리기 정도의 활동이 가능합니다."; }
 if( $point > 46 ) { $step = 4; $str = "축구 정도의 활동이 가능합니다."; }
-?>
-
-
-
+-->
 @@include('../inc/head.html')
-
-	
-			
-				
-					
-					
-					
-				
-
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>내심장은 얼마나  일을 잘 할 수있나</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title4.png" alt="내심장은 얼마나  일을 잘 할 수있나" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
-
-
-
-
-<p class="hd_end">내<span class="cblue">심장은</span>얼마나<br>
-  <span class="cblue2">일을 잘 할 수</span> 있을까? </p>
-
-   <!-- 1단계-->
-   <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r4.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue"><?=$step?>단계</p>
-			  <p class="fs14"><?=$str?></p>   
-   </div>
-   <!-- 1단계-->
-  
-   <!-- 2단계
-   <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r4.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue">2단계 </p>
-			  <p class="fs14">줄넘기, 계단 오르기, 산책 정도의 활동이 가능합니다.</p>   
-   </div>
--->
-
-      <!-- 3단계
-   <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r4.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue">3단계 </p>
-			  <p class="fs14">등산, 달리기 정도의 활동이 가능합니다.</p>   
-   </div>
--->
-
-      <!-- 4단계
-   <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r4.png"></div>  
-		<div class="box01">    
-			  <p class="fs18 cblue"> 4단계 </p>
-			  <p class="fs14">축구 정도의 활동이 가능합니다.</p>   
-   </div>
-   -->
-
-
-  </div>
-
-
-   <p class="fs04" id="font03">본 평가는 현재 대중적으로 사용되는 KASI(korean activity scale index) 측정도구를 바탕으로 작성된 ‘평소 활동 가능 정도 체크를 통한 심장 기능 간이 척도’입니다.</p> 
-    
-     
-   <p class="btnbox">  
-         <a href="info04.php" class="btn2 btnblue btnmo">다시하기</a>
-     <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=216&bbs_cd=22" class="btn2 btnblue2 btnmo">더 알아보기</a>
-   </p>
-
-
-
-
-
-					</div>
-				</div><!-- /content -->
-			
-		
-
-		
-<?php
-
-?>
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+	<div class="swap">
+		<p class="hd_end">
+			내<span class="cblue">심장은</span>얼마나<br>
+			<span class="cblue2">일을 잘 할 수</span> 있을까? 
+		</p>
+		<div class="bx_wrap">  
+			<div>
+				<div class="bx_img"><img src="../img/img_old/r4.png"></div>  
+				<div class="box01">    
+					<p class="fs18 "><i class="cblue big"><?=$step?>단계</i><br/><?=$str?></p>   
+				</div>
+			</div>
+		</div>
+		<p class="fs04" id="font03">본 평가는 현재 대중적으로 사용되는 KASI(korean activity scale index) 측정도구를 바탕으로 작성된 <br/>‘평소 활동 가능 정도 체크를 통한 심장 기능 간이 척도’입니다.</p> 
+		<p class="btn-wrap">  
+			<a href="info04.html" class="btn color03">다시하기</a>
+			<a href="https://inha.com/iccvc/edu/edu_data_view.html?idx=216&bbs_cd=22" class="btn color01">더 알아보기</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

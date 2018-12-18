@@ -10,7 +10,7 @@
 .hd_st .fs22:nth-child(n+2){margin-top: 10px}
 .hd_st .fs17{color: #333;font-style: normal;font-size: 20px; position: relative;top: -15px;}
 .bx_inner{margin-top: 30px;}
-.bx_inner .fs13{margin-top: 7px; color: #777;font-family: 'NotoKrL',sans-serif; font-weight: normal; font-size: 18px;}
+.bx_inner .fs13{margin-top: 7px; color: #777;font-family: 'NotoKrL',sans-serif; font-weight: normal; font-size: 18px; line-height: 24px}
 .a3{}
 .a3 img{display: block;margin:60px auto }
 .btn-wrap .btn1{display:inline-block; width:400px ;height:60px; border-radius: 30px; text-align: center; color: #fff;font-family: 'NotoKrR',sans-serif; font-size: 18px; padding-top: 20px; 
@@ -20,8 +20,9 @@ background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%)
 background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
 
-.btn-wrap a.btn, .btn-wrap a.btn2{ height:60px;min-width:180px;padding:20px 40px;font-size:18px; margin: 50px 0;}
-.btn-wrap a{margin-left: 8px; cursor: pointer;}
+.btn-wrap{ margin: 50px 0;}
+.btn-wrap a.btn, .btn-wrap a.btn2{ height:60px;min-width:180px;padding:20px 40px;font-size:18px;}
+.btn-wrap a{margin-left: 8px; cursor: pointer; }
 .btn-wrap a:first-child {margin-left: 0px}
 
 .hd_end{color: #000;font-family: 'NotoKrR',sans-serif; font-weight: normal; font-size: 40px; }
@@ -60,6 +61,7 @@ table.table th{border-top: 2px solid #bbbbbb}
  .box-tit{margin:60px auto 30px; color: #000;font-family: 'NotoKrM',sans-serif; font-weight: normal;font-size: 24px; }
 
 /* 자가진단 결과화면 */
+.hd_end{ margin-top:50px}
 .box01{margin-top:55px; }
 .box01 p{color: #000; font-size: 34px; line-height: 45px;}
 .box01 i{color: #199da3;font-style: normal;font-family: 'NotoKrM',sans-serif; font-weight: normal;}

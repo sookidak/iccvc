@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+
+/* 자가진단 인트로 */
+.cblue2{color: #0770bb !important;}
+.content{display: table; width: 100%; height: 100%; min-height: 860px}
+.content .swap{display: table-cell;vertical-align: middle;width: 100%; height: 100%; text-align: center;}
+.hd_st{color: #000;font-family: 'NotoKrM',sans-serif; font-weight: normal; font-size: 60px; }
+.hd_st .cblue, .hd_end .cblue, .fs23 .cblue{color: #0770bb ;font-style: normal;}
+.hd_st .fs22:nth-child(n+2){margin-top: 10px}
+.hd_st .fs17{color: #333;font-style: normal;font-size: 20px; position: relative;top: -15px;}
+.bx_inner{margin-top: 30px;}
+.bx_inner .fs13{margin-top: 7px; color: #777;font-family: 'NotoKrL',sans-serif; font-weight: normal; font-size: 18px; line-height: 24px}
+.a3{}
+.a3 img{display: block;margin:60px auto }
+.btn-wrap .btn1{display:inline-block; width:400px ;height:60px; border-radius: 30px; text-align: center; color: #fff;font-family: 'NotoKrR',sans-serif; font-size: 18px; padding-top: 20px; 
+;background: #199da3; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+
+.btn-wrap{ margin: 50px 0;}
+.btn-wrap a.btn, .btn-wrap a.btn2{ height:60px;min-width:180px;padding:20px 40px;font-size:18px;}
+.btn-wrap a{margin-left: 8px; cursor: pointer; }
+.btn-wrap a:first-child {margin-left: 0px}
+
+.hd_end{color: #000;font-family: 'NotoKrR',sans-serif; font-weight: normal; font-size: 40px; }
+.bx_wrap{border: 1px solid #dddddd; border-radius: 12px; width: 820px; margin:60px auto 20px; height: 560px }
+.bx_wrap > div{display: table-cell; vertical-align: middle; width: 820px; height: 560px}
+.fs04{color: #777; font-size: 14px; line-height: 20px}
+
+
+/* 자가진단 체크 화면 */
+.fs23 {color: #000;font-family: 'NotoKrR',sans-serif; font-weight: normal; font-size: 40px; margin-top:50px}
+.da_txt2 .fs17{color: #333;font-style: normal;font-size: 16px;font-family: 'NotoKrR',sans-serif; margin-top: 20px;}
+.f_wrap{display: table; width: 940px; margin:10px auto 0px; border-top: 2px solid #bbbbbb  }
+.box_wrap{display: table-row;}
+.wa, .wc, .wb, .wd, .wd2{display: table-cell;text-align: left; border-bottom: 1px solid #eeeeee; vertical-align: middle; font-size: 16px}
+.wa, .wc{width: 300px;color: #000;font-family: 'NotoKrR',sans-serif; font-weight: normal; font-size: 16px; padding: 23px 0 23px 17px; }
+.wb, .wd, .wd2{padding:8px 0 }
+.we .flo{display: inline-block;}
+.tx01 { color: #0770bb; font-size: 14px; margin-top: 3px}
+.hc li{display: block; margin-top: 10px}
+.hc li:first-child{margin-top: 0px}
+.star{position: relative;top: 3px; color:#0770bb;  }
+.text-style4{text-align: left;  width: 940px; margin:60px auto 10px;}
+input[type=text]{width: 335px;}
+
+table.table{ width: 940px; margin:10px auto 0px; }
+table.table .txl{text-align: left;}
+table.table .radio{margin-left: 23px;}
+table.table td, table.table th{border-left: 0; border-right: 0;}
+table.table th{border-top: 2px solid #bbbbbb}
+
+
+ .hd1, .clist {border-bottom: 1px solid #eeeeee; height: 60px; width: 100%; vertical-align: middle; display:block; text-align: left; padding-left: 30px;}
+ .hd1{background: #f6f6f6 ;padding-top: 22px; color: #000;font-family: 'NotoKrR',sans-serif; font-weight: normal;}
+ .clist{padding-top: 18px }
+ .clist li{display: inline-block; padding-right: 10px}
+ .box-tit{margin:60px auto 30px; color: #000;font-family: 'NotoKrM',sans-serif; font-weight: normal;font-size: 24px; }
+
+/* 자가진단 결과화면 */
+.hd_end{ margin-top:50px}
+.box01{margin-top:55px; }
+.box01 p{color: #000; font-size: 34px; line-height: 45px;}
+.box01 i{color: #199da3;font-style: normal;font-family: 'NotoKrM',sans-serif; font-weight: normal;}
+.box01 .text{color: #777; font-size: 20px; line-height: 25px;margin-top: 5px !important}
+.box01  .big{font-size: 40px; padding-bottom: 10px; display: inline-block;}
+.box01 .cblue{color: #199da3}
+.box01 .cblue2{color: #e3751c !important}
+.box01 .text2{color: #0770bb; font-size: 18px;font-family: 'NotoKrM',sans-serif; font-weight: normal;margin-top: 10px}
+.box01 .text3{color: #777; font-size: 16px;font-family: 'NotoKrL',sans-serif; margin-top: 10px; line-height: 24px}
+.box01 .text4{color: #0770bb; font-size: 16px;font-family: 'NotoKrL',sans-serif; font-weight: normal;margin-top: 10px }

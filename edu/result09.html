@@ -1,7 +1,4 @@
-<?
-
-
-
+<!-- 
 $point = 0;
 for($i=0;$i<15;$i++){
 	$point += (int)$_POST["cc".$i];
@@ -11,97 +8,62 @@ if( $point < 8 ) $step = 1;
 if( $point >= 8 && $point < 16 ) $step = 2;
 if( $point >= 16 && $point < 20) $step = 3;
 if( $point >= 20) $step = 4;
-?>
-
-
-
+-->
 @@include('../inc/head.html')
-
-	
-			
-				
-					
-					
-					
-				
-
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>나는 술에 얼마나의존할까</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title9.png" alt="나는 술에 얼마나의존할까" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
-
-
-
-	<?if($step == 1){?>
-  <p class="hd_end">나는 <i class="cblue">술</i>에 얼마나 <i class="cblue">의존</i>할까?</p>
-    <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r9.png"></div>  
-		<div class="box01">    
-				  <p class="fs18 cblue">1단계</p>
-				  <p class="fs15">당신은 알코올 의존도가 낮습니다. </p>
-				  <p class="fs13 mt10">일반 음주자로서 현재의 음주습관에 문제는 없지만 가급적 음주를 멀리 하시는 것이 더욱 좋습니다.  </p>
-				  <p class="fs13 ccyan mt20">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>      
-		</div>
-    </div>
-	<?}?>
-
-<!-- 2단계-->
-		<?if($step == 2){?>
-    <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r9_2.png"></div>  
-		<div class="box01">    
-				  <p class="fs18 cblue">2단계</p>
-				  <p class="fs15">주의하세요.</p>
-				  <p class="fs13  mt10">위험 음주자로서 주의가 필요합니다. 알코올 전문가와의 상담이나 도움받기가 권장됩니다.  </p>
-				  <p class="fs13 ccyan mt20">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>       
-		</div>
-    </div>
-	<?}?>
-
-		<?if($step == 3){?>
-    <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r9_3.png"></div>  
-		<div class="box01">    
-				  <p class="fs18 cblue">3단계</p>
-				  <p class="fs15">당신은 알코올 위험도가 높습니다.</p>
-				  <p class="fs13  mt10">문제음주자로서 알코올 전문가의 치료가 필요한 수준입니다.  </p>
-				  <p class="fs13 ccyan mt20">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>      
-		</div>
-    </div>
-	<?}?>
-
-	<?if($step == 4){?>
-    <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r9_4.png"></div>  
-		<div class="box01">    
-				  <p class="fs18 cblue">4단계</p>
-				  <p class="fs13  mt10">당신은 알코올 의존하고 있습니다.  </p>	  				  
-				  <p class="fs15">알코올 의존(중독)자로서 전문 치료기관에서 입원치료가 필요할 수 있습니다. </p>
-				  <p class="fs13 ccyan mt20">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>      
-		</div>
-    </div>
-	<?}?>
-
-
-
-   <p class="fs04" id="font03">본 평가는 AUDIT-K(Alcohol Use Disorder Identification Test)를 바탕으로 작성된 ‘알코올 의존도 자가 평가’입니다.</p> 
-   <p class="btnbox">  
-         <a href="info09.php" class="btn2 btnblue btnmo">다시하기</a>
-     <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=97&bbs_cd=23" class="btn2 btnblue2 btnmo">더 알아보기</a>
-   </p>
-
-
-
-
-
-					</div>
-				</div><!-- /content -->
-			
-		
-
-		
-<?php
-
-?>
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+	<div class="swap">
+		<!-- 1단계	-->
+		<p class="hd_end">나는 <i class="cblue">술</i>에 얼마나 <i class="cblue">의존</i>할까?</p>
+		<div class="bx_wrap">  
+			<div>	
+				<div class="bx_img"><img alt="" src="../img/img_old/r9.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">1단계</i><br/>당신은 알코올 의존도가 낮습니다. </p>
+					<p class="text">일반 음주자로서 현재의 음주습관에 문제는 없지만 <br/>가급적 음주를 멀리 하시는 것이 더욱 좋습니다.  </p>
+					<P class="text2">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>   
+				</div>   
+			</div>
+		</div>	
+		<!-- 2단계		
+		<div class="bx_wrap"> 
+			<div>	   
+				<div class="bx_img"><img alt="" src="../img/img_old/r9_2.png"></div> 
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">2단계</i><br/>주의하세요.</p>
+					<p class="text">위험 음주자로서 주의가 필요합니다. <br/>알코올 전문가와의 상담이나 도움받기가 권장됩니다.  </p>
+					<P class="text2">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>       
+				</div>  
+			</div>
+		</div>	-->	
+		<!-- 3단계
+		<div class="bx_wrap"> 
+			<div>	    
+				<div class="bx_img"><img alt="" src="../img/img_old/r9_3.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">3단계</i><br/>당신은 알코올 위험도가 높습니다.</p>
+					<p class="text">문제음주자로서 알코올 전문가의 치료가 필요한 수준입니다. </p>
+					<P class="text2">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>      
+				</div>  
+			</div>
+		</div>	-->	
+		<!-- 4단계 
+		<div class="bx_wrap"> 
+			<div>	 
+				<div class="bx_img"><img alt="" src="../img/img_old/r9_4.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">4단계</i><br/>당신은 알코올 의존하고 있습니다. </p>	  				  
+					<p class="text">알코올 의존(중독)자로서 전문 치료기관에서 입원치료가 필요할 수 있습니다.</p>
+					<P class="text2">과도한 음주는 부정맥과 심근경색을 유발하는 원인이기도 하며, 뇌졸중의 위험을 증가시킵니다.</p>      
+				</div>  
+			</div>
+		</div>-->
+		<p class="fs04" id="font03">본 평가는 AUDIT-K(Alcohol Use Disorder Identification Test)를 바탕으로 작성된 ‘알코올 의존도 자가 평가’입니다.</p> 
+		<p class="btn-wrap">  
+			<a href="info09.html" class="btn color03">다시하기</a>
+			<a href="https://inha.com/iccvc/edu/edu_data_view.html?idx=97&bbs_cd=23" class="btn color01">더 알아보기</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,7 +1,4 @@
-<?
-
-
-
+<!-- 
 $p_sex = $_POST["p_sex"]; 
 $p_age = $_POST["p_age"]; 
 $p_pressure = $_POST["p_pressure"]; 
@@ -163,60 +160,27 @@ switch($p_sex){
 		if($points == 27) $percent = 84;
 
 		break;
-}
-
-
-?>
-
-
-
+	} 
+-->
 @@include('../inc/head.html')
-
-	
-			
-				
-					
-					
-					
-				
-
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>뇌졸중 위험도 자가 평가</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title2.png" alt="나의 심장나이는?" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
-
-
-
-
-
- <p class="hd_end">내가 <span class="cblue2">뇌졸중</span>에 걸릴위험도는?</p>    
-  <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r1.png"></div>  
-		<div class="box01">    
-		  <p class="fs15">당신이 10년 내 <i class="cblue">뇌졸중</i>에 발생할 확률은</p>
-		  <p class="fs19"><i class="cblue"><?=$percent?>%</i> 입니다.</p>            
-    </div>
-  </div>
-
-   <p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘뇌졸중의 위험도 자가평가’입니다.</p> 
-
-   <p class="btnbox">  
-     <a href="info01.php" class="btn2 btnblue btnmo">다시하기</a>
-     <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=95&bbs_cd=21" class="btn2 btnblue2 btnmo">더 알아보기</a>
-   </p>
-
-
-
-
-
-					</div>
-				</div><!-- /content -->
-			
-		
-
-		
-<?php
-
-?>
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+	<div class="swap">
+		<p class="hd_end">내가 <span class="cblue2">뇌졸중</span>에 걸릴위험도는?</p>    
+		<div class="bx_wrap">  
+			<div>	
+				<div class="bx_img"><img alt="" src="../img/img_old/r1.png"></div>  
+				<div class="box01">    
+					<p class="fs15">당신이 10년 내 <i class="cblue">뇌졸중</i>에 발생할 확률은 <br/><i class="cblue"><?=$percent?>%</i> 입니다.</p>            
+				</div>
+			</div>
+		</div>
+		<p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘뇌졸중의 위험도 자가평가’입니다.</p> 
+		<p class="btn-wrap">  
+			<a href="info01.html" class="btn color03">다시하기</a>
+			<a href="https://inha.com/iccvc/edu/edu_data_view.html?idx=95&bbs_cd=21" class="btn color01">더 알아보기</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

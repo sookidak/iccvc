@@ -202,7 +202,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 /* radio */
 .radio{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;}
 .radio input[type=radio]{position:absolute;left:3px;top:3px;}
-.radio label{display:inline-block;position:relative;padding-left:35px;min-width:30px;min-height:30px;line-height:30px;color:#777;}
+.radio label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
 .radio label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:#fff;cursor:pointer;border:1px solid #ddd;box-sizing:border-box;border-radius:25px;z-index:10;}
 .radio input[type=radio]:checked +label:before{border:6px solid #199da3;}
 .radio input[type=radio]:disabled +label:before{background: #eee;}
@@ -727,3 +727,26 @@ ul.bxslider {  list-style: none;}
 /* IMAGE CAPTIONS */
 .bx-wrapper .bx-caption {  position: absolute;  bottom: 0;  left: 0;  background: #666;  background: rgba(80, 80, 80, 0.75);  width: 100%;}
 .bx-wrapper .bx-caption span {  color: #fff;  font-family: Arial;  display: block;  font-size: .85em;  padding: 10px;}
+
+
+
+/* 자가진단 테스트 리스트 */
+.my-test:after{content: ""; display: block;clear: both; margin-bottom: 27px;}
+.my-test button{width: 236px; height: 235px;display: block;float: left; border:1px solid #dddddd; border-left: 0; font-family: 'NotoKrR'; font-size: 18px; color: #333; line-height: 22px;position: relative; padding-top: 118px; vertical-align: top;}
+.my-test button:nth-child(n+6){ border-top: 0;}
+.my-test button:nth-child(5n+1){ border-left:1px solid #dddddd;}
+.my-test button:hover, .my-test button:focus{ border:2px solid #0770bb;}
+.my-test button:after{content: ""; display: block; width: 100px;height: 100px;  background: url('../img/mytest_img.png') 0px 0px no-repeat; position: absolute; left:67px; top: 31px; } 
+.my-test button.test01:after{background-position: 0px 0px }
+.my-test button.test02:after{background-position: -100px 0px }
+.my-test button.test03:after{background-position: -200px 0px }
+.my-test button.test04:after{background-position: -300px 0px }
+.my-test button.test05:after{background-position: -400px 0px }
+.my-test button.test06:after{background-position: 0px -100px }
+.my-test button.test07:after{background-position: -100px -100px }
+.my-test button.test08:after{background-position: -200px -100px }
+.my-test button.test09:after{background-position: -300px -100px }
+.my-test button.test10:after{background-position: -400px -100px }
+.my-test button:hover:after, .my-test button:focus:after{ top:30px;left:65px;}
+.my-test button:nth-child(n+6):hover:after, .my-test button:nth-child(n+6):focus:after{ top:29px;}
+.my-test button:nth-child(5n+1):hover:after, .my-test button:nth-child(5n+1):focus:after{ left:66px; }

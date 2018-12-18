@@ -1,7 +1,4 @@
-<?
-
-
-
+<!--  
 $p_sex = $_POST["p_sex"]; 
 $p_age = $_POST["p_age"]; 
 $p_ky = $_POST["p_ky"]; 
@@ -147,60 +144,28 @@ if( $bmi >= 18.5 && $bmi < 23 ) $str_bmi = "정상" ;
 if( $bmi >= 23 && $bmi < 25 ) $str_bmi = "위험체중" ;
 if( $bmi >= 25 && $bmi < 30 ) $str_bmi = "1단계비만" ;
 if( $bmi >= 30 ) $str_bmi = "2단계비만" ; 
-
-
-?>
-
-
-
+-->
 @@include('../inc/head.html')
-
-	
-			
-				
-					
-					
-					
-				
-
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>나의 심장나이는?(BMI지수)</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title2.png" alt="나의 심장나이는?" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
-
-
-
-
- <p class="hd_end">나의<span class="cblue2">심장 나이</span>는?</p>    
-  <div class="bx_wrap">  
-		<div class="bx_img"><img src="./img/r2.png"></div>  
-		<div class="box01">    
-		  <p class="fs15">당신의 현재 심장나이는</p>
-		  <p class="fs19"><i class="cblue"><?=$str_age?></i> 입니다.</p>       
-		  <p class="fs13 mt20">당신의 체질량지수(BMI)는</p>
-		  <p class="fs17"><i class="cblue"><?=$bmi?> kg/m²</i>로 <i class="cblue"><?=$str_bmi?></i> 입니다.</p>
-    </div>
-  </div>
-
-
-   <p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘BMI 지수를 통한 심장 나이 자가 평가’입니다.</p> 
-    
-   <p class="btnbox">  
-      <a href="info02.php" class="btn2 btnblue btnmo">다시하기</a>
-      <a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=94&bbs_cd=20" class="btn2 btnblue2 btnmo">더 알아보기</a>
-   </p>
-
-
-
-
-					</div>
-				</div><!-- /content -->
-			
-		
-
-		
-<?php
-
-?>
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+	<div class="swap">
+		<p class="hd_end">나의<span class="cblue2">심장 나이</span>는?</p>    
+		<div class="bx_wrap">  
+			<div>
+				<div class="bx_img"><img alt="" src="../img/img_old/r2.png"></div>  
+				<div class="box01">    
+					<p class="fs15">당신의 현재 심장나이는 <i class="cblue"><?=$str_age?></i> 입니다.</p>       
+					<p class="fs13 marT20">당신의 체질량지수(BMI)는 <i class="cblue"><?=$bmi?> kg/m²</i>로 <br/>
+						<i class="cblue2"><?=$str_bmi?></i> 입니다.</p>
+				</div>
+			</div>
+		</div>
+		<p class="fs04" id="font03">본 평가는 프래밍엄 코호트 연구(Framingham cohort study)를 바탕으로 작성된 ‘BMI 지수를 통한 심장 나이 자가 평가’입니다.</p> 
+		<p class="btn-wrap">  
+			<a href="info02.html" class="btn color03">다시하기</a>
+			<a href="https://inha.com/iccvc/edu/edu_data_view.html?idx=94&bbs_cd=20" class="btn color01">더 알아보기</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

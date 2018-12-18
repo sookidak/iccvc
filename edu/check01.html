@@ -1,216 +1,142 @@
-<?
-
-
-?>
-
-
-
 @@include('../inc/head.html')
-
-	
-			
-				
-					
-					
-					
-				
-
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>뇌졸중 위험도 자가 평가</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title1.png" alt="뇌졸중 위험도 자가 평가" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
-
-
-
-  <div class="da_txt2" >
-    <p><img src="img/r1.png"><p>
-    <p class="fs23">내가 <i class="cblue">뇌졸중에 걸릴 위험도</i>는?<p>
-    <p class="fs17">- 뇌졸중 위험도 자가평가 -<p>
-  </div> 
-	<form name="ftst" method=post>
-  <div class="f_wrap">
-
-    <div class="box_wrap bc">
-    <p class="flo wa" >성별 </p>
-    <div class="flo wb">
-      <p class="flo sew"><input type="radio" id="c1" name="p_sex" id="p_sex" value="m"><label for="c1"></label>남성</p>
-      <p class="flo"><input type="radio" id="c2" name="p_sex" id="p_sex" value="f" ><label for="c2"></label>여성</p>      
-    </div>
-  </div>
-
-      
-  <div class="box_wrap">
-    <p class="flo wa">나이 </p>
-    <div class="flo wb">
-      <div class="we">
-      <p class="flo"><input type="text" name="p_age" id="p_age"></p>
-	  <p class="flo txa">세</p>
-      </div>        
-	        <p class="tx01">(55세 미만 분들은 55세를, 84세 이상 분들은 84세를 나이에 입력하시면 가장 근사값을 구하실 수 있습니다.)</p>  
- 
-    </div>
-  </div>
-      
-   <div class="box_wrap bc">
-    <p class="flo wa">수축기 혈압 </p>
-    <div class="flo wb">
-      <div class="we">
-      <p class="flo"><input type="text" name="p_pressure" id="p_pressure"></p>
-      </div>
-      
-      <p class="tx01">(예) 120mmHg/70mmHg이면 120을 입력하세요.)</p>   
-    </div>
-  </div>
-	<!--div class="box_wrap bc">
-    <p class="flo wa">수축기 혈압 </p>
-    <div class="flo wb">
-      <div class="we">
-      <p class="selbox flo">
-        
-				<label for="go">선택하세요</label>
-				<select class="go" name="p_pressure" id="p_pressure" >
-						<option value=0>선택하세요</option>
-						<option value=95>95~105</option>
-						<option value=106>106~115</option>
-						<option value=116>116~126</option>
-						<option value=127>127~137</option>
-						<option value=138>138~148</option>
-						<option value=149>149~159</option>
-						<option value=160>160~170</option>
-						<option value=171>171~181</option>
-						<option value=182>182~191</option>
-						<option value=192>192~202</option>
-						<option value=203>203~213</option>
-				</select>  
-      </p>
-      </div> 
-	        <p class="tx01">(예) 120mmHg/70mmHg이면 120을 입력하세요.)</p>   
-    </div>
-  </div-->
-  
-   <div class="box_wrap">
-    <p class="wc">고혈압 치료를 받고 계십니까?</p>
-    <div class="wd">
-      <div class="we">
-      <p class="flo sew"><input type="radio" id="r1" name="cc2" value="1"><label for="r1"></label>예</p>
-      <p class="flo"><input type="radio" id="r2" name="cc2" value="0"><label for="r2"></label>아니오</p>      
-      </div>
-      </div>
-  </div>
-  
-      
-   <div class="box_wrap bc">
-    <p class="wc">흡연을 하십니까?</p>
-    <div class="wd">
-      <div class="we">
-      <p class="flo sew"><input type="radio" id="r3" name="cc3" value="1"><label for="r3"></label>예</p>
-      <p class="flo"><input type="radio" id="r4" name="cc3" value="0"><label for="r4"></label>아니오</p>      
-      </div>
-      </div>
-  </div>
-      
-   <div class="box_wrap">
-    <p class="wc">당뇨가 있습니까?</p>
-    <div class="wd">
-      <div class="we">
-      <p class="flo sew"><input type="radio" id="r5" name="cc4" value="1"><label for="r5"></label>예</p>
-      <p class="flo"><input type="radio" id="r6" name="cc4" value="0"><label for="r6"></label>아니오</p>      
-      </div>
-      </div>
-  </div>  
-      
-      
-   <div class="box_wrap bc">
-    <p class="wc">기타 위험인자 있으면 체크해주세요 </p>
-    <div class="wd2">
-      <div class="we">
-      <ul class="hc">
-        <li><input type="checkbox" id="r10" name="cc7" value="1"><label for="r10"></label>관상동맥질환(협심증, 심근경색)</li>
-        <li><input type="checkbox" id="r11" name="cc9" value="1"><label for="r11"></label>심방세동(심장이 불규칙하게 뛰는 부정맥의 일종)</li>
-        <li><input type="checkbox" id="r12" name="cc10" value="1"><label for="r12"></label>좌심실비대(심전도를 통해 진단 받은경우)</li>
-        </ul>      
-      </div>
-      </div>
-  </div>
-
-  </form>
-</div>
-
-   <p class="btnbox">  
-         <a href="javascript:fsubmit()" class="btn btnblue btnmo">결과보기</a>
-   </p>
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+	<div class="swap">
+		<div class="da_txt2" >
+			<p class="fs23">내가 <i class="cblue">뇌졸중</i>에 걸릴 위험도는?</p>
+			<p class="fs17">- 뇌졸중 위험도 자가평가 -</p>
+		</div> 
+		<p class="text-style4"> <span class="star">*</span> 필수 항목은 꼭 체크 또는 입력해 주세요.</p>
+		<form name="ftst" method=post>
+			<div class="f_wrap">
+				<div class="box_wrap bc">
+					<p class="flo wa" ><label for="c1">성별</label> <span class="star">*</span> </p>
+					<div class="flo wb">
+						<p class="radio"><input type="radio" id="c1" name="p_sex" value="m"><label for="c1">남성</label></p>
+						<p class="radio"><input type="radio" id="c2" name="p_sex" value="f" ><label for="c2">여성</label></p>      
+					</div>
+				</div>
+				<div class="box_wrap">
+					<p class="flo wa"><label for="p_age">나이 </label> <span class="star">*</span> </p>
+					<div class="flo wb">
+						<div class="we">
+							<p class="flo"><input type="text" name="p_age" id="p_age"></p>
+							<p class="flo txa">세</p>
+						</div>        
+						<p class="tx01">(55세 미만 분들은 55세를, 84세 이상 분들은 84세를 나이에 입력하시면 가장 근사값을 구하실 수 있습니다.)</p>  
 
 					</div>
-				</div><!-- /content -->
-			
-		
+				</div>
+				<div class="box_wrap bc">
+					<p class="flo wa"><label for="p_pressure">수축기 혈압 </label> <span class="star">*</span> </p>
+					<div class="flo wb">
+						<div class="we">
+							<p class="flo"><input type="text" name="p_pressure" id="p_pressure"></p>
+						</div>
 
-		
-<?php
+						<p class="tx01">(예) 120mmHg/70mmHg이면 120을 입력하세요.)</p>   
+					</div>
+				</div>
+				<div class="box_wrap">
+					<p class="wc"><label for="r1">고혈압 치료를 받고 계십니까? </label><span class="star">*</span></p>
+					<div class="wd">
+						<div class="we">
+							<p class="radio"><input type="radio" id="r1" name="cc2" value="1"><label for="r1">예</label></p>
+							<p class="radio"><input type="radio" id="r2" name="cc2" value="0"><label for="r2">아니오</label></p>      
+						</div>
+					</div>
+				</div>
+				<div class="box_wrap bc">
+					<p class="wc"><label for="r3">흡연을 하십니까? </label><span class="star">*</span></p>
+					<div class="wd">
+						<div class="we">
+							<p class="radio"><input type="radio" id="r3" name="cc3" value="1"><label for="r3">예</label></p>
+							<p class="radio"><input type="radio" id="r4" name="cc3" value="0"><label for="r4">아니오</label></p>      
+						</div>
+					</div>
+				</div>
+				<div class="box_wrap">
+					<p class="wc"><label for="r5">당뇨가 있습니까?</label> <span class="star">*</span></p>
+					<div class="wd">
+						<div class="we">
+							<p class="radio"><input type="radio" id="r5" name="cc4" value="1"><label for="r5">예</label></p>
+							<p class="radio"><input type="radio" id="r6" name="cc4" value="0"><label for="r6">아니오</label></p>      
+						</div>
+					</div>
+				</div>  
+				<div class="box_wrap bc">
+					<p class="wc"><label for="r10">기타 위험인자 있으면 체크해주세요</label> </p>
+					<div class="wd2">
+						<div class="we">
+							<ul class="hc">
+								<li class="checkbox"><input type="checkbox" id="r10" name="cc7" value="1"><label for="r10">관상동맥질환(협심증, 심근경색)</label></li>
+								<li class="checkbox"><input type="checkbox" id="r11" name="cc9" value="1"><label for="r11">심방세동(심장이 불규칙하게 뛰는 부정맥의 일종)</label></li>
+								<li class="checkbox"><input type="checkbox" id="r12" name="cc10" value="1"><label for="r12">좌심실비대(심전도를 통해 진단 받은경우)</label></li>
+							</ul>      
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<p class="btn-wrap">  
+		<a href="javascript:fsubmit()" class="btn btnblue btnmo">결과보기</a>
+	</p>
+</div><!-- /content -->
+</body>
+</html>
 
-?>
 <script type="text/javascript">
-<!--
-function fsubmit(){
+	<!--
+		function fsubmit(){
 
-	var p_sex = $(":input:radio[name=p_sex]:checked").val();
-	if( !p_sex ){
-		alert("성별을 선택 해주세요");
-		document.getElementById("p_sex").focus();
-		return;
-	}
+			var p_sex = $(":input:radio[name=p_sex]:checked").val();
+			if( !p_sex ){
+				alert("성별을 선택 해주세요");
+				document.getElementById("p_sex").focus();
+				return;
+			}
 
-	var p_age = document.getElementById("p_age").value;
-	if( p_age == ""){
-		alert("나이를 입력해주세요");
-		document.getElementById("p_age").focus();
-		return;
-	}
-	if( p_age > 120){
-		alert("나이를 제대로 입력해주세요");
-		document.getElementById("p_age").focus();
-		return;
-	}
-	var p_pressure = document.getElementById("p_pressure").value;
-	if( p_pressure == ""){
-		alert("수축기 혈압을 입력해주세요");
-		document.getElementById("p_pressure").focus();
-		return;
-	}
+			var p_age = document.getElementById("p_age").value;
+			if( p_age == ""){
+				alert("나이를 입력해주세요");
+				document.getElementById("p_age").focus();
+				return;
+			}
+			if( p_age > 120){
+				alert("나이를 제대로 입력해주세요");
+				document.getElementById("p_age").focus();
+				return;
+			}
+			var p_pressure = document.getElementById("p_pressure").value;
+			if( p_pressure == ""){
+				alert("수축기 혈압을 입력해주세요");
+				document.getElementById("p_pressure").focus();
+				return;
+			}
 
-	var cc2 = $(":input:radio[name=cc2]:checked").val();
-	if( !cc2 ){
-		alert("고혈압 치료를 받는지 체크 해주세요");
-		document.getElementById("p_sex").focus();
-		return;
-	}
+			var cc2 = $(":input:radio[name=cc2]:checked").val();
+			if( !cc2 ){
+				alert("고혈압 치료를 받는지 체크 해주세요");
+				document.getElementById("p_sex").focus();
+				return;
+			}
 
-	var cc3 = $(":input:radio[name=cc3]:checked").val();
-	if( !cc3 ){
-		alert("흡연 여부를 체크 해주세요");
-		document.getElementById("p_sex").focus();
-		return;
-	}
+			var cc3 = $(":input:radio[name=cc3]:checked").val();
+			if( !cc3 ){
+				alert("흡연 여부를 체크 해주세요");
+				document.getElementById("p_sex").focus();
+				return;
+			}
 
-	var cc4 = $(":input:radio[name=cc4]:checked").val();
-	if( !cc4 ){
-		alert("당뇨가 있는지 체크 해주세요");
-		document.getElementById("p_sex").focus();
-		return;
-	}
-
-	/*
-	var p_pressure = $("#p_pressure option:selected").val();
-	if( p_pressure < 1){
-		alert("수축기 혈압을 선택 해주세요");
-		document.getElementById("p_pressure").focus();
-		return;
-	}
-	*/
-	document.ftst.action = "result01.php";
-	document.ftst.submit();
-}
+			var cc4 = $(":input:radio[name=cc4]:checked").val();
+			if( !cc4 ){
+				alert("당뇨가 있는지 체크 해주세요");
+				document.getElementById("p_sex").focus();
+				return;
+			}
+			document.ftst.action = "result01.html";
+			document.ftst.submit();
+		}
 //-->
 </script>

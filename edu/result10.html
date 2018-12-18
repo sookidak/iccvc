@@ -1,5 +1,4 @@
-<?
-
+<!-- 
 $point = 0;
 for($i=0;$i<15;$i++){
 $point += (int)$_POST["cc".$i];
@@ -9,83 +8,58 @@ if( $point < 1 ) $step = 1;
 if( $point >= 1 && $point < 4 ) $step = 2;
 if( $point >= 4 && $point < 7) $step = 3;
 if( $point >= 7) $step = 4;
-?>
-
-
-
+-->
 @@include('../inc/head.html')
+<link rel="stylesheet" href="../css/edu_test.css">
 <div class="content">
-	<div class="top_cont1">
-		<div class="location1">홈 &gt; 소개 &gt; <span>나는 얼마나짜게 먹을까</span></div>
-		<h3 class="sub_title1"><img src="./img/self/sub_title10.png" alt="나는 얼마나짜게 먹을까" /></h3>
-	</div><!-- /top_cont1 -->
 	<div class="swap">
 		<!-- 1단계  -->  
-		<?if($step == 1 ){?>
 		<p class="hd_end">나는 얼마나<i class="cblue">짜게 먹을</i>까?</p>
 		<div class="bx_wrap">  
-			<div class="bx_img"><img src="./img/r10.png"></div>  
-			<div class="box01">    
-				<p class="fs18 cblue">1단계</p>
-				<p class="fs15">좋은 습관을 가졌네요.</p>
-				<p class="fs13 ccyan mt20">소금(나트륨) 섭취량이 6g 증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이  89% 증가합니다.</p>      
+			<div>	
+				<div class="bx_img"><img alt="" src="../img/img_old/r10.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">1단계</i><br/>좋은 습관을 가졌네요.</p>
+					<p class="text2 marT30">소금(나트륨) 섭취량이 6g 증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이  89% 증가합니다.</p>      
+				</div>
 			</div>
 		</div>
-		<?}?>
-
-		<?if($step == 2 ){?>
-		<div class="bx_wrap">  
-			<div class="bx_img"><img src="./img/r10_2.png"></div>  
-			<div class="box01">    
-				<p class="fs18 cblue">2단계</p>
-				<p class="fs15">주의해주세요. </p>
-				<p class="fs13 ccyan mt20">소금(나트륨) 섭취량이 6g 증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이  89% 증가합니다.</p>      
+		<!-- 2단계
+		<div class="bx_wrap">    
+			<div>	
+				<div class="bx_img"><img alt="" src="../img/img_old/r10_2.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">2단계</i><br/>주의해주세요. </p>
+					<p class="text2 marT30">소금(나트륨) 섭취량이 6g 증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이  89% 증가합니다.</p>      
+				</div>
 			</div>
-		</div>
-		<?}?>
-
-
-		<?if($step == 3 ){?>
-		<div class="bx_wrap">  
-			<div class="bx_img"><img src="./img/r10_3.png"></div>  
-			<div class="box01">    
-				<p class="fs18 cblue">3단계</p>
-				<p class="fs15">위험해요.</p>
-				<p class="fs13 ccyan mt20">소금(나트륨)섭취량이 6g(2400mg)증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이 89% 증가합니다.</p>      
+		</div> --> 
+		<!-- 3단계 
+		<div class="bx_wrap">   
+			<div>	 
+				<div class="bx_img"><img alt="" src="../img/img_old/r10_3.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">3단계</i><br/>위험해요.</p>
+					<p class="text2 marT30">소금(나트륨)섭취량이 6g(2400mg)증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이 89% 증가합니다.</p>      
+				</div>
 			</div>
-		</div>
-		<?}?>
-
-
-		<?if($step == 4 ){?>
-		<div class="bx_wrap">  
-			<div class="bx_img"><img src="./img/r10_4.png"></div>  
-			<div class="box01">    
-				<p class="fs18 cblue">4단계</p>
-				<p class="fs15">매우 위험해요.</p>
-				<p class="fs13 ccyan mt20">소금(나트륨) 섭취량이 6g 증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이  89% 증가합니다.</p>      
+		</div>--> 
+		<!-- 4단계  
+		<div class="bx_wrap">    
+			<div>	
+				<div class="bx_img"><img alt="" src="../img/img_old/r10_4.png"></div>  
+				<div class="box01">    
+					<p class="fs18"><i class="cblue big">4단계</i><br/>매우 위험해요.</p>
+					<p class="text2 marT30">소금(나트륨) 섭취량이 6g 증가할 때마다 심장병 사망률이 61%, 뇌졸중 사망률이  89% 증가합니다.</p>      
+				</div>
 			</div>
-		</div>
-		<?}?>
-
-
-
-
+		</div>--> 
 		<p class="fs04" id="font03">본 평가는 식품의약안전처에서 발표한 자료를 바탕으로 작성된 ‘나트륨 과잉섭취 도 자가 평가’입니다.</p> 
-
-		<p class="btnbox">  
-			<a href="info10.php" class="btn2 btnblue btnmo">다시하기</a>
-			<a href="https://inha.com/iccvc/edu/edu_data_view.php?idx=209&bbs_cd=23" class="btn2 btnblue2 btnmo">더 알아보기</a>
+		<p class="btn-wrap">  
+			<a href="info10.html" class="btn color03">다시하기</a>
+			<a href="https://inha.com/iccvc/edu/edu_data_view.html?idx=209&bbs_cd=23" class="btn color01">더 알아보기</a>
 		</p>
-
-
-
 	</div>
-</div><!-- /content -->
-
-
-
-
-<?php
-
-?>
+</div>
+</body>
+</html>

@@ -1,167 +1,144 @@
-<?
-
-
-?>
-
-
-
 @@include('../inc/head.html')
+<link rel="stylesheet" href="../css/edu_test.css">
+<div class="content">
+  <div class="swap">
+    <div class="da_txt2" >
+      <p class="fs23">나의 <i class="cblue">낙상 위험도</i>는?</p>
+    </div>
+    <p class="text-style4"> <span class="star">*</span> 모든항목을 체크해 주세요.</p>
+    <form name="ftst" method=post>  
+      <div id="t02">
+        <table class="table">          
+          <caption><span class="offscreen">7개문항에 따른 어렵기 5가지난이도를 선택하는 표입니다.</span></caption>   
+          <colgroup>                   
+            <col style="width:90px"/>     
+            <col style=""/>               
+            <col style="width:130px"/>    
+            <col style="width:130px"/>    
+            <col style="width:130px"/>    
+            <col style="width:130px"/> 
+          </colgroup>   
+          <thead>
+            <tr>
+              <th class="col1"></th>
+              <th class="col2">문항</th> 
+              <th class="col3">전혀 문제없다</th>
+              <th class="col4">약간 어렵다</th>
+              <th class="col5">상당히 어렵다</th>
+              <th class="col6">매우 어렵다</th>
+            </tr>
+          </thead>         
+          <tbody>  
+            <tr>
+              <td class="tc1"><img alt="" src="../img/img_old/s1.png"></td>
+              <td class="txl">1. 옷 입기 혹은 옷 벗기</td>
+              <td class="tc2 tc7"><p class="radio"><input type="radio" id="c1" name="cc0" value=1><label for="c1"></label></p></td>
+              <td class="tc3 tc8"><p class="radio"><input type="radio" id="c2" name="cc0" value=2><label for="c2"></label></p></td>
+              <td class="tc4 tc9"><p class="radio"><input type="radio" id="c3" name="cc0" value=3><label for="c3"></label></p></td>
+              <td class="tc5 tc10"><p class="radio"><input type="radio" id="c4" name="cc0" value=4><label for="c4"></label></p></td>
+            </tr>
+            <tr>
+              <td class="tc6"><img alt="" src="../img/img_old/s2.png"></td>
+              <td class="txl">2. 목욕 혹은 샤워하기</td>
+              <td class="tc2 "><p class="radio"><input type="radio" id="c5" name="cc1" value=1><label for="c5"></label></p></td>
+              <td class="tc3"><p class="radio"><input type="radio" id="c6" name="cc1" value=2><label for="c6"></label></p></td>
+              <td class="tc2"><p class="radio"><input type="radio" id="c7" name="cc1" value=3><label for="c7"></label></p></td>
+              <td class="tc5"><p class="radio"><input type="radio" id="c8" name="cc1" value=4><label for="c8"></label></p></td>
+            </tr>
+            <tr>
+              <td class="tc1"><img alt="" src="../img/img_old/s3.png"></td>
+              <td class="txl">3. 의자에 앉거나 일어나기</td>
+              <td class="tc2 tc7"><p class="radio"><input type="radio" id="c9" name="cc2" value=1><label for="c9"></label></p></td>
+              <td class="tc3 tc8"><p class="radio"><input type="radio" id="c10" name="cc2" value=2><label for="c10"></label></p></td>
+              <td class="tc4 tc9"><p class="radio"><input type="radio" id="c11" name="cc2" value=3><label for="c11"></label></p></td>
+              <td class="tc5 tc10"><p class="radio"><input type="radio" id="c12" name="cc2" value=4><label for="c12"></label></p></td>
+            </tr>
 
-	
-			
-				
-					
-					
-					
-				
+            <tr>
+              <td class="tc6"><img alt="" src="../img/img_old/s4.png"></td>
+              <td class="txl">4. 계단 올라가거나 내려가기</td>
+              <td class="tc2"><p class="radio"><input type="radio" id="c13" name="cc3" value=1><label for="c13"></label></p></td>
+              <td class="tc3"><p class="radio"><input type="radio" id="c14" name="cc3" value=2><label for="c14"></label></p></td>
+              <td class="tc4"><p class="radio"><input type="radio" id="c15" name="cc3" value=3><label for="c15"></label></p></td>
+              <td class="tc5"><p class="radio"><input type="radio" id="c16" name="cc3" value=4><label for="c16"></label></p></td>
+            </tr>
+            <tr>
+              <td class="tc1"><img alt="" src="../img/img_old/s5.png"></td>
+              <td class="txl">5. 물건을 머리 위로 올리거나 바닥에 내려놓기</td>
+              <td class="tc2 tc7"><p class="radio"><input type="radio" id="c17" name="cc4" value=1><label for="c17"></label></p></td>
+              <td class="tc3 tc8"><p class="radio"><input type="radio" id="c18" name="cc4" value=2><label for="c18"></label></p></td>
+              <td class="tc4 tc9"><p class="radio"><input type="radio" id="c19" name="cc4" value=3><label for="c19"></label></p></td>
+              <td class="tc5 tc10"><p class="radio"><input type="radio" id="c20" name="cc4" value=4><label for="c20"></label></p></td>
+            </tr>
 
-				<div class="content">
-					<div class="top_cont1">
-						<div class="location1">홈 &gt; 소개 &gt; <span>나의 낙상 위험도는</span></div>
-						<h3 class="sub_title1"><img src="./img/self/sub_title5.png" alt="나의 낙상 위험도는" /></h3>
-					</div><!-- /top_cont1 -->
-					<div class="swap">
+            <tr>
+              <td class="tc1"><img alt="" src="../img/img_old/s6.png"></td>
+              <td class="txl">6. 비탈길을 오르거나 내려가기</td>
+              <td class="tc2"><p class="radio"><input type="radio" id="c21" name="cc5" value=1><label for="c21"></label></p></td>
+              <td class="tc3"><p class="radio"><input type="radio" id="c22" name="cc5" value=2><label for="c22"></label></p></td>
+              <td class="tc4"><p class="radio"><input type="radio" id="c23" name="cc5" value=3><label for="c23"></label></p></td>
+              <td class="tc5"><p class="radio"><input type="radio" id="c24" name="cc5" value=4><label for="c24"></label></p></td>
+            </tr>
+            <tr>
+              <td class="tc6"><img alt="" src="../img/img_old/s7.png"></td>
+              <td class="txl">7. 외부 행사에 참여하기 위해 외출하기</td>
+              <td class="tc2 tc7"><p class="radio"><input type="radio" id="c25" name="cc6" value=1><label for="c25"></label></p></td>
+              <td class="tc3 tc8"><p class="radio"><input type="radio" id="c26" name="cc6" value=2><label for="c26"></label></p></td>
+              <td class="tc4 tc9"><p class="radio"><input type="radio" id="c27" name="cc6" value=3><label for="c27"></label></p></td>
+              <td class="tc5 tc10"><p class="radio"><input type="radio" id="c28" name="cc6" value=4><label for="c28"></label></p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="btn-wrap">  
+         <a href="javascript:fsubmit()" class="btn btnblue btnmo">결과보기</a>
+       </p>
+     </div>
+   </form>  
+ </div>
+</div><!-- /content -->
+</body>
+</html>
 
-
-
-  <div class="da_txt2" >
-    <p><img src="img/r5.png"><p>
-    <p class="fs23">나의 <i class="cblue">낙상 위험도</i>는?<p>
-  </div> 
-
-<form name="ftst" method=post>  
-<div id="t02">
-<table>
-
-  <tr>
-    <th class="col1"></th>
-    <th class="col2">문항</th> 
-    <th class="col3">전혀 문제없다</th>
-    <th class="col4">약간 어렵다</th>
-    <th class="col5">상당히 어렵다</th>
-    <th class="col6">매우 어렵다</th>
-  </tr>
-  <tr>
-    <td class="tc1"><img src="img/s1.png"></td>
-    <td class="txl">1. 옷 입기 혹은 옷 벗기</td>
-    <td class="tc2 tc7"><input type="radio" id="c1" name="cc0" value=1><label for="c1"></label></td>
-    <td class="tc3 tc8"><input type="radio" id="c2" name="cc0" value=2><label for="c2"></label></td>
-    <td class="tc4 tc9"><input type="radio" id="c3" name="cc0" value=3><label for="c3"></label></td>
-    <td class="tc5 tc10"><input type="radio" id="c4" name="cc0" value=4><label for="c4"></label></td>
-  </tr>
-  <tr>
-    <td class="tc6"><img src="img/s2.png"></td>
-    <td class="txl">2. 목욕 혹은 샤워하기</td>
-    <td class="tc2 "><input type="radio" id="c5" name="cc1" value=1><label for="c5"></label></td>
-    <td class="tc3"><input type="radio" id="c6" name="cc1" value=2><label for="c6"></label></td>
-    <td class="tc2"><input type="radio" id="c7" name="cc1" value=3><label for="c7"></label></td>
-    <td class="tc5"><input type="radio" id="c8" name="cc1" value=4><label for="c8"></label></td>
-  </tr>
-  <tr>
-    <td class="tc1"><img src="img/s3.png"></td>
-    <td class="txl">3. 의자에 앉거나 일어나기</td>
-    <td class="tc2 tc7"><input type="radio" id="c9" name="cc2" value=1><label for="c9"></label></td>
-    <td class="tc3 tc8"><input type="radio" id="c10" name="cc2" value=2><label for="c10"></label></td>
-    <td class="tc4 tc9"><input type="radio" id="c11" name="cc2" value=3><label for="c11"></label></td>
-    <td class="tc5 tc10"><input type="radio" id="c12" name="cc2" value=4><label for="c12"></label></td>
-  </tr>
-  
-    <tr>
-    <td class="tc6"><img src="img/s4.png"></td>
-    <td class="txl">4. 계단 올라가거나 내려가기</td>
-    <td class="tc2"><input type="radio" id="c13" name="cc3" value=1><label for="c13"></label></td>
-    <td class="tc3"><input type="radio" id="c14" name="cc3" value=2><label for="c14"></label></td>
-    <td class="tc4"><input type="radio" id="c15" name="cc3" value=3><label for="c15"></label></td>
-    <td class="tc5"><input type="radio" id="c16" name="cc3" value=4><label for="c16"></label></td>
-  </tr>
-    <tr>
-    <td class="tc1"><img src="img/s5.png"></td>
-    <td class="txl">5. 물건을 머리 위로 올리거나 바닥에 내려놓기</td>
-    <td class="tc2 tc7"><input type="radio" id="c17" name="cc4" value=1><label for="c17"></label></td>
-    <td class="tc3 tc8"><input type="radio" id="c18" name="cc4" value=2><label for="c18"></label></td>
-    <td class="tc4 tc9"><input type="radio" id="c19" name="cc4" value=3><label for="c19"></label></td>
-    <td class="tc5 tc10"><input type="radio" id="c20" name="cc4" value=4><label for="c20"></label></td>
-  </tr>
-
-  <tr>
-    <td class="tc1"><img src="img/s6.png"></td>
-    <td class="txl">6. 비탈길을 오르거나 내려가기</td>
-    <td class="tc2"><input type="radio" id="c21" name="cc5" value=1><label for="c21"></label></td>
-    <td class="tc3"><input type="radio" id="c22" name="cc5" value=2><label for="c22"></label></td>
-    <td class="tc4"><input type="radio" id="c23" name="cc5" value=3><label for="c23"></label></td>
-    <td class="tc5"><input type="radio" id="c24" name="cc5" value=4><label for="c24"></label></td>
-  </tr>
-  <tr>
-    <td class="tc6"><img src="img/s7.png"></td>
-    <td class="txl">7. 외부 행사에 참여하기 위해 외출하기</td>
-    <td class="tc2 tc7"><input type="radio" id="c25" name="cc6" value=1><label for="c25"></label></td>
-    <td class="tc3 tc8"><input type="radio" id="c26" name="cc6" value=2><label for="c26"></label></td>
-    <td class="tc4 tc9"><input type="radio" id="c27" name="cc6" value=3><label for="c27"></label></td>
-    <td class="tc5 tc10"><input type="radio" id="c28" name="cc6" value=4><label for="c28"></label></td>
-  </tr>
-</table>
-
-  
-     <p class="btnbox">  
-         <a href="javascript:fsubmit()" class="btn2 btnblue btnmo">결과보기</a>
-   </p>
-</div>
-</form>  
-
-
-
-
-
-
-					</div>
-				</div><!-- /content -->
-			
-		
-
-		
-<?php
-
-?>
 <script type="text/javascript">
-<!--
-function fsubmit(){
-	var cc0 = $('input:radio[name=cc0]').is(':checked');
-	if( cc0 == false){
-		alert("1.옷 입기 혹은 옷 벗기 항목을 선택해주세요");
-		return;
-	}
-	var cc1 = $('input:radio[name=cc1]').is(':checked');
-	if( cc1 == false){
-		alert("2.목욕 혹은 샤워하기 항목을 선택해주세요");
-		return;
-	}
-	var cc2 = $('input:radio[name=cc2]').is(':checked');
-	if( cc2 == false){
-		alert("3.의자에 앉거나 일어나기 항목을 선택해주세요");
-		return;
-	}
-	var cc3 = $('input:radio[name=cc3]').is(':checked');
-	if( cc3 == false){
-		alert("4.계단 올라가거나 내려가기 항목을 선택해주세요");
-		return;
-	}
-	var cc4 = $('input:radio[name=cc4]').is(':checked');
-	if( cc4 == false){
-		alert("5.물건을 머리 위로 올리거나 바닥에 내려놓기 항목을 선택해주세요");
-		return;
-	}
-	var cc5 = $('input:radio[name=cc5]').is(':checked');
-	if( cc5 == false){
-		alert("6.비탈길을 오르거나 내려가기 항목을 선택해주세요");
-		return;
-	}
-	var cc6 = $('input:radio[name=cc6]').is(':checked');
-	if( cc6 == false){
-		alert("7.외부 행사에 참여하기 위해 외출하기 항목을 선택해주세요");
-		return;
-	}
-	document.ftst.action = "result05.php";
-	document.ftst.submit();
-}
+  <!--
+    function fsubmit(){
+     var cc0 = $('input:radio[name=cc0]').is(':checked');
+     if( cc0 == false){
+      alert("1.옷 입기 혹은 옷 벗기 항목을 선택해주세요");
+      return;
+    }
+    var cc1 = $('input:radio[name=cc1]').is(':checked');
+    if( cc1 == false){
+      alert("2.목욕 혹은 샤워하기 항목을 선택해주세요");
+      return;
+    }
+    var cc2 = $('input:radio[name=cc2]').is(':checked');
+    if( cc2 == false){
+      alert("3.의자에 앉거나 일어나기 항목을 선택해주세요");
+      return;
+    }
+    var cc3 = $('input:radio[name=cc3]').is(':checked');
+    if( cc3 == false){
+      alert("4.계단 올라가거나 내려가기 항목을 선택해주세요");
+      return;
+    }
+    var cc4 = $('input:radio[name=cc4]').is(':checked');
+    if( cc4 == false){
+      alert("5.물건을 머리 위로 올리거나 바닥에 내려놓기 항목을 선택해주세요");
+      return;
+    }
+    var cc5 = $('input:radio[name=cc5]').is(':checked');
+    if( cc5 == false){
+      alert("6.비탈길을 오르거나 내려가기 항목을 선택해주세요");
+      return;
+    }
+    var cc6 = $('input:radio[name=cc6]').is(':checked');
+    if( cc6 == false){
+      alert("7.외부 행사에 참여하기 위해 외출하기 항목을 선택해주세요");
+      return;
+    }
+    document.ftst.action = "result05.html";
+    document.ftst.submit();
+  }
 //-->
 </script>

@@ -234,14 +234,6 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .prg-cont{line-height:24px;font-size:16px;color: #333;letter-spacing:-0.05em;}
 .prg-video{width: 960px;height: 540px;overflow: hidden;}
 
-/* 직원소개 */
-.staff-wrap {border-top: 1px solid #bbb;}
-.staff-wrap .staff-list li{overflow: hidden;padding: 18px 30px 20px 30px;border-bottom: 1px solid #eee;min-height: 85px;}
-.staff-wrap .staff-list .staff-name {float: left;width: 150px;padding-top: 15px;font-size: 16px;font-family:'NotoKrM',sans-serif;}
-.staff-wrap .staff-list .staff-dept {float: left;width: 970px;}
-.staff-wrap .staff-list .staff-dept dt {float: left;width: 77px;font-size: 16px;font-family:'NotoKrR',sans-serif;}
-.staff-wrap .staff-list .staff-dept dd {display: block;font-size: 16px;color: #777;margin-bottom: 14px;}
-.staff-wrap .staff-list .staff-dept dd:last-child{margin-bottom: 0}
 /* table -  문단에들어간 테이블 정리 */
 .prg-cont .table th{line-height: 22px;}
 .prg-cont .table td{line-height: 20px; padding:20px}
@@ -346,6 +338,20 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .NotoKrM {font-family: 'NotoKrM',sans-serif; font-weight: normal; }
 .NotoKrB {font-family: 'NotoKrB',sans-serif; font-weight: normal; }
 
+.sub-wrap {overflow: hidden;padding-left: 10px;margin-top: 35px;}
+.sub-wrap .sub-title {position: relative;margin-bottom:12px;font-size:18px;font-family:'notoKrR',sans-serif;color:#333;font-weight: normal;}
+.sub-wrap .sub-title:before {content:'';display:inline-block;position:absolute;left:-10px;top:50%;margin-top:-2px;width:5px;height:5px;background:#0770bb;}
+.sub-wrap .sub-box {width: 660px;overflow: hidden;border: 1px solid #ddd;border-radius: 5px;padding: 29px;margin-top: 8px;}
+.sub-wrap .sub-box .img-list {padding-bottom: 27px; overflow: hidden;}
+.sub-wrap .sub-box .img-list li {float: left;width: 187px;text-align: center;margin-left: 19px;}
+.sub-wrap .sub-box .img-list li:first-child {margin-left: 0}
+.sub-wrap .sub-box .img-list li img {width: 187px;height: 144px;}
+.sub-wrap .sub-box .img-list li p {font-family: 'NotoKrR',sans-serif;font-size: 16px;color: #333;font-weight: normal;margin-top: 5px;}
+.sub-wrap .sub-box .def-list {padding-top: 24px;border-top: 1px solid #ddd;}
+.sub-wrap .sub-box .def-list dt {float: left;position: relative;font-family:'notoKrM',sans-serif;font-size: 14px;color:#333;padding-right: 20px;}
+.sub-wrap .sub-box .def-list dt:before {position: absolute;content: '';width: 1px;height: 10px;top:8px;right: 9px;background-color: #aaa}
+.sub-wrap .sub-box .def-list dd {display: block;font-family:'NotoKrL',sans-serif;font-size: 14px;color:#777;padding-bottom: 4px;padding-left: 44px;}
+.sub-wrap .sub-box .def-list dd:last-child{padding-bottom: 0}
 
 /* table */
 .table {border-collapse:collapse !important;  table-layout: fixed; width: 100%}
@@ -558,6 +564,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .marT60{margin-top: 60px !important}
 .marT80{margin-top: 80px !important}
 .marT100{margin-top: 100px !important}
+.marB9{margin-bottom: 9px !important}
 .marB15{margin-bottom: 15px !important}
 .marB30{margin-bottom: 30px !important}
 .marL5{margin-left: 5px !important}
@@ -671,6 +678,16 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .profile ul li p{font-family: 'NotoKrM'; font-size: 16px; color: #333; width:170px; position: absolute;left: 30px;}
 
 
+/* 직원소개 */
+.staff-wrap {border-top: 1px solid #bbb;}
+.staff-wrap .staff-list li{overflow: hidden;padding: 18px 30px 20px 30px;border-bottom: 1px solid #eee;min-height: 85px;}
+.staff-wrap .staff-list .staff-name {float: left;width: 150px;padding-top: 15px;font-size: 16px;font-family:'NotoKrM',sans-serif;}
+.staff-wrap .staff-list .staff-dept {float: left;width: 970px;}
+.staff-wrap .staff-list .staff-dept dt {float: left;width: 77px;font-size: 16px;font-family:'NotoKrR',sans-serif;}
+.staff-wrap .staff-list .staff-dept dd {display: block;font-size: 16px;color: #777;margin-bottom: 14px;}
+.staff-wrap .staff-list .staff-dept dd:last-child{margin-bottom: 0}
+
+
 /* 자주하는 질문 */
 .qna{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }
 .qna button{font-size: 16px;padding:27px 100px; width: 100%; text-align: left;  font-family: 'NotoKrR';}
@@ -753,3 +770,36 @@ ul.bxslider {  list-style: none;}
 .my-test button:hover:after, .my-test button:focus:after{ top:30px;left:65px;}
 .my-test button:nth-child(n+6):hover:after, .my-test button:nth-child(n+6):focus:after{ top:29px;}
 .my-test button:nth-child(5n+1):hover:after, .my-test button:nth-child(5n+1):focus:after{ left:66px; }
+
+
+/* 관련사이트 */
+.site-list{}
+.site-list li{float: left;margin-left: 20px;width: 180px;overflow: hidden;text-align: center;}
+.site-list li:nth-child(5n+1){margin-left: 0}
+.site-list li:nth-child(n+6){margin-top: 18px}
+.site-list li a {position: relative;display: block;width: 180px;height: 140px;border: 1px solid #ddd;border-radius: 5px}
+.site-list li p {font-family: 'NotoKrR'; font-size: 16px; color: #333; margin-top: 5px;}
+.site-list li a:after {content: '';display: block;width: 160px;height: 120px;background: url(../img/site_img.png) 0px 0px no-repeat; position: absolute; top: 10px; left: 10px;}
+.site-list li a.site01:after {background-position: 0 0;}
+.site-list li a.site02:after {background-position: -180px 0;}
+.site-list li a.site03:after {background-position: -360px 0;}
+.site-list li a.site04:after {background-position: -540px 0;}
+.site-list li a.site05:after {background-position: -720px 0;}
+.site-list li a.site06:after {background-position: 0 -140px;}
+.site-list li a.site07:after {background-position: -180px -140px;}
+.site-list li a.site08:after {background-position: -360px -140px;}
+.site-list li a.site09:after {background-position: -540px -140px;}
+.site-list li a.site10:after {background-position: -720px -140px;}
+.site-list li a.site11:after {background-position: 0 -280px;}
+.site-list li a.site12:after {background-position: -180px -280px;}
+.site-list li a.site13:after {background-position: -360px -280px;}
+.site-list li a.site14:after {background-position: -540px -280px;}
+.site-list li a.site15:after {background-position: -720px -280px;}
+.site-list li a.site16:after {background-position: 0 -420px;}
+.site-list li a.site17:after {background-position: -180px -420px;}
+.site-list li a.site18:after {background-position: -360px -420px;}
+.site-list li a.site19:after {background-position: -540px -420px;}
+.site-list li a.site20:after {background-position: -720px -420px;}
+.site-list li a.site21:after {background-position: 0 -560px;}
+.site-list li a.site22:after {background-position: -180px -560px;}
+.site-list li a.site23:after {background-position: -360px -560px;}

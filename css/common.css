@@ -150,7 +150,12 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .btn-wrap button{margin-left: 8px; cursor: pointer;}
 .btn-wrap button:first-child {margin-left: 0px}
 
-
+/* linklist */
+.linklist-type1{width: 1180px;display: block;margin-bottom: 60px;letter-spacing: -4px;}
+.linklist-type1 a{display: inline-block;text-align: center;height: 60px;color: #333;font-size: 16px;line-height: 60px;min-width: 236px; letter-spacing: -1px;border: 1px solid #ddd;border-left: 0}
+.linklist-type1 a.active{position:relative;color:#fff;font-size:16px;font-family:'NotoKrM',sans-serif;background: #0770bb}
+.linklist-type1 a:nth-child(n+6){border-top: 0;}
+.linklist-type1 a:nth-child(5n+1){border-left: 1px solid #dddddd;}
 
 /* tab */
 .tab-wrap{position:relative;}

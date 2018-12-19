@@ -493,11 +493,10 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .board-wrap .img-list > li:last-child{margin-bottom: 50px;}
 .board-wrap .img-list .thum-img{width:378px; height:285px}
 .board-wrap .img-list .category{margin-top: 17px; margin-left: 20px; }
-.board-wrap .img-list .tit{margin-top: 13px; margin-left: 20px; color:#000;font-size: 16px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 340px }
-.board-wrap .img-list .tit .badge{margin-right: 7px; margin-top: 3px}
+.board-wrap .img-list .tit{margin-top: 13px; margin-left: 20px; color:#000;font-size: 16px;text-overflow: ellipsis; white-space: nowrap; overflow: hidden; width: 340px ;display: inline-block;}
+.board-wrap .img-list .tit .badge{margin-right: 7px;}
 .board-wrap .img-list .data{margin-top: 8px; margin-left: 20px;}
-.board-wrap .img-list .tit a:hover, .board-wrap .img-list .tit a:focus{text-decoration: underline; cursor: pointer; }
-.board-wrap .img-list .tit a{display: inline;}
+.board-wrap .img-list .tit:hover, .board-wrap .img-list .tit:focus{text-decoration: underline; cursor: pointer; }
 
 /* board - img list - detail */
 .board-wrap .board-navi-box .navi-list .thum-img {width: 240px; height: 180px; margin-bottom: 20px}
@@ -666,7 +665,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .qna dt:after{content:''; display: block; width:20px ;height: 11px;background:url('../img/icon_component.png') -70px -10px no-repeat;position: absolute;top:30px;right:30px ;}
 .qna dt.active button{color: #0770bb;}
 .qna dt.active:after{background-position:-70px -25px}
-.qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee;}
+.qna dd{background: #f6f6f6; padding:27px 100px;color: #777 ;position: relative;border-bottom: 1px solid #eeeeee;word-break: keep-all;}
 .qna dd:before{content:''; display: block; width:14px ;height: 20px;background:url('../img/icon_component.png') -70px -60px no-repeat;position: absolute;top:50%;left: 30px; transform: translateY(-50%)}
 .Accordion-panel[hidden] { display: none;}
 

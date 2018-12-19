@@ -495,9 +495,8 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .board-wrap .board-navi-box .navi-tit .navi-btn .next-list{background-position:  -30px 11px;margin-left: 2px }
 .board-wrap .board-navi-box .navi-list > ul > li{ border-bottom: 1px solid #eeeeee; padding: 27px 20px 32px}
 .board-wrap .board-navi-box .navi-list .category{margin-bottom:15px;}
-.board-wrap .board-navi-box .navi-list .tit{font-size: 16px; color: #000;  margin:0 0 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
-.board-wrap .board-navi-box .navi-list .tit .badge{margin-right: 7px; margin-top: 3px}
-.board-wrap .board-navi-box .navi-list .tit a{display: inline;}
+.board-wrap .board-navi-box .navi-list .tit{font-size: 16px; color: #000;  margin:0 0 12px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;display:inline-block;width: 240px; }
+.board-wrap .board-navi-box .navi-list .tit .badge{margin-right: 7px;}
 
 /* board - img list  */
 .board-wrap .img-list {width: 1180px; position:relative; text-align:center;}

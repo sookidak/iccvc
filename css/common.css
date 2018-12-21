@@ -245,10 +245,6 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .list-type1 > li{padding-left:10px;font-size:16px;line-height: 24px;letter-spacing: -0.05em;position: relative;margin-bottom:7px;color:#333;}
 .list-type1 > li:before{content:'';display:inline-block;position:absolute;left:0;top:12px;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
 
-.list-type1 li .list-title {display: block;font-family:'notoKrR',sans-serif;margin-top: 21px;}
-.list-type1 li:first-child .list-title{margin-top: 0;}
-.list-type1 li .list-cont {display: block;color: #777;margin-top: 6px;}
-
 .list-type1 li ul{text-align:left;margin-top:7px;padding-bottom:1px;}
 .list-type1 li ul li{font-size:16px;position: relative;margin-bottom:6px;color:#777; text-indent: -7px; margin-left: 7px}
 .list-type1 li .list-inner li {font-size:14px;line-height: 14px;color:#777;}
@@ -542,11 +538,14 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .floatL{float:left;}
 .floatR{float:right;}
 
-.marT7{margin-top: 7px !important}
+.marT0{margin-top: 0 !important}
 .marT10{margin-top: 10px !important}
+.marT13{margin-top: 13px !important}
 .marT15{margin-top: 15px !important}
 .marT20{margin-top: 20px !important}
+.marT25{margin-top: 25px !important}
 .marT30{margin-top: 30px !important}
+.marT35{margin-top: 35px !important}
 .marT40{margin-top: 40px !important}
 .marT50{margin-top: 50px !important}
 .marT55{margin-top: 55px !important}
@@ -559,6 +558,11 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .marL5{margin-left: 5px !important}
 .marL10{margin-left: 10px !important}
 .marL20{margin-left: 20px !important}
+.marL-10{margin-left: -10px !important}
+
+.valignT {vertical-align: top !important}
+.valignB {vertical-align: bottom !important}
+.valignM {vertical-align: middle !important}
 
 /* 인사말 */
 .greet-wrap{display: block;overflow: hidden;}
@@ -678,7 +682,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 
 
 /* 질환 정보 */
-.sub-title {position: relative;margin-bottom:10px;font-size:18px;line-height: 18px;font-family:'notoKrR',sans-serif;color:#333;font-weight: normal;}
+.sub-title {position: relative;font-size:18px;line-height: 18px;font-family:'notoKrR',sans-serif;color:#333;font-weight: normal;}
 .sub-title:before {content:'';display:inline-block;position:absolute;left:-10px;top:50%;margin-top:-2px;width:5px;height:5px;background:#0770bb;}
 .sub-wrap {overflow: hidden;padding-left: 10px;margin-top: 35px;}
 .sub-wrap > img + p {margin-top: 15px;}
@@ -695,20 +699,26 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .sub-wrap .sub-box .def-list dd {display: block;font-family:'NotoKrL',sans-serif;font-size: 14px;color:#777;padding-bottom: 4px;padding-left: 44px;}
 .sub-wrap .sub-box .def-list dd:last-child{padding-bottom: 0}
 
-.sub-wrap2 {margin-top: 30px;text-align: left}
-.sub-wrap2:first-child {margin-top: 0;}
-.sub-wrap2 .sub-img {display: inline-block}
-.sub-wrap2 .list-type1 > li {font-family:'notoKrR',sans-serif;}
-.sub-wrap2 .list-type1 > li li {font-family:'notoKrL',sans-serif;}
-.sub-wrap2 .sub-explan {display: inline-block;vertical-align: top;padding-left: 27px;margin-top: 0;}
-.sub-wrap2 .sub-explan .list-type1 > li {padding-left: 0px;margin-bottom: 15px;}
-.sub-wrap2 .sub-explan .list-type1 > li:before {left: -7px;}
-.sub-wrap2 .sub-explan .list-type1 > li:last-child {margin-bottom: 0}
+.dis-wrap1 {padding-left: 10px;}
+.dis-wrap1 .sub-title + img , .dis-wrap1 .sub-title + p{margin-top: 15px;}
+.dis-wrap1 .sub-title + ul {margin: 15px 0 0 -10px}
+.dis-wrap1 img + p {margin-top: 15px;}
+.dis-wrap1 p + img {margin-top: 15px;}
 
-.sub-explan {padding-left: 10px;margin-top: 15px;}
-.sub-explan .explan-tit{position: relative;font-family:'notoKrR',sans-serif;font-size: 16px; color: #000; font-weight: normal;margin-bottom: 7px;}
-.sub-explan .explan-tit:before {content:'';display:inline-block;position:absolute;left:-10px;top:12px;margin-top:-1px;;width:3px;height:3px;background: url('../img/icon_list.png') left top no-repeat}
+.dis-wrap2 {overflow: hidden;}
+.dis-wrap2 .dis-img {display: inline-block}
+.dis-wrap2 .dis-cont {display: inline-block;vertical-align: top;padding-left: 27px;}
+.dis-wrap2 .dis-cont .list-type1 > li {font-family:'notoKrR',sans-serif;line-height: 16px;padding-left: 0px;margin-bottom: 20px;}
+.dis-wrap2 .dis-cont .list-type1 > li:last-child {margin-bottom: 0}
+.dis-wrap2 .dis-cont .list-type1 > li:before {top:9px; left: -9px;}
+.dis-wrap2 .dis-cont .list-type1 > li p {line-height: 24px;margin-top: 10px;}
+.dis-wrap2 .dis-cont .list-type1 > li ul {margin-top: 10px;}
+.dis-wrap2 .dis-cont .list-type1 > li li {font-family:'notoKrL',sans-serif;line-height: 24px;}
+.dis-wrap2 .dis-cont .list-type1 > li{margin-bottom: 14px;}
+.dis-wrap2 .dis-cont .sub-title {margin-bottom: 15px;}
 
+.list-type1 li .list-title {font-family: 'NotoKrR',sans-serif;font-weight: normal;}
+.list-type1 li .list-title + p {margin-top: 7px;}
 
 /* 자주하는 질문 */
 .qna{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }

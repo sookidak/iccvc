@@ -535,6 +535,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .floatR{float:right;}
 
 .marT0{margin-top: 0 !important}
+.marT5{margin-top: 5px !important}
 .marT10{margin-top: 10px !important}
 .marT13{margin-top: 13px !important}
 .marT15{margin-top: 15px !important}
@@ -548,7 +549,9 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .marT60{margin-top: 60px !important}
 .marT80{margin-top: 80px !important}
 .marT100{margin-top: 100px !important}
+.marB0{margin-bottom: 0px !important}
 .marB9{margin-bottom: 9px !important}
+.marB10{margin-bottom: 10px !important}
 .marB15{margin-bottom: 15px !important}
 .marB30{margin-bottom: 30px !important}
 .marL5{margin-left: 5px !important}
@@ -704,17 +707,40 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .dis-wrap2 {overflow: hidden;}
 .dis-wrap2 .dis-img {display: inline-block}
 .dis-wrap2 .dis-cont {display: inline-block;vertical-align: top;padding-left: 27px;}
-.dis-wrap2 .dis-cont .list-type1 > li {font-family:'notoKrR',sans-serif;line-height: 16px;padding-left: 0px;margin-bottom: 20px;}
+.dis-wrap2 .dis-cont .list-type1 > li {line-height: 16px;padding-left: 0px;margin-bottom: 20px;}
 .dis-wrap2 .dis-cont .list-type1 > li:last-child {margin-bottom: 0}
 .dis-wrap2 .dis-cont .list-type1 > li:before {top:9px; left: -9px;}
 .dis-wrap2 .dis-cont .list-type1 > li p {line-height: 24px;margin-top: 10px;}
 .dis-wrap2 .dis-cont .list-type1 > li ul {margin-top: 10px;}
-.dis-wrap2 .dis-cont .list-type1 > li li {font-family:'notoKrL',sans-serif;line-height: 24px;}
+.dis-wrap2 .dis-cont .list-type1 > li li {line-height: 24px;}
 .dis-wrap2 .dis-cont .list-type1 > li{margin-bottom: 14px;}
 .dis-wrap2 .dis-cont .sub-title {margin-bottom: 15px;}
 
 .list-type1 li .list-title {font-family: 'NotoKrR',sans-serif;font-weight: normal;}
 .list-type1 li .list-title + p {margin-top: 7px;}
+
+.table.hpl td {vertical-align: top}
+.table.hpl .list-type1 li{font-size: 14px;margin-bottom: 0;}
+
+.list-type1.limB22 > li {margin-bottom: 22px;}
+.list-type1.limB14 > li {margin-bottom: 14px;}
+.list-type1.limB12 > li {margin-bottom: 12px;}
+
+.list-sm {margin-top: 0 !important;}
+.list-sm > li {font-size: 14px !important;margin-bottom: 0 !important;}
+
+.prevent_list {margin-top: 37px;}
+.prevent_list ul {margin-top: 24px; overflow: hidden;}
+.prevent_list ul li {float: left; width: 313px; height: 240px; margin-left: 20px; border: 1px solid #ddd; border-radius: 10px;box-sizing: border-box;text-align: center}
+.prevent_list ul li:nth-child(3n+1) {margin-left: 0}
+.prevent_list ul li:nth-child(n+4) {margin-top: 20px}
+.prevent_list ul li:hover , .prevent_list ul li:focus {border: 2px solid #0770bb;}
+.prevent_list ul li:hover a , .prevent_list ul li:focus a {padding-top: 129px;}
+.prevent_list ul li a {display: block; padding-top: 130px; width: 100%; height: 100%; position: relative;}
+.prevent_list ul li a .prevent_title {font-size: 20px;font-family: 'NotoKrR',sans-serif;font-weight: normal;color: #000;margin-bottom: 10px;}
+.prevent_list ul li a .text-style2 {line-height: 20px;}
+.prevent_list .text-style3 {margin-top: 4px;}
+.prevent_list ul li a:after{content: '';display: block;width: 120px;height: 100px;background: url(../img/prevent_img.png) 0px 0px no-repeat; position: absolute; top: 20px; left: 50%; margin-left: -60px;}
 
 /* 자주하는 질문 */
 .qna{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }

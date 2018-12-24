@@ -169,15 +169,22 @@ $(document).ready(function() {
   	});
 
 
-	//select IE9 수정
+	//select disable적용
 	if ($("select").length){ 		
 		$('select').each(function(i, e){
 			var sele = $(this).prop('disabled');		
 			if (sele==true) {		 			
-				$(this).parent('label').addClass('disabled');
+				$(this).parent('.select').addClass('disabled');
 			}
 		});
 	}
+	//select 적용 
+  	var selectTarget = $('.select select'); 
+  	selectTarget.change(function(){ 
+  		var select_name = $(this).children('option:selected').text(); 
+  		$(this).siblings('label').text(select_name); 
+  	});
+
 
 
 });

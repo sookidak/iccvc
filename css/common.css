@@ -395,15 +395,11 @@ input[type=text]:disabled, input[type=password]:disabled{ border: 1px solid #eee
 input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
 
 
-.select {position:relative;display:inline-block;z-index:0}
-.select select {z-index:1;}
-.select:before {  display:block; position:absolute;content:'';right:40px;top:0px;height:38px;width:20px;margin:1px;background:#fff;z-index:5;}
-.select.disabled:before {  background:#f8f8f8;}
-.select select{ line-height:normal; border: 1px solid #ddd; font-size: 14px; line-height: 22px; font-family: 'NotoKrL'; color: #777; background: url(../img/icon_components_select_off.png) no-repeat right center; height: 40px; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:40px; border-radius: 0} 
-.select select::-ms-expand { display: none;}
-.select select:disabled{ border-color:#eee; color: #777; background: #f8f8f8; }
-.select select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
-
+.select { position: relative; width: 200px; z-index: 1; height: 40px; font-size: 14px; font-weight:normal;  font-family: 'NotoKrL'; color: #777; display: inline-block;} 
+.select label { position: absolute; top: 0px; left: 0px; width: 100%; z-index: -1;line-height:normal; border: 1px solid #ddd;  background: url(../img/icon_components_select_off.png) no-repeat right center #fff; height: 100%; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:40px; border-radius: 0 ;  vertical-align: middle; line-height:38px;} 
+.select select { width: 100%; height: 100%;  line-height: 24px;  font-family: inherit;  font-size: inherit; font-weight:inherit;  border: 0; padding:10px 20px; opacity: 0; filter:alpha(opacity=0);  -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.select.disabled label{ border-color:#eee; color: #777; background: #f8f8f8; }
+.select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
 
 
 .input-email, .input-num, .input-add, .input-rrn{text-align: left;} 

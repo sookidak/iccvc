@@ -740,7 +740,17 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .prevent_list ul li a .prevent_title {font-size: 20px;font-family: 'NotoKrR',sans-serif;font-weight: normal;color: #000;margin-bottom: 10px;}
 .prevent_list ul li a .text-style2 {line-height: 20px;}
 .prevent_list .text-style3 {margin-top: 4px;}
-.prevent_list ul li a:after{content: '';display: block;width: 120px;height: 100px;background: url(../img/prevent_img.png) 0px 0px no-repeat; position: absolute; top: 20px; left: 50%; margin-left: -60px;}
+.prevent_list ul li a:after{content: '';display: block;width: 120px;height: 100px;background: url(../img/prevent_img.png) 0px 0px no-repeat; position: absolute; top: 25px; left: 50%; margin-left: -60px;}
+.prevent_list ul li:hover a:after , .prevent_list ul li:focus a:after{top: 24px;}
+.prevent_list ul li a.prevent01:after{background-position: 0 0;}
+.prevent_list ul li a.prevent02:after{background-position: -140px 0;}
+.prevent_list ul li a.prevent03:after{background-position: -280px 0;}
+.prevent_list ul li a.prevent04:after{background-position: 0 -120px;}
+.prevent_list ul li a.prevent05:after{background-position: -140px -120px;}
+.prevent_list ul li a.prevent06:after{background-position: -280px -120px;}
+.prevent_list ul li a.prevent07:after{background-position: 0 -240px;}
+.prevent_list ul li a.prevent08:after{background-position: -140px -240px;}
+.prevent_list ul li a.prevent09:after{background-position: -280px -240px;}
 
 /* 자주하는 질문 */
 .qna{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }

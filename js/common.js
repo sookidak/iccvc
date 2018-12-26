@@ -17,7 +17,7 @@ $(document).ready(function() {
 	$qna=$(".qna"),
 	$location=$(".location-nav-wrap"),
 	$lang=$(".lang");
-	$pl=$(".prevent_list ul li");
+	
 	//메인 확인
 	var mainCheck = function(){
 		if ($('#main').length==1) {

@@ -194,7 +194,7 @@ $(document).ready(function() {
 	}
 
 	$(function(){ //질환정보 9대생활수칙 바로가기
-		var $tab = $('.tablist-type1');
+		var $tab = $('.tablist-dis');
 		if(location.hash == "#tab01-panel"){  //금연
 			$tab.find('a').eq(1).addClass('active').siblings('a').removeClass('active');
 			$('.tabpanel').removeClass('active');

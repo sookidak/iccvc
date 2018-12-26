@@ -248,10 +248,20 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .list-type1 li ul{text-align:left;margin-top:7px;padding-bottom:1px;}
 .list-type1 li ul li{font-size:16px;position: relative;margin-bottom:6px;color:#777; text-indent: -7px; margin-left: 7px}
 .list-type1 li .list-inner li {font-size:14px;line-height: 14px;color:#777;}
+.list-type1 li .list-title {font-family: 'NotoKrR',sans-serif;font-weight: normal;display: block;}
+.list-type1 li .list-title + p {margin-top: 7px;}
 
 .list-type1.wide > li{width: 320px; display: inline-block;}
 .list-type1.dbline {width: 500px;overflow: hidden;}
 .list-type1.dbline > li{width: 49%; display: inline-block;}
+
+.list-type1.limB22 > li {margin-bottom: 22px !important;}
+.list-type1.limB20 > li {margin-bottom: 20px !important;}
+.list-type1.limB14 > li {margin-bottom: 14px !important;}
+.list-type1.limB12 > li {margin-bottom: 12px !important;}
+
+.list-sm {margin-top: 0 !important;}
+.list-sm > li {font-size: 14px !important; margin-bottom: 0 !important;}
 
 .list-type2{text-align:left;}
 .list-type2 li{padding-left:13px;position: relative;margin-bottom:7px;font-size:14px;color:#333;}
@@ -309,7 +319,6 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .section-cont:after{content:'';display:block;clear:both;}
 .sec-left{float:left;vertical-align: top}
 .sec-right{float:right;vertical-align: top}
-
 
 
 
@@ -375,7 +384,6 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .table-type3 .check-list{ margin-top: 30px; }
 .table-type3 .check-list:after { display: block; content: ""; }
 .table-type3 .check-list li{ float: left; width: 245px; height: 45px}
-
 
 
 
@@ -607,9 +615,8 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .info-wrap .center-intro .intro-comm .text-style2 .title-style4 {margin-left: 5px;}
 .info-wrap .center-cont {overflow: hidden;margin-top: 60px;}
 .info-wrap .center-cont ul{display: inline-block;overflow: hidden;}
-.info-wrap .center-cont li{float: left;width: 380px;text-align: left;margin-left: 20px;}
-.info-wrap .center-cont li:first-child{margin-left: 0;}
-.info-wrap .center-cont li li{margin-left: 0;}
+.info-wrap .center-cont > ul > li{float: left;width: 380px;text-align: left;margin-left: 20px;}
+.info-wrap .center-cont > ul > li:first-child{margin-left: 0;}
 .info-wrap .center-cont li li:last-child{margin-bottom: 0}
 .info-wrap .center-cont .cont-photo{width: 380px; height: 175px; overflow: hidden;}
 .info-wrap .center-cont .cont-photo img{width: 380px;height: 175px;}
@@ -683,20 +690,17 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 /* 질환 정보 */
 .sub-title {position: relative;font-size:18px;line-height: 18px;font-family:'notoKrR',sans-serif;color:#333;font-weight: normal;}
 .sub-title:before {content:'';display:inline-block;position:absolute;left:-10px;top:50%;margin-top:-2px;width:5px;height:5px;background:#0770bb;}
-.sub-wrap {overflow: hidden;padding-left: 10px;margin-top: 35px;}
-.sub-wrap > img + p {margin-top: 15px;}
-.sub-wrap > p + img {margin-top: 15px;}
-.sub-wrap .sub-box {width: 660px;overflow: hidden;border: 1px solid #ddd;border-radius: 5px;padding: 29px;margin-top: 8px;}
-.sub-wrap .sub-box .img-list {padding-bottom: 27px; overflow: hidden;}
-.sub-wrap .sub-box .img-list li {float: left;width: 187px;text-align: center;margin-left: 19px;}
-.sub-wrap .sub-box .img-list li:first-child {margin-left: 0}
-.sub-wrap .sub-box .img-list li img {width: 187px;height: 144px;}
-.sub-wrap .sub-box .img-list li p {font-family: 'NotoKrR',sans-serif;font-size: 16px;color: #333;font-weight: normal;margin-top: 5px;}
-.sub-wrap .sub-box .def-list {padding-top: 24px;border-top: 1px solid #ddd;}
-.sub-wrap .sub-box .def-list dt {float: left;position: relative;font-family:'notoKrM',sans-serif;font-size: 14px;color:#333;padding-right: 20px;}
-.sub-wrap .sub-box .def-list dt:before {position: absolute;content: '';width: 1px;height: 10px;top:8px;right: 9px;background-color: #aaa}
-.sub-wrap .sub-box .def-list dd {display: block;font-family:'NotoKrL',sans-serif;font-size: 14px;color:#777;padding-bottom: 4px;padding-left: 44px;}
-.sub-wrap .sub-box .def-list dd:last-child{padding-bottom: 0}
+.cont-box {width: 660px;overflow: hidden;border: 1px solid #ddd;border-radius: 5px;padding: 29px;margin-top: 8px;}
+.cont-box .img-list {padding-bottom: 27px; overflow: hidden;}
+.cont-box .img-list li {float: left;width: 187px;text-align: center;margin-left: 19px;}
+.cont-box .img-list li:first-child {margin-left: 0}
+.cont-box .img-list li img {width: 187px;height: 144px;}
+.cont-box .img-list li p {font-family: 'NotoKrR',sans-serif;font-size: 16px;color: #333;font-weight: normal;margin-top: 5px;}
+.cont-box .def-list {padding-top: 24px;border-top: 1px solid #ddd;}
+.cont-box .def-list dt {float: left;position: relative;font-family:'notoKrM',sans-serif;font-size: 14px;color:#333;padding-right: 20px;}
+.cont-box .def-list dt:before {position: absolute;content: '';width: 1px;height: 10px;top:8px;right: 9px;background-color: #aaa}
+.cont-box .def-list dd {display: block;font-family:'NotoKrL',sans-serif;font-size: 14px;color:#777;padding-bottom: 4px;padding-left: 44px;}
+.cont-box .def-list dd:last-child{padding-bottom: 0}
 
 .dis-wrap1 {padding-left: 10px;}
 .dis-wrap1 .sub-title + img , .dis-wrap1 .sub-title + p{margin-top: 15px;}
@@ -707,27 +711,15 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .dis-wrap2 {overflow: hidden;}
 .dis-wrap2 .dis-img {display: inline-block}
 .dis-wrap2 .dis-cont {display: inline-block;vertical-align: top;padding-left: 27px;}
-.dis-wrap2 .dis-cont .list-type1 > li {line-height: 16px;padding-left: 0px;margin-bottom: 20px;}
+.dis-wrap2 .dis-cont .list-type1 > li {padding-left: 0px;}
 .dis-wrap2 .dis-cont .list-type1 > li:last-child {margin-bottom: 0}
-.dis-wrap2 .dis-cont .list-type1 > li:before {top:9px; left: -9px;}
+.dis-wrap2 .dis-cont .list-type1 > li:before {left: -9px;}
 .dis-wrap2 .dis-cont .list-type1 > li p {line-height: 24px;margin-top: 10px;}
-.dis-wrap2 .dis-cont .list-type1 > li ul {margin-top: 10px;}
-.dis-wrap2 .dis-cont .list-type1 > li li {line-height: 24px;}
-.dis-wrap2 .dis-cont .list-type1 > li{margin-bottom: 14px;}
-.dis-wrap2 .dis-cont .sub-title {margin-bottom: 15px;}
-
-.list-type1 li .list-title {font-family: 'NotoKrR',sans-serif;font-weight: normal;}
-.list-type1 li .list-title + p {margin-top: 7px;}
+.dis-wrap2 .dis-cont .list-type1 > li ul {margin-top: 5px;}
+.dis-wrap2 .dis-cont .sub-title {margin-bottom: 10px;}
 
 .table.hpl td {vertical-align: top}
 .table.hpl .list-type1 li{font-size: 14px;margin-bottom: 0;}
-
-.list-type1.limB22 > li {margin-bottom: 22px;}
-.list-type1.limB14 > li {margin-bottom: 14px;}
-.list-type1.limB12 > li {margin-bottom: 12px;}
-
-.list-sm {margin-top: 0 !important;}
-.list-sm > li {font-size: 14px !important;margin-bottom: 0 !important;}
 
 .prevent_list {margin-top: 37px;}
 .prevent_list ul {margin-top: 24px; overflow: hidden;}
@@ -751,6 +743,14 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .prevent_list ul li a.prevent07:after{background-position: 0 -240px;}
 .prevent_list ul li a.prevent08:after{background-position: -140px -240px;}
 .prevent_list ul li a.prevent09:after{background-position: -280px -240px;}
+
+.tablist-dis{width:1180px;display:block;margin-bottom:60px;  letter-spacing: -4px; }
+.tablist-dis a{display: inline-block;text-align:center;height:60px;color:#333;font-size:16px; line-height: 60px; min-width:236px;  letter-spacing: -1px;  border:1px solid #dddddd;border-left: 0}
+.tablist-dis a.active{position:relative;color:#fff;font-size:16px;font-family:'NotoKrM',sans-serif;background: #0770bb}
+.tablist-dis a:nth-child(n+6){border-top: 0;}
+.tablist-dis a:nth-child(5n+1){border-left: 1px solid #dddddd;}
+
+
 
 /* 자주하는 질문 */
 .qna{font-size: 16px; line-height: 22px; border-top: 2px solid #bbbbbb; }

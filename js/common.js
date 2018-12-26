@@ -17,7 +17,7 @@ $(document).ready(function() {
 	$qna=$(".qna"),
 	$location=$(".location-nav-wrap"),
 	$lang=$(".lang");
-
+	$pl=$(".prevent_list ul li");
 	//메인 확인
 	var mainCheck = function(){
 		if ($('#main').length==1) {
@@ -128,7 +128,6 @@ $(document).ready(function() {
 		$(".scroll-btn").addClass('active')
 	}
 
-
 	//탭 클릭 이벤트 
 	$tablist1.find('a').on('click',function(e) {
 		e.preventDefault();		
@@ -139,7 +138,6 @@ $(document).ready(function() {
 		//alert(panel);
 		$(panel).addClass('active');
 	});
-
 
 	//서브 탭 클릭 이벤트 
 	$tablist2.find('a').on('click',function(e) {
@@ -185,11 +183,56 @@ $(document).ready(function() {
   		$(this).siblings('label').text(select_name); 
   	});
 
-
-
 });
 
+	function tabMenu(obj){//질환정보 9대생활수칙 탭
+		var el_this = obj;
+		var el_target = $(el_this).attr('href');
+		$(el_this).addClass('active').siblings(el_this).removeClass('active');
+		$('.tabpanel').removeClass('active');
+		$(el_target).addClass('active');
+	}
 
+	$(function(){ //질환정보 9대생활수칙 바로가기
+		var $tab = $('.tablist-type1');
+		if(location.hash == "#tab01-panel"){  //금연
+			$tab.find('a').eq(1).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab01-panel").addClass('active');
+		} else if(location.hash == "#tab02-panel"){  //술 줄이기
+			$tab.find('a').eq(2).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab02-panel").addClass('active');
+		} else if(location.hash == "#tab03-panel"){  //싱겁게 먹기
+			$tab.find('a').eq(3).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab03-panel").addClass('active');
+		} else if(location.hash == "#tab04-panel"){  //꾸준한 운동
+			$tab.find('a').eq(4).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab04-panel").addClass('active');
+		} else if(location.hash == "#tab05-panel"){  //적정체중 유지
+			$tab.find('a').eq(5).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab05-panel").addClass('active');
+		} else if(location.hash == "#tab06-panel"){  //즐거운 마음 갖기
+			$tab.find('a').eq(6).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab06-panel").addClass('active');
+		} else if(location.hash == "#tab07-panel"){  //정기적 검사
+			$tab.find('a').eq(7).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab07-panel").addClass('active');
+		} else if(location.hash == "#tab08-panel"){  //꾸준한 치료
+			$tab.find('a').eq(8).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab08-panel").addClass('active');
+		} else if(location.hash == "#tab09-panel"){  //발생 즉시 병원이송
+			$tab.find('a').eq(9).addClass('active').siblings('a').removeClass('active');
+			$('.tabpanel').removeClass('active');
+			$("#tab09-panel").addClass('active');
+		}
+	})
 
 
 

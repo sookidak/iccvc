@@ -84,12 +84,10 @@ $(document).ready(function() {
 
 	//메뉴 - 3depth
 	$gnb3Wrap.on('mouseenter',function(){
-		$(this).siblings('a').addClass('active')
-		.show();
+		$(this).siblings('a').addClass('active');
 	});
 	$gnb3Wrap.on('mouseleave',function(){		
-		$(this).siblings('a').removeClass('active')
-		.hide();
+		$(this).siblings('a').removeClass('active');
 	});
 
 

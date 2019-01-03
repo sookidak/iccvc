@@ -162,8 +162,12 @@ $(document).ready(function() {
 
   	//자주하는 질문
   	$qna.find('dt').on('click focus keydown',function() {
-  		$qna.find('dt').removeClass('active');
-  		$(this).addClass('active');
+  		if ($(this).hasClass('active')) {
+  			$(this).removeClass('active');
+  		}else{
+  			$qna.find('dt').removeClass('active');
+  			$(this).addClass('active');
+  		}
   	});
 
 

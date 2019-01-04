@@ -588,7 +588,24 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .prg-cont.business p + p{padding-top: 24px;}
 
 /* 조직구성 */
-.org-wrap {display: block;text-align: center;overflow: hidden;}
+.org-wrap {text-align: center;position: relative;}
+.org-wrap h2{width: 527px; height: 72px; border-radius: 36px; position: relative; display: inline-block; color: #fff; font-size: 28px; font-family:'notoKrM',sans-serif; font-weight: normal; line-height: 72px; background: #0b79b6; 
+background: -moz-linear-gradient(0deg, #0b79b6 0%, #0b79b6 20%, #199da3 100%);
+background: -webkit-linear-gradient(0deg, #0b79b6 0%,#0b79b6 20%,#199da3 100%);
+background: linear-gradient(90deg, #0b79b6 0%,#0b79b6 20%,#199da3 100%);}
+.org-wrap > ul > li{width: 300px; height: 60px; display: inline-block; position: relative; background: #eeeeee; color: #000; font-size: 18px; font-family:'notoKrR',sans-serif; font-weight: normal; line-height: 60px; margin-top: 50px;}
+.org-wrap > ul > li:nth-child(n+2){margin-left: 200px}
+.org-wrap .sub {width: 180px; display:inline-block; vertical-align: top; margin-top: 50px;}
+.org-wrap h3{ height: 60px; background: #757a85; color: #fff; font-size: 18px; font-family:'notoKrR',sans-serif; font-weight: normal; line-height: 60px;position: relative;  }
+.org-wrap .sub:nth-child(n+2){margin-left: 48px}
+.org-wrap .sub ul > li{width: 180px; height: 60px; border:1px solid #dddddd; border-top:0;color: #777; font-size: 16px; font-family:'notoKrR',sans-serif; font-weight: normal; line-height: 60px; }
+
+.org-wrap h2:after{content: "";display: block; width: 1px; height: 135px; position: absolute;left: 50%; bottom: -135px; background:#aaaaaa }
+.org-wrap h3:after{content: "";display: block; width: 1px; height: 25px; position: absolute;left: 50%; top: -25px; background:#aaaaaa }
+.org-wrap > ul > li:first-child:after{content: "";display: block; width: 250px; height: 1px; position: absolute;right: -250px; bottom: 50%; background:#aaaaaa }
+.org-wrap > ul > li:nth-child(2):after{content: "";display: block; width: 692px; height: 1px; position: absolute;left: -447px; bottom: -25px; background:#aaaaaa }
+
+
 
 /* 연혁 */
 .prg-cont.history {letter-spacing: -0.8px;}

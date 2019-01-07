@@ -167,6 +167,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 
 .tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none}
 .tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block;}
+.tab-wrap .tabpanel:focus {outline: transparent;}
 .tablist-type2{margin-bottom:60px;}
 .tablist-type2:after{content:'';display:block;clear:both;}
 .tablist-type2 a{float:left;padding:0 20px 15px;color:#777;font-size:18px;border-bottom:1px solid #ddd}

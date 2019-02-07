@@ -53,25 +53,25 @@
 .nav-wrap h1 a{font-size: 18px; color:#0082b6; font-family: 'NotoKrM',sans-serif; font-weight: normal; display: block; padding-left: 180px; height: 43px;position: relative;padding-top: 11px;}
 .nav-wrap h1 a:before{content: '';display: block;width: 1px;height: 20px;background: #0082b6;position: absolute;top: 11px;left:163px;}
 .nav-wrap h1 a:after{content: '';display: block;width: 145px;height: 43px;background:url(../img/icon_header.png) left top no-repeat;position: absolute;top: 0px;left:0px;}
-.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif;text-align: center;margin-left:85px;}
+.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif;text-align: center;}
 .gnb li:first-child{margin-left:0;}
-.gnb li a{display:block;line-height:90px;height:90px;position:relative}
+.gnb li a{display:block;line-height:90px;height:90px;position:relative; width: 150px;}
 .gnb li a:hover,.gnb li a.active{color:#0770bb}
 .gnb li a:hover:after,.gnb li a.active:after{content:'';display:inline-block;position:absolute;left:0;bottom:0;right:0;height:4px;background: #0770bb}
 
 /* header - 열린부분 */
 .opensection-wrap.active{display:block;}
 .opensection-wrap{position:absolute;left:0;top:90px;right:0;background:#fff;z-index:999;display:none; box-shadow:  0 5px 10px rgba(0,0,0,0.3); z-index: 100}
-.subnav-wrap .common-layout{padding-left:52px;}
-.opensection-nav{float: right; position: relative;right: -45px;}
-.gnb2-wrap{position:relative;float:left;width:145px;height:348px;padding-top:32px;text-align: center;}
+.subnav-wrap .common-layout{}
+.opensection-nav{float: right; position: relative;}
+.gnb2-wrap{position:relative;float:left;width:150px;height:348px;padding-top:32px;text-align: center;}
 .gnb-2depth{font-size:16px;color:#333333}
 .gnb-2depth>li> a{line-height:36px;display:block;position: relative;}
 .gnb-2depth> li> a:hover,.gnb-2depth >li>a.active{background:#0770bb;color:#fff;font-family: 'NotoKrM'}
 .gnb-2depth> li> a:hover+.gnb3-wrap,.gnb-2depth >li>a.active+.gnb3-wrap{display:block;}
 .gnb-2depth >li >a.has-depth:hover:after,.gnb-2depth >li >a.has-depth.active:after{content:'';display:inline-block;position:absolute;right:10px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url('../img/icon_header.png') -80px -100px no-repeat;z-index:1000;}
 
-.gnb3-wrap{position:absolute;left:145px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:145px;z-index:1000;color:#fff;display:none;}
+.gnb3-wrap{position:absolute;left:150px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:150px;z-index:1000;color:#fff;display:none;}
 .gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family: 'NotoKrDL';}
 .gnb-3depth li a:hover,.gnb-3depth li a.active{border-bottom:1px solid #fff;}
 

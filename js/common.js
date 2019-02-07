@@ -57,6 +57,7 @@ $(document).ready(function() {
 		.removeClass('active');
 		$allBtn.show();
 		$closeBtn.hide();
+		$gnb.find("li a").removeClass("active");
 	}
 
 		//메뉴 롤오버 이벤트 
@@ -76,7 +77,10 @@ $(document).ready(function() {
 	//메뉴 - 2depth
 	$gnb2depth.on('mouseenter',function(){
 		$(this).addClass('active')
-		.siblings('gnb3Wrap').show();
+		.siblings('.gnb3Wrap').show();
+		var no = $(this).parents("div.gnb2-wrap").index();
+		$gnb.find("li a").removeClass("active");
+		$gnb.find("li").eq(no).find("a").addClass("active");
 	});
 	$gnb2depth.on('mouseleave',function(){		
 		$(this).removeClass('active');
@@ -85,6 +89,8 @@ $(document).ready(function() {
 	//메뉴 - 3depth
 	$gnb3Wrap.on('mouseenter',function(){
 		$(this).siblings('a').addClass('active');
+		var no = $(this).parents("div.gnb2-wrap").index();
+		$gnb.find("li").eq(no).find("a").addClass("active");
 	});
 	$gnb3Wrap.on('mouseleave',function(){		
 		$(this).siblings('a').removeClass('active');

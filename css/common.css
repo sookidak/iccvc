@@ -159,11 +159,14 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 
 /* tab */
 .tab-wrap{position:relative;}
-.tablist-type1{width:1180px;display:block;margin-bottom:60px;  letter-spacing: -4px; }
-.tablist-type1 a{display: inline-block;text-align:center;height:60px;color:#333;font-size:16px; line-height: 60px; min-width:236px;  letter-spacing: -1px;  border:1px solid #dddddd;border-left: 0}
+.tablist-type1{width:1180px;display:table;margin-bottom:60px;  letter-spacing: -4px; }
+.tablist-type1 a{display: table-cell;text-align:center;height:60px;color:#333;font-size:16px; line-height: 60px; min-width:236px;  letter-spacing: -1px;  border:1px solid #dddddd;border-left: 0}
 .tablist-type1 a.active{position:relative;color:#fff;font-size:16px;font-family:'NotoKrM',sans-serif;background: #0770bb}
 .tablist-type1 a:nth-child(n+6){border-top: 0;}
 .tablist-type1 a:nth-child(5n+1){border-left: 1px solid #dddddd;}
+
+.tablist-type1 .br{display: table-row}
+.tablist-type1 .br:nth-child(n+2) a{border-top:0px;}
 
 .tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none}
 .tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block;}
@@ -173,8 +176,8 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .tablist-type2 a{float:left;padding:0 20px 15px;color:#777;font-size:18px;border-bottom:1px solid #ddd}
 .tablist-type2 a.active{color:#0770bb;border-bottom:2px solid #0770bb;font-family:'NotoKrR',sans-serif;}
 
-.tablist-type3{width:1180px;display:block;margin-bottom:60px; letter-spacing: -4px; }
-.tablist-type3 a{display: inline-block;text-align:center;height:60px;color:#333;font-size:18px; line-height: 54px; min-width:236px; letter-spacing: -1px; border-bottom:2px solid #0770bb;}
+.tablist-type3{width:1180px;display:table;margin-bottom:60px; letter-spacing: -4px; }
+.tablist-type3 a{display:table-cell;text-align:center;height:60px;color:#333;font-size:18px; line-height: 54px; min-width:236px; letter-spacing: -1px; border-bottom:2px solid #0770bb;}
 .tablist-type3 a.active{position:relative;color:#0770bb;font-size:20px;font-family:'NotoKrM',sans-serif;border:2px solid #0770bb;}
 .tablist-type3 a:first-child.active {border-radius: 10px 0 0 0;border-bottom: 0;}
 .tablist-type3 a:last-child.active {border-radius: 0 10px 0 0;border-bottom: 0;}

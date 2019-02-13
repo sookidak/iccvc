@@ -117,20 +117,30 @@ $(document).ready(function() {
 	// 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
 	var tapN = $tablist1.find('a').length;
 	if (tapN < 5) {
-		var tapW = 1180/tapN;
-		$tablist1.find('a').css( 'width', tapW+'px' );
+		//var tapW = 1180/tapN;
+		//$tablist1.find('a').css( 'width', tapW+'px' );
 	}else if(tapN > 5){
-		$(".scroll-btn").addClass('active')
+		for (i = 0; i < tapN / 5; i++) {
+			var j = i * 5;
+			$tablist1.find('a').slice(j, j + 5).wrapAll("<div class='br'></div>");
+		}
+
+
 	}
 	
-	// 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
-	var tapN = $tablist3.find('a').length;
-	if (tapN < 5) {
-		var tapW = 1180/tapN;
-		$tablist3.find('a').css( 'width', tapW+'px' );
-	}else if(tapN > 5){
-		$(".scroll-btn").addClass('active')
-	}
+	// // 탭 갯수가 6개 이하일때 넓이 조절 이하일때 조절바 노출
+	// var tapN = $tablist3.find('a').length;
+	// if (tapN < 5) {
+	// 	var tapW = 1180/tapN;
+	// 	$tablist3.find('a').css( 'width', tapW+'px' );
+	// }else if(tapN > 5){
+	// 	for (i = 0; i < tapN/4; i++) {
+	// 		var j = i*4;
+	// 		$tablist1.find('a').slice(j, j+4).wrapAll("<div class='br'></div>");			
+	// 	}
+
+
+	// }
 
 	//탭 클릭 이벤트 
 	$tablist1.find('a').on('click',function(e) {
@@ -154,15 +164,15 @@ $(document).ready(function() {
 	});
 
 	//탭 클릭 이벤트 
-	$tablist3.find('a').on('click',function(e) {
-		e.preventDefault();		
-		$tablist3.find('a').removeClass('active');
-		$(this).addClass('active');
-		$(".tabpanel").removeClass('active');
-		var panel = $(this).attr('href');
-		//alert(panel);
-		$(panel).addClass('active');
-	});
+	// $tablist3.find('a').on('click',function(e) {
+	// 	e.preventDefault();		
+	// 	$tablist3.find('a').removeClass('active');
+	// 	$(this).addClass('active');
+	// 	$(".tabpanel").removeClass('active');
+	// 	var panel = $(this).attr('href');
+	// 	//alert(panel);
+	// 	$(panel).addClass('active');
+	// });
 
   	//자주하는 질문
   	$qna.find('dt').on('click focus keydown',function() {

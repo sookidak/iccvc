@@ -402,6 +402,7 @@ input[type=text], input[type=password]{line-height:normal; border: 1px solid #dd
 label.hide{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden; }
 input[type=text]:disabled, input[type=password]:disabled{ border: 1px solid #eee; color: #777; background: #f8f8f8; }
 input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px solid #199da3;font-family: 'NotoKrR'; color: #000; }
+input[readonly]{border: 1px solid #eee !important; color: #777 !important; background: #f8f8f8 !important;}
 
 
 .select { position: relative; width: 200px; z-index: 1; height: 40px; font-size: 14px; font-weight:normal;  font-family: 'NotoKrL'; color: #777; display: inline-block;} 

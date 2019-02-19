@@ -889,3 +889,34 @@ ul.bxslider {  list-style: none;}
 .site-list li a.site21:after {background-position: 0 -560px;}
 .site-list li a.site22:after {background-position: -180px -560px;}
 .site-list li a.site23:after {background-position: -360px -560px;}
+
+
+/* 이용약관 및 개인정보 */
+.agree-text {color: #777; letter-spacing: -1px; word-break: keep-all;}
+.agree-text h2{font-size: 20px; color: #000; font-family: 'NotoKrM'; font-weight: normal; margin-bottom: 20px; margin-top: 50px}
+.agree-text h3{font-size: 16px; color: #333;font-family: 'NotoKrR'; font-weight: normal; margin: 20px 0 10px;}
+.agree-text p{ line-height: 24px; font-size: 16px; }
+.agree-text ul li{font-size: 16px; color: #777; line-height: 24px;position: relative; margin-bottom: 6px;}
+.agree-text ul li span{}
+.agree-text ul.type1 li{padding-left: 8px; }
+.agree-text ul.type1 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 12px;  border-color: #777  }
+.agree-text ul.type1 ul{margin-top: 5px}
+.agree-text ul.type1 ul li{font-size: 14px;margin-bottom: 0px;padding-left: 10px; }
+.agree-text ul.type1 ul li:after{width: 2px; height: 2px; left: 4px; top: 12px; background: #b5b5b5  }
+.agree-text ul.type2 li{padding-left: 8px; color: #0770bb;}
+.agree-text ul.type2 li a{border-bottom: 1px solid #fff; display: inline-block;}
+.agree-text ul.type2 li:hover a{border-bottom: 1px solid #0770bb;}
+.agree-text ul.type2 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 15px; background: #0770bb  }
+.agree-text ul.type3 > li{padding-left: 20px;}
+.agree-text ul.type3 li span{position: absolute;left: 0;}
+.agree-text ul.type3 ol{padding-left: 12px; margin-top: 5px;}
+.agree-text ul.type3 ol li{font-size: 14px;margin-bottom: 0px; list-style-type:decimal;}
+
+.agree-text .text-top{font-size: 20px; color: #333; font-weight: normal; line-height: 28px; text-align: center;}
+.agree-text .text-top span{color:#00b0f0; font-family: 'NotoKrM'; font-weight: normal; }
+.agree-text .text-top span:nth-child(2){color:#4fc54b }
+.agree-text .text-top span:nth-child(3){color:#e88547 }
+
+.agree-text .text-style2:first-child + h2{margin-top: 30px}
+.agree-text ul + .text-style2 {margin-top: 15px}
+.agree-text p + ul {margin-top: 10px}

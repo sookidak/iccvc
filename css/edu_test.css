@@ -10,7 +10,7 @@
 .hd_st .fs22:nth-child(n+2){margin-top: 10px}
 .hd_st .fs17{color: #333;font-style: normal;font-size: 20px; position: relative;top: -15px;}
 .bx_inner{margin-top: 30px;}
-.bx_inner .fs13{margin-top: 7px; color: #777;font-family: 'NotoKrL',sans-serif; font-weight: normal; font-size: 18px; line-height: 24px}
+.bx_inner .fs13{margin-top: 7px; color: #777;font-family: 'NotoKrL',sans-serif; font-weight: normal; font-size: 18px; line-height: 25px}
 .a3{}
 .a3 img{display: block;margin:60px auto }
 .btn-wrap .btn1{display:inline-block; width:400px ;height:60px; border-radius: 30px; text-align: center; color: #fff;font-family: 'NotoKrR',sans-serif; font-size: 18px; padding-top: 20px; 
@@ -70,5 +70,5 @@ table.table th{border-top: 2px solid #bbbbbb}
 .box01 .cblue{color: #199da3}
 .box01 .cblue2{color: #e3751c !important}
 .box01 .text2{color: #0770bb; font-size: 18px;font-family: 'NotoKrM',sans-serif; font-weight: normal;margin-top: 10px}
-.box01 .text3{color: #777; font-size: 16px;font-family: 'NotoKrL',sans-serif; margin-top: 10px; line-height: 24px}
+.box01 .text3{color: #777; font-size: 16px;font-family: 'NotoKrL',sans-serif; margin-top: 10px; line-height: 25px}
 .box01 .text4{color: #0770bb; font-size: 16px;font-family: 'NotoKrL',sans-serif; font-weight: normal;margin-top: 10px }

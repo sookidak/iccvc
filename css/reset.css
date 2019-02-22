@@ -82,7 +82,7 @@ body {
 	color:#333;
 	-webkit-text-size-adjust: 100%;
 	vertical-align: middle;
-	letter-spacing:-0.04em;
+	letter-spacing:0.04em;
 }
 ul li{
 	list-style:none;

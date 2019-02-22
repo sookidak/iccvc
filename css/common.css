@@ -900,7 +900,7 @@ ul.bxslider {  list-style: none;}
 .agree-text ul li{font-size: 16px; color: #777; line-height: 25px;position: relative; margin-bottom: 6px;}
 .agree-text ul li span{}
 .agree-text ul.type1 li{padding-left: 8px; }
-.agree-text ul.type1 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 12px;  border-color: #777  }
+.agree-text ul.type1 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 12px;  background-color: #777  }
 .agree-text ul.type1 ul{margin-top: 5px}
 .agree-text ul.type1 ul li{font-size: 14px;margin-bottom: 0px;padding-left: 10px; }
 .agree-text ul.type1 ul li:after{width: 2px; height: 2px; left: 4px; top: 12px; background: #b5b5b5  }

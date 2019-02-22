@@ -50,7 +50,7 @@ Array.prototype.slice.call(document.querySelectorAll('.Accordion')).forEach(func
           target.setAttribute('aria-disabled', 'true');
         }
       }
-      else if (allowToggle && isExpanded) {
+      else if (isExpanded) {
         // Set the expanded state on the triggering element
         target.setAttribute('aria-expanded', 'false');
         // Hide the accordion sections, using aria-controls to specify the desired section

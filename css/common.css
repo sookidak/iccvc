@@ -628,9 +628,9 @@ background: linear-gradient(90deg, #0b79b6 0%,#0b79b6 20%,#199da3 100%);}
 /* 센터소개 */
 .info-wrap{display: inline-block;margin-bottom: 26px;}
 .info-wrap .center-intro{overflow: hidden}
-.info-wrap .center-intro .intro-photo{float: left;width: 135px;height: 135px;margin-right: 30px;}
-.info-wrap .center-intro .intro-photo img{width: 135px;height: 135px;}
-.info-wrap .center-intro .intro-comm{float: left;overflow: hidden;}
+.info-wrap .center-intro .intro-photo{float: left;width: 300px;height: auto;margin-right: 30px;}
+.info-wrap .center-intro .intro-photo img{width: 300px;height: auto;}
+.info-wrap .center-intro .intro-comm{float: right;overflow: hidden;width: 780px;}
 .info-wrap .center-intro .intro-comm .text-style2{line-height: 25px;}
 .info-wrap .center-intro .intro-comm > .text-style2{padding-top: 6px;}
 .info-wrap .center-intro .intro-comm .text-style2 + .text-style2{margin-top: 20px;}

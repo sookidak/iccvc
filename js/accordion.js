@@ -21,7 +21,7 @@ Array.prototype.slice.call(document.querySelectorAll('.Accordion')).forEach(func
   accordion.addEventListener('click', function (event) {
     var target = event.target;
 
-    if (target.classList.contains('Accordion-trigger')) {
+   
       // Check if the current toggle is expanded.
       var isExpanded = target.getAttribute('aria-expanded') == 'true';
       var active = accordion.querySelector('[aria-expanded="true"]');
@@ -58,7 +58,7 @@ Array.prototype.slice.call(document.querySelectorAll('.Accordion')).forEach(func
       }
 
       event.preventDefault();
-    }
+    
   });
 
   // Bind keyboard behaviors on the main accordion container
@@ -69,7 +69,7 @@ Array.prototype.slice.call(document.querySelectorAll('.Accordion')).forEach(func
     var ctrlModifier = (event.ctrlKey && key.match(/33|34/));
 
     // Is this coming from an accordion header?
-    if (target.classList.contains('Accordion-trigger')) {
+    
       // Up/ Down arrow and Control + Page Up/ Page Down keyboard operations
       // 38 = Up, 40 = Down
       if (key.match(/38|40/) || ctrlModifier) {
@@ -97,7 +97,7 @@ Array.prototype.slice.call(document.querySelectorAll('.Accordion')).forEach(func
 
         event.preventDefault();
       }
-    }
+    
     else if (ctrlModifier) {
       // Control + Page Up/ Page Down keyboard operations
       // Catches events that happen inside of panels

@@ -777,7 +777,7 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 
 /* 센터  메인 */
 .main-wrap{background-color: #f2f2f2; padding:60px 0 }
-.main-lolling{width: 680px; height: 680px; position: relative;}
+.main-lolling{width: 680px; height: 680px; position: relative;overflow: hidden;}
 .main-right {position: absolute;top: 0; right: 0;}
 .main-right > div{background-color: #fff; border-radius: 27px 0 0 0 ;  width: 480px; padding: 0px  30px}
 .main-right .top{height: 555px;}
